@@ -2,11 +2,13 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
-  background: #ffd092;
-  background: linear-gradient(180deg, #18103d 0%, #090513 100%);
+  font-family: 'Vollkorn', sans-serif;
 }
 
 * {
   box-sizing: border-box;
+}
+
+.active {
+  color: red;
 }

@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 2rem 0;
+  background: #f2f3f4;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 76rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.wrapper > div {
+  display: flex;
+  gap: 20px;
+}
+
+.socials {
+  font-size: 1.8rem;
+}
+
+.socials > div {
+  display: flex;
+  align-items: center;
+}
+
+.socials > div:hover {
+  color: red;
+  cursor: pointer;
+}

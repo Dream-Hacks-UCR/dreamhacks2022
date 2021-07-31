@@ -1,111 +1,98 @@
+.element {
+  width: 100%;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 80vh;
 }
 
-.header {
+.wrapper {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  text-align: center;
+  width: 76rem;
+  min-height: inherit;
+  margin-top: 3rem;
 }
 
 .title {
-  line-height: 4.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.landing {
+  display: table;
+  table-layout: fixed;
+  width: 76rem;
+  min-height: inherit;
+}
+
+.landing > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.heading {
   font-weight: 700;
   font-size: 5rem;
-  color: #6548e6;
 }
 
-.subtitle {
-  line-height: 2rem;
-  font-weight: 600;
-  font-size: 2rem;
-  color: #8c9bed;
-}
-
-.caption {
-  text-align: center;
-  margin-top: 1rem;
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #8c9bed;
-}
-
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  margin: 1rem 0;
-}
-
-.subheader {
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  font-size: 1.7rem;
-  color: #6548e6;
-}
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+.countdownWrapper {
+  margin-bottom: 5rem;
 }
 
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.8rem 1.5rem;
-  gap: 10px;
-  border: none;
-  border-radius: 0.6rem;
-  background: #8c9bed;
+  width: 20rem;
+  margin-bottom: 0.7rem;
+  padding: 0.7rem 1.2rem;
   font-weight: 600;
-  font-size: 1.2rem;
-  color: #141429;
+  font-size: 1.7rem;
+  border: none;
+  border-radius: 0.3rem;
+  background: #f2f3f4;
 }
 
 .button:hover {
-  background: #b1c0f3;
+  background: #dedede;
   cursor: pointer;
-  box-shadow: 0 4px 10px #674ed64d;
 }
 
-@media (max-width: 360px) {
-  .subtitle {
-    font-size: 1.3rem !important;
-  }
-  .caption {
-    font-size: 1.5rem !important;
-  }
+.applyWrapper {
+  display: flex;
+  font-size: 1.7rem;
 }
 
-@media (max-width: 425px) {
-  .subheader {
-    font-size: 1.5rem;
-  }
-  .button {
-    font-size: 1.1rem;
-  }
+.applyWrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0 0.3rem 0.3rem 0;
+  background: #f2f3f4;
+  font-weight: 600;
 }
 
-@media (max-width: 768px) {
-  .button {
-    width: 100%;
-  }
-  .subtitle {
-    font-size: 1.5rem;
-  }
-  .caption {
-    font-size: 2rem;
-  }
+.applyWrapper > div:hover {
+  background: #dedede;
+  cursor: pointer;
+}
+
+.input {
+  padding: 0.7rem;
+  font-size: 1.7rem;
+  font-family: 'Vollkorn', sans-serif;
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid red;
+  border-radius: 0.3rem 0 0 0.3rem;
 }

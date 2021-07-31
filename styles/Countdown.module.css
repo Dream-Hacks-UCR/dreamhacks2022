@@ -1,0 +1,50 @@
+.completed {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.heading {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.countdown {
+  font-family: 'Inter', sans-serif;
+  font-size: 3.5rem;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper {
+  gap: 20px;
+}
+
+.numWrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.num {
+  text-align: center;
+  min-width: 4rem;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 0.3rem;
+  background: #f2f3f4;
+}
+
+.num:hover {
+  cursor: default;
+  background: #dedede;
+}
+
+.label {
+  margin-top: 0.1rem;
+  font-family: 'Vollkorn', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
