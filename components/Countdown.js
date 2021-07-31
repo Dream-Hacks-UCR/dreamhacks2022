@@ -39,7 +39,7 @@ export default function CountdownOutput() {
                 </div>
             }
             { 
-              (days > 0 || hours > 0) &&
+              ( days > 0 || hours > 0 ) &&
                 <div>
                   <div className={styles.numWrapper}>
                     { Array.from(numHours).map(n =>
@@ -55,7 +55,7 @@ export default function CountdownOutput() {
                 </div>
             }
             { 
-              (days > 0 || hours > 0 || minutes > 0) &&
+              ( days > 0 || hours > 0 || minutes > 0 ) &&
                 <div>
                   <div className={styles.numWrapper}>
                     { Array.from(numMins).map(n =>
@@ -71,7 +71,7 @@ export default function CountdownOutput() {
                 </div>
             }
             { 
-              ( days > 0 || hours > 0  || minutes > 0 || seconds > 0) &&
+              ( days > 0 || hours > 0  || minutes > 0 || seconds > 0 ) &&
                 <div>
                   <div className={styles.numWrapper}>
                     { Array.from(numSecs).map(n =>
