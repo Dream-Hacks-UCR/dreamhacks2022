@@ -3,7 +3,6 @@
   justify-content: center;
   width: 100%;
   padding: 2rem 0;
-  background: #f2f3f4;
 }
 
 .wrapper {
@@ -32,4 +31,21 @@
 .socials > div:hover {
   color: red;
   cursor: pointer;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 720px) {
+  .wrapper {
+    flex-direction: column-reverse;
+  }
+  .socials {
+    margin-bottom: 0.7rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 1rem;
+  }
 }

@@ -6,7 +6,10 @@
   justify-content: center;
   width: 100%;
   padding: 1.5rem 0;
-  background: #f2f3f4;
+  background: #f2f3f4a4;
+  -webkit-backdrop-filter: saturate(180%) blur(25px);
+  -moz-backdrop-filter: saturate(180%) blur(25px);
+  backdrop-filter: saturate(180%) blur(25px);
 }
 
 .wrapper {

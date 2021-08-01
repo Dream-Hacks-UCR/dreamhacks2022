@@ -12,14 +12,12 @@
 
 .countdown {
   font-family: 'Inter', sans-serif;
+  font-weight: 500;
   font-size: 3.5rem;
 }
 
 .wrapper {
   display: flex;
-}
-
-.wrapper {
   gap: 20px;
 }
 
@@ -47,4 +45,59 @@
   font-family: 'Vollkorn', sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 540px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+  .countdown {
+    font-size: 2.2rem;
+  }
+  .wrapper {
+    gap: 15px;
+  }
+  .numWrapper {
+    gap: 3px;
+  }
+  .num {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 640px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+  .countdown {
+    font-size: 2.5rem;
+  }
+  .wrapper {
+    gap: 15px;
+  }
+  .numWrapper {
+    gap: 3px;
+  }
+  .num {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 720px) {
+  .heading {
+    font-size: 1.7rem;
+  }
+  .countdown {
+    font-size: 3rem;
+  }
+  .wrapper {
+    gap: 15px;
+  }
+  .numWrapper {
+    gap: 4px;
+  }
+  .num {
+    min-width: 3.5rem;
+  }
 }

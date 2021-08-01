@@ -24,10 +24,10 @@ export default function Nav() {
               duration={500}
               className={styles.link}
             >
-              Dream Hacks
+              DH
             </NavLink>
           : <Link passHref href='/' className={styles.link}>
-              <div>Dream Hacks</div>
+              <div>DH</div>
             </Link>
         }
         <div>

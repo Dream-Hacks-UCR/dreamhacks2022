@@ -54,10 +54,21 @@
 }
 
 .arrow {
+  margin-left: 1rem;
   transition: 200ms ease-in-out;
 }
 
 .open .arrow {
   transform: rotate(90deg);
   transition: 200ms ease-in-out;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 720px) {
+  .title {
+    font-size: 1.3rem;
+  }
+  .content {
+    font-size: 1.1rem;
+  }
 }
