@@ -43,7 +43,7 @@ export default function Landing() {
             </motion.div>
           </div>
         </div>
-        <div>
+        <div className={styles.carouselWrapper}>
           {/* Insert image */}
         </div>
       </div>

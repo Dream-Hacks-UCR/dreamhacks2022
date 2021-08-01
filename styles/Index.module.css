@@ -30,6 +30,7 @@
 }
 
 .body {
+  text-align: center;
   margin-bottom: 2rem;
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
@@ -129,4 +130,25 @@
   outline: none;
   border: 2px solid red;
   border-radius: 0.3rem 0 0 0.3rem;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 1280px) {
+  .wrapper {
+    width: 100%;
+  }
+  .carouselWrapper {
+    display: none; 
+  }
+  .landing,
+  .about,
+  .landing > div,
+  .about > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .landing,
+  .about {
+    width: 100%;
+  }
 }

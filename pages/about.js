@@ -4,7 +4,9 @@ export default function About() {
   return (
     <div className={styles.container}>
       <div className={styles.about}>
-        <div></div>
+        <div className={styles.assetWrapper}>
+          {/* Insert image */}
+        </div>
         <div className={styles.aboutContent}>
           <div className={styles.title}>About</div>
           <div className={styles.body}>

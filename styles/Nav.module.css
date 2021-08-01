@@ -44,3 +44,11 @@
   color: red;
   cursor: pointer;
 }
+
+/* RESPONSIVE STYLES */
+@media (max-width: 1280px) {
+  .wrapper {
+    width: 100%;
+    margin: 0 1rem;
+  }
+}
