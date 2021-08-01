@@ -64,7 +64,16 @@
 }
 
 /* RESPONSIVE STYLES */
-@media (max-width: 720px) {
+@media (max-width: 325px) {
+  .title {
+    font-size: 1.2rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 325px) and (max-width: 720px) {
   .title {
     font-size: 1.3rem;
   }

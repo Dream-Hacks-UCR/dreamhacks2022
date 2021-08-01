@@ -48,7 +48,16 @@
 }
 
 /* RESPONSIVE STYLES */
-@media (max-width: 720px) {
+@media (max-width: 325px) {
+  .question {
+    font-size: 1.2rem;
+  }
+  .answer {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 325px) and (max-width: 720px) {
   .question {
     font-size: 1.3rem;
   }
