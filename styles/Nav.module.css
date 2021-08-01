@@ -5,11 +5,17 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  max-height: 4.5rem;
   padding: 1.5rem 0;
   background: #f2f3f4a4;
   -webkit-backdrop-filter: saturate(180%) blur(25px);
   -moz-backdrop-filter: saturate(180%) blur(25px);
   backdrop-filter: saturate(180%) blur(25px);
+  overflow-y: hidden;
+}
+
+.open.container {
+  max-height: 100vh;
 }
 
 .wrapper {
@@ -26,7 +32,6 @@
   align-items: center;
   gap: 40px;
 }
-
 
 .button {
   display: flex;
@@ -48,7 +53,42 @@
   cursor: pointer;
 }
 
+.closeMenu,
+.openMenu {
+  display: none;
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
 /* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .closeMenu {
+    display: flex;
+  }
+  .open .closeMenu,
+  .openMenu {
+    display: none;
+  }
+  .open .openMenu {
+    display: flex;
+  }
+  .navHeader {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .tabs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+  }
+}
+
 @media (max-width: 1280px) {
   .wrapper {
     width: 100%;

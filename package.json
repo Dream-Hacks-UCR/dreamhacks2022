@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "body-scroll-lock": "^4.0.0-beta.0",
     "framer-motion": "^4.1.17",
     "mongodb": "^3.5.9",
     "next": "latest",
