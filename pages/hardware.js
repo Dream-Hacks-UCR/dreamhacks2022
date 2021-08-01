@@ -1,3 +1,5 @@
+import HardwareAccordion from '../components/HardwareAccordion'
+
 import styles from '../styles/Index.module.css'
 
 export default function Hardware() {
@@ -5,6 +7,7 @@ export default function Hardware() {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.title}>Hardware</div>
+        <HardwareAccordion />
       </div>
     </div>
   )

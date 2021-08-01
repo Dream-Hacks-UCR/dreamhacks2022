@@ -5,6 +5,9 @@ export default function Team() {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div className={styles.title}>Team</div>
+        <div className={styles.body}>
+          The ones behind organizing this hackathon. Hover over each one to reveal the face behind the card!
+        </div>
       </div>
     </div>
   )
