@@ -138,11 +138,17 @@
   .heading {
     font-size: 2.7rem;
   }
+  .title {
+    font-size: 2rem;
+  }
 }
 
 @media (min-width: 375px) and (max-width: 450px) {
   .heading {
     font-size: 3.2rem;
+  }
+  .title {
+    font-size: 2.5rem;
   }
 }
 
@@ -156,6 +162,9 @@
 @media (min-width: 450px) and (max-width: 640px) {
   .heading {
     font-size: 4rem;
+  }
+  .title {
+    font-size: 2.7rem;
   }
 }
 
