@@ -23,9 +23,12 @@ export default function Landing() {
           </motion.div>
           <div className={styles.applyWrapper}>
             <input placeholder='Enter your email...' className={styles.input}/>
-            <div>
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.995 }}
+            >
               Apply <GoChevronRight />
-            </div>
+            </motion.div>
           </div>
         </div>
         <div>

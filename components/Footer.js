@@ -10,7 +10,7 @@ export default function Footer() {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div>
-          Made with ❤️ and ✨ by the Dream Hacks Team.
+          Built with ❤️ and ✨ by the Dream Hacks Team.
         </div>
         <div className={styles.socials}>
           <Link passHref href='mailto:dreamhacksucr@gmail.com'>
