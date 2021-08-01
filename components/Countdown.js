@@ -35,7 +35,7 @@ export default function CountdownOutput() {
                       </motion.div>
                     )}
                   </div>
-                  <div className={styles.label}>Days</div>
+                  <div className={styles.label}>days</div>
                 </div>
             }
             { 
@@ -51,7 +51,7 @@ export default function CountdownOutput() {
                       </motion.div>
                     )}
                   </div>
-                  <div className={styles.label}>Hours</div>
+                  <div className={styles.label}>hrs</div>
                 </div>
             }
             { 
@@ -67,7 +67,7 @@ export default function CountdownOutput() {
                       </motion.div>
                     )}
                   </div>
-                  <div className={styles.label}>Minutes</div>
+                  <div className={styles.label}>mins</div>
                 </div>
             }
             { 
@@ -83,7 +83,7 @@ export default function CountdownOutput() {
                       </motion.div>
                     )}
                   </div>
-                  <div className={styles.label}>Seconds</div>
+                  <div className={styles.label}>secs</div>
                 </div>
             }
           </div>

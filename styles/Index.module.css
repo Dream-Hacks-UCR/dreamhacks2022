@@ -134,6 +134,18 @@
 }
 
 /* RESPONSIVE STYLES */
+@media (max-width: 375px) {
+  .heading {
+    font-size: 2.7rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 450px) {
+  .heading {
+    font-size: 3.2rem;
+  }
+}
+
 @media (max-width: 540px) {
   .button,
   .input {
@@ -141,9 +153,19 @@
   }
 }
 
-@media (max-width: 640px) {
+@media (min-width: 450px) and (max-width: 640px) {
   .heading {
     font-size: 4rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .button,
+  .applyWrapper > div {
+    font-size: 1.3rem;
+  }
+  .input {
+    font-size: 1.1rem;
   }
 }
 

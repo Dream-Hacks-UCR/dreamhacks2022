@@ -37,6 +37,7 @@
 @media (max-width: 720px) {
   .wrapper {
     flex-direction: column-reverse;
+    text-align: center;
   }
   .socials {
     margin-bottom: 0.7rem;
