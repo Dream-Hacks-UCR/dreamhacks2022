@@ -7,12 +7,14 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  min-height: 50vh;
 }
 
 .wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 76rem;
   min-height: inherit;
   margin-top: 3rem;
@@ -20,19 +22,7 @@
 
 .title {
   font-weight: 700;
-  font-size: 2rem;
-}
-
-.landing {
-  display: table;
-  table-layout: fixed;
-  width: 76rem;
-  min-height: inherit;
-}
-
-.landing > div {
-  display: table-cell;
-  vertical-align: middle;
+  font-size: 3rem;
 }
 
 .heading {
@@ -40,15 +30,56 @@
   font-size: 5rem;
 }
 
+.body {
+  margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* SECTION STYLES */
+
+.landingContainer {
+  height: 100vh;
+}
+
+.landing,
+.about {
+  display: table;
+  table-layout: fixed;
+  width: 76rem;
+  min-height: inherit;
+}
+
+.landing > div,
+.about > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 .countdownWrapper {
   margin-bottom: 5rem;
 }
+
+.aboutContent {
+  text-align: center;
+}
+
+.organizers {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* BUTTON STYLES */
 
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20rem;
+  width: 24rem;
   margin-bottom: 0.7rem;
   padding: 0.7rem 1.2rem;
   font-weight: 600;
@@ -62,6 +93,8 @@
   background: #dedede;
   cursor: pointer;
 }
+
+/* INPUT STYLES */
 
 .applyWrapper {
   display: flex;
