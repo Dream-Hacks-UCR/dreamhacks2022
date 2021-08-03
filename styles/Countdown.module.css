@@ -32,12 +32,12 @@
   padding: 1rem 0;
   border: none;
   border-radius: 0.3rem;
-  background: #f2f3f4;
+  background: var(--accent);
 }
 
 .num:hover {
   cursor: default;
-  background: #dedede;
+  background: var(--accent-dark);
 }
 
 .label {

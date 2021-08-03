@@ -8,6 +8,7 @@
   justify-content: center;
   align-items: center;
   min-height: 50vh;
+  padding: 0 1rem;
 }
 
 .wrapper {
@@ -37,7 +38,8 @@
 }
 
 .link {
-  text-decoration: none;
+  color: var(--accent);
+  cursor: pointer;
 }
 
 /* SECTION STYLES */
@@ -86,11 +88,11 @@
   font-size: 1.7rem;
   border: none;
   border-radius: 0.3rem;
-  background: #f2f3f4;
+  background: var(--accent);
 }
 
 .button:hover {
-  background: #dedede;
+  background: var(--accent-dark);
   cursor: pointer;
 }
 
@@ -109,13 +111,13 @@
   width: 10rem;
   padding: 0.7rem 1.2rem;
   border-radius: 0 0.3rem 0.3rem 0;
-  background: #f2f3f4;
+  background: var(--accent);
   font-weight: 600;
 }
 
 .applyWrapper > div:hover {
   border-radius: 0.3rem;
-  background: #dedede;
+  background: var(--accent-dark);
   cursor: pointer;
 }
 
@@ -124,12 +126,15 @@
   padding: 0.7rem;
   font-size: 1.2rem;
   font-family: 'Inter', sans-serif;
+  border: 2px solid var(--accent);
   border-radius: 0.3rem 0 0 0.3rem;
+  background: var(--bg-light);
+  color: var(--font-color);
 }
 
 .input:focus {
   outline: none;
-  border: 2px solid red;
+  border: 2px solid var(--accent-dark);
   border-radius: 0.3rem 0 0 0.3rem;
 }
 

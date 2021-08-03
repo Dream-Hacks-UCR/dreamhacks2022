@@ -7,10 +7,10 @@
   width: 100%;
   max-height: 4.5rem;
   padding: 1.5rem 0;
-  background: #f2f3f4a4;
-  -webkit-backdrop-filter: saturate(180%) blur(25px);
-  -moz-backdrop-filter: saturate(180%) blur(25px);
-  backdrop-filter: saturate(180%) blur(25px);
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: saturate(120%) blur(20px);
+  -moz-backdrop-filter: saturate(120%) blur(20px);
+  backdrop-filter: saturate(120%) blur(20px);
   overflow-y: hidden;
 }
 
@@ -40,16 +40,16 @@
   padding: 0.5rem 1rem;
   border: none;
   border-radius: 0.3rem;
-  background: #dedede;
+  background: var(--accent);
 }
 
 .button:hover {
-  background: #c2c2c2;
+  background: var(--accent-dark);
   cursor: pointer;
 }
 
 .link:hover {
-  color: red;
+  color: var(--accent-dark);
   cursor: pointer;
 }
 
