@@ -1,0 +1,83 @@
+.wrapper {
+  width: 100%;
+}
+
+.open.wrapper {
+  margin-bottom: 1rem;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  border-bottom: 2px solid var(--accent);
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.title:hover {
+  border-radius: 0.3rem;
+  background: var(--accent);
+  cursor: pointer;  
+}
+
+.open .title {
+  border-radius: 0.3rem 0.3rem 0 0;
+  background: var(--accent);
+}
+
+.subtitle {
+  color:  var(--accent-dark);
+}
+
+.content {
+  max-height: 0;
+  padding: 1rem 1.5rem;
+  padding-bottom: 0;
+  opacity: 0;
+  border-left: 3px solid var(--accent);
+  border-bottom: 3px solid var(--accent);
+  border-right: 3px solid  var(--accent);
+  border-radius: 0 0 0.3rem 0.3rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.2rem;
+  overflow-y: hidden;
+  transition: max-height 200ms ease-out, opacity 150ms ease-out;
+}
+
+.open .content {
+  max-height: 10rem;
+  padding: 1rem 1.5rem;
+  opacity: 100;
+  transition: max-height 200ms ease-out, opacity 150ms ease-out;
+}
+
+.arrow {
+  margin-left: 1rem;
+  transition: 200ms ease-in-out;
+}
+
+.open .arrow {
+  transform: rotate(90deg);
+  transition: 200ms ease-in-out;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 325px) {
+  .title {
+    font-size: 1.2rem;
+  }
+  .content {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 325px) and (max-width: 720px) {
+  .title {
+    font-size: 1.3rem;
+  }
+  .content {
+    font-size: 1.1rem;
+  }
+}

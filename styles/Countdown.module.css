@@ -1,0 +1,168 @@
+.completed {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+
+.heading {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.countdown {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.numWrapper {
+  display: flex;
+  gap: 5px;
+}
+
+.num {
+  text-align: center;
+  min-width: 4rem;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 0.3rem;
+  background: var(--accent);
+}
+
+.num:hover {
+  cursor: default;
+  background: var(--accent-dark);
+}
+
+.label {
+  margin-top: 0.1rem;
+  font-family: 'Vollkorn', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 340px) {
+  .heading {
+    font-size: 1.1rem;
+  }
+  .countdown {
+    font-size: 1.5rem;
+  }
+  .wrapper {
+    gap: 7px;
+  }
+  .numWrapper {
+    gap: 3px;
+  }
+  .num {
+    min-width: 1.8rem;
+    padding: 0.8rem 0;
+  }
+  .label {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 340px) and (max-width: 375px) {
+  .heading {
+    font-size: 1.1rem;
+  }
+  .countdown {
+    font-size: 1.5rem;
+  }
+  .wrapper {
+    gap: 7px;
+  }
+  .numWrapper {
+    gap: 3px;
+  }
+  .num {
+    min-width: 1.9rem;
+    padding: 0.8rem 0;
+  }
+  .label {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 450px) {
+  .heading {
+    font-size: 1.2rem;
+  }
+  .countdown {
+    font-size: 1.7rem;
+  }
+  .wrapper {
+    gap: 10px;
+  }
+  .numWrapper {
+    gap: 3px;
+  }
+  .num {
+    min-width: 2.2rem;
+  }
+  .label {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 540px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+  .countdown {
+    font-size: 2.2rem;
+  }
+  .wrapper {
+    gap: 15px;
+  }
+  .numWrapper {
+    gap: 3px;
+  }
+  .num {
+    min-width: 2.5rem;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 640px) {
+  .heading {
+    font-size: 1.5rem;
+  }
+  .countdown {
+    font-size: 2.5rem;
+  }
+  .wrapper {
+    gap: 15px;
+  }
+  .numWrapper {
+    gap: 3px;
+  }
+  .num {
+    min-width: 3rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 720px) {
+  .heading {
+    font-size: 1.7rem;
+  }
+  .countdown {
+    font-size: 3rem;
+  }
+  .wrapper {
+    gap: 15px;
+  }
+  .numWrapper {
+    gap: 4px;
+  }
+  .num {
+    min-width: 3.5rem;
+  }
+}

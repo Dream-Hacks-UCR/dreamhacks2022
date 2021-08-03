@@ -1,111 +1,230 @@
+.element {
+  width: 100%;
+}
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 50vh;
+  padding: 0 1rem;
 }
 
-.header {
+.wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
+  width: 76rem;
+  min-height: inherit;
+  margin-top: 3rem;
 }
 
 .title {
-  line-height: 4.5rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.heading {
   font-weight: 700;
   font-size: 5rem;
-  color: #6548e6;
 }
 
-.subtitle {
-  line-height: 2rem;
-  font-weight: 600;
-  font-size: 2rem;
-  color: #8c9bed;
-}
-
-.caption {
+.body {
   text-align: center;
-  margin-top: 1rem;
-  font-weight: 700;
-  font-size: 2.5rem;
-  color: #8c9bed;
+  margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
 }
 
-.section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.link {
+  color: var(--accent);
+  cursor: pointer;
+}
+
+/* SECTION STYLES */
+
+.landingContainer {
+  height: 100vh;
+}
+
+.landing,
+.about {
+  display: table;
+  table-layout: fixed;
+  width: 76rem;
+  min-height: inherit;
+}
+
+.landing > div,
+.about > div {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.countdownWrapper {
+  margin-bottom: 2rem;
+}
+
+.aboutContent {
   text-align: center;
-  width: 100%;
-  margin: 1rem 0;
 }
 
-.subheader {
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  font-size: 1.7rem;
-  color: #6548e6;
-}
-
-.grid {
+.organizers {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
+  justify-content: space-around;
 }
+
+/* BUTTON STYLES */
 
 .button {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.8rem 1.5rem;
-  gap: 10px;
-  border: none;
-  border-radius: 0.6rem;
-  background: #8c9bed;
+  width: 24rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 1rem;
   font-weight: 600;
-  font-size: 1.2rem;
-  color: #141429;
+  font-size: 1.7rem;
+  border: none;
+  border-radius: 0.3rem;
+  background: var(--accent);
 }
 
 .button:hover {
-  background: #b1c0f3;
+  background: var(--accent-dark);
   cursor: pointer;
-  box-shadow: 0 4px 10px #674ed64d;
 }
 
-@media (max-width: 360px) {
-  .subtitle {
-    font-size: 1.3rem !important;
-  }
-  .caption {
-    font-size: 1.5rem !important;
+/* INPUT STYLES */
+
+.applyWrapper {
+  display: flex;
+  margin-top: 2rem;
+  font-size: 1.7rem;
+}
+
+.applyWrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  padding: 0.7rem 1.2rem;
+  border-radius: 0 0.3rem 0.3rem 0;
+  background: var(--accent);
+  font-weight: 600;
+}
+
+.applyWrapper > div:hover {
+  border-radius: 0.3rem;
+  background: var(--accent-dark);
+  cursor: pointer;
+}
+
+.input {
+  width: 30rem;
+  padding: 0.7rem;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  border: 2px solid var(--accent);
+  border-radius: 0.3rem 0 0 0.3rem;
+  background: var(--bg-light);
+  color: var(--font-color);
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid var(--accent-dark);
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 325px) {
+  .body {
+    font-size: 1rem;
   }
 }
 
-@media (max-width: 425px) {
-  .subheader {
-    font-size: 1.5rem;
+@media (max-width: 375px) {
+  .heading {
+    font-size: 2.8rem;
   }
-  .button {
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 450px) {
+  .heading {
+    font-size: 3.2rem;
+  }
+  .title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .button,
+  .input {
+    width: 100%;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 640px) {
+  .heading {
+    font-size: 4rem;
+  }
+  .title {
+    font-size: 2.7rem;
+  }
+}
+
+@media (max-width: 720px) {
+  .button,
+  .applyWrapper > div {
+    font-size: 1.3rem;
+  }
+  .input {
     font-size: 1.1rem;
   }
 }
 
 @media (max-width: 768px) {
+  .landing {
+    align-items: center;
+  }
   .button {
+    align-self: center;
+  }
+  .applyWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+  .applyWrapper > div,
+  .input {
+    border-radius: 0.3rem;
+  }
+  .applyWrapper > div {
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
     width: 100%;
   }
-  .subtitle {
-    font-size: 1.5rem;
+  .carouselWrapper {
+    display: none; 
   }
-  .caption {
-    font-size: 2rem;
+  .landing,
+  .about,
+  .landing > div,
+  .about > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .landing,
+  .about {
+    width: 100%;
   }
 }
