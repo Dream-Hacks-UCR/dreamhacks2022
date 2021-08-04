@@ -55,7 +55,6 @@
 }
 
 /* SECTION STYLES */
-
 .landingContainer {
   height: 100vh;
 }
@@ -88,7 +87,6 @@
 }
 
 /* BUTTON STYLES */
-
 .button,
 .secondarybutton {
   display: flex;
@@ -98,6 +96,7 @@
   margin-bottom: 0.5rem;
   padding: 0.5rem 1.5rem;
   font-weight: 600;
+  font-family: 'Vollkorn', sans-serif;
   font-size: 1.7rem;
   border: none;
   border-radius: 0.3rem;
@@ -125,7 +124,6 @@
 }
 
 /* INPUT STYLES */
-
 .applyWrapper {
   display: flex;
   margin-top: 2rem;

@@ -2,21 +2,22 @@ import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import CountdownOutput from '../components/Countdown'
-import router from 'next/router'
 import { toast } from 'react-hot-toast'
+import { signIn, useSession } from 'next-auth/client'
 
 import { GoChevronRight } from 'react-icons/go'
 
 import styles from '../styles/Index.module.css'
 
 export default function Landing() {
+  const [session] = useSession()
   const [email, setEmail] = useState('')
 
   const handleChangeEmail = (e) => {
     setEmail(e.target.value)
   }
 
-  const openLogin = () => {
+  const openSignin = () => {
     const matchRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)
 
     if (email === '' || !matchRegex) {
@@ -24,7 +25,7 @@ export default function Landing() {
     }
     else {
       sessionStorage.setItem('email', email)
-      router.push('/login')
+      signIn()
     }
   }
 
@@ -59,21 +60,24 @@ export default function Landing() {
                 Join Our Team <GoChevronRight />
               </motion.div>
             </Link>
-            <div className={styles.applyWrapper}>
-              <input 
-                placeholder='Enter your email...' 
-                value={email}
-                onChange={handleChangeEmail}
-                className={styles.input}
-              />
-              <motion.div
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 1.03 }}
-                onClick={() => openLogin()}
-              >
-                Apply <GoChevronRight />
-              </motion.div>
-            </div>
+            
+            { !session &&
+                <div className={styles.applyWrapper}>
+                  <input 
+                    placeholder='Enter your email...' 
+                    value={email}
+                    onChange={handleChangeEmail}
+                    className={styles.input}
+                  />
+                  <motion.div
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 1.03 }}
+                    onClick={() => openSignin()}
+                  >
+                    Apply <GoChevronRight />
+                  </motion.div>
+                </div>
+            }
           </div>
           <div className={styles.carouselWrapper}>
             {/* Insert image */}

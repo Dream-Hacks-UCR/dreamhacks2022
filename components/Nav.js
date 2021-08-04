@@ -4,6 +4,7 @@ import { Link as NavLink } from 'react-scroll'
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import { signIn, signOut, useSession } from 'next-auth/client'
 
 import { HiMenuAlt4, HiOutlineX } from 'react-icons/hi'
 import { GoChevronRight } from 'react-icons/go'
@@ -11,6 +12,7 @@ import { GoChevronRight } from 'react-icons/go'
 import styles from '../styles/Nav.module.css'
 
 export default function Nav() {
+  const [session] = useSession()
   const router = useRouter()
 
   const [open, setOpen] = useState(false)
@@ -133,15 +135,28 @@ export default function Nav() {
               </>
             : null
           }
-          <Link passHref href='/login'>
-            <motion.div 
-              whileHover={{ scale: 1.05}} 
-              whileTap={{ scale: 0.997 }}
-              className={styles.button}
-            >
-              Apply <GoChevronRight />
-            </motion.div>
-          </Link>
+          {
+            session 
+            ?
+              <motion.div 
+                whileHover={{ scale: 1.05}} 
+                whileTap={{ scale: 0.997 }}
+                className={styles.button}
+                onClick={signOut}
+              >
+                Sign Out <GoChevronRight />
+              </motion.div>
+            :
+              <motion.div 
+                whileHover={{ scale: 1.05}} 
+                whileTap={{ scale: 0.997 }}
+                className={styles.button}
+                onClick={signIn}
+              >
+                Sign In <GoChevronRight />
+              </motion.div>
+          }
+          
         </div>
       </div>
     </div>
