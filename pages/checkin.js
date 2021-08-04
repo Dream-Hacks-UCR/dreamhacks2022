@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { useSession } from 'next-auth/client'
 import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
+import { FadeLoader } from 'react-spinners'
 
 import { IoMdRadioButtonOff, IoMdRadioButtonOn } from 'react-icons/io'
 
@@ -18,13 +19,23 @@ export default function CheckIn() {
   const [firstTime, setFirstTime] = useState('')
 
   useEffect(() => {
-    if (!session) {
+    if (!loading && !session) {
       router.push('/')
       toast.error('Access denied. Please sign in!', {
         id: 'notSignedInCheckInError',
       })
     }
   }, [loading, session, router])
+
+  if (loading) {
+    return(
+      <Layout>
+        <div className={styles.wrapper}>
+          <FadeLoader color='#95a6da' width={5} height={12} />
+        </div>
+      </Layout>
+    )
+  }
   
   return (
     <>

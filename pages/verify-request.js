@@ -23,6 +23,16 @@ export default function LogIn() {
     }
   }, [loading, session, router])
 
+  if (loading) {
+    return(
+      <Layout>
+        <div className={styles.wrapper}>
+          <FadeLoader color='#95a6da' width={5} height={12} />
+        </div>
+      </Layout>
+    )
+  }
+
   return (
     <>
       <Head>
