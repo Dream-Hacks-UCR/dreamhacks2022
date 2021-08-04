@@ -55,6 +55,7 @@ export default function Nav() {
                 offset={-90}
                 duration={500}
                 className={styles.link}
+                onClick={() => setOpen(false)}
               >
                 DH
               </NavLink>
@@ -77,6 +78,7 @@ export default function Nav() {
                   offset={-90}
                   duration={500}
                   className={styles.link}
+                  onClick={() => setOpen(false)}
                 >
                   About
                 </NavLink>
@@ -88,6 +90,7 @@ export default function Nav() {
                   offset={-90}
                   duration={500}
                   className={styles.link}
+                  onClick={() => setOpen(false)}
                 >
                   Hardware
                 </NavLink>
@@ -99,6 +102,7 @@ export default function Nav() {
                   offset={-90}
                   duration={500}
                   className={styles.link}
+                  onClick={() => setOpen(false)}
                 >
                   FAQ 
                 </NavLink>
@@ -110,6 +114,7 @@ export default function Nav() {
                   offset={-90}
                   duration={500}
                   className={styles.link}
+                  onClick={() => setOpen(false)}
                 >
                   Sponsors
                 </NavLink>
@@ -121,6 +126,7 @@ export default function Nav() {
                   offset={-90}
                   duration={500}
                   className={styles.link}
+                  onClick={() => setOpen(false)}
                 >
                   Team
                 </NavLink>  
