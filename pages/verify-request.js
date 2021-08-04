@@ -1,11 +1,27 @@
+import React, { useEffect } from 'react'
 import Head from 'next/head'
 import Layout from '../components/Layout'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { useSession } from 'next-auth/client'
+import { useRouter } from 'next/router'
+import { toast } from 'react-hot-toast'
 
 import styles from '../styles/Index.module.css'
 
 export default function LogIn() {
+  const [session, loading] = useSession()
+  const router = useRouter()
+
+  useEffect(() => {
+    if (session) {
+      router.push('/')
+      toast.error('Access denied. Already signed in!', {
+        id: 'alreadySignedInVerifyError',
+      })
+    }
+  }, [loading, session, router])
+
   return (
     <>
       <Head>

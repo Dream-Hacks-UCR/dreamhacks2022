@@ -40,7 +40,7 @@ export default function LogIn({ csrfToken }) {
       setEmail(sessionStorage.getItem('email', email))
     }
     setInit(false)
-  }, [email, loading, session, router])
+  }, [email, init, loading, session, router])
   
   return (
     <>
