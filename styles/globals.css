@@ -14,8 +14,9 @@
   --font: #d7daed;
   --font-light-grey: #bec8e8;
   --font-grey: #95a6da;
+  --font-dark-grey: #646799;
   --font-dark: #1a1b33;
-  --font-dark-grey: #722431;
+  --font-dark-accent: #722431;
 }
 
 html,

@@ -35,7 +35,7 @@
 
 .title:hover .subtitle,
 .open .subtitle {
-  color:  var(--font-dark-grey);
+  color:  var(--font-dark-accent);
 }
 
 .content {

@@ -2,10 +2,38 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   width: 76rem;
   min-height: inherit;
-  margin-top: 3rem;
+  margin-top: 5rem;
   padding: 0 1rem;
+}
+
+.title,
+.subtitle {
+  width: 24rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: var(--font-grey);
+}
+
+.body {
+  width: 24rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: var(--font-grey);
+}
+
+.section {
+  width: 24rem;
+  margin-bottom: 1.5rem;
 }
 
 .form {
@@ -13,6 +41,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  margin-bottom: 1.5rem;
 }
 
 .inputWrapper {
@@ -20,11 +49,12 @@
 }
 
 .label {
+  text-align: left;
   margin-left: 0.1rem;
   margin-bottom: 0.3rem;
   font-weight: 600;
   font-family: 'Inter', sans-serif;
-  color: var(--font-grey);
+  color: var(--font-dark-grey);
 }
 
 .input {
@@ -44,6 +74,31 @@
   border-radius: 0.3rem;
 }
 
+.radioWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 0.7rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.radio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.radio:hover {
+  cursor: pointer;
+}
+
+.radioWrapper .radio:nth-of-type(1) {
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
 .button,
 .secondarybutton {
   display: flex;
@@ -57,7 +112,7 @@
   background: var(--accent);
   font-weight: 600;
   font-family: 'Vollkorn', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: var(--font-dark);
 }
 
@@ -76,7 +131,18 @@
   cursor: pointer;
 }
 
+/* RESPONSIVE STYLES */
+@media (max-width: 325px) {
+  .body {
+    font-size: 1rem;
+  }
+}
+
 @media (max-width: 540px) {
+  .section,
+  .title,
+  .subtitle,
+  .body,
   .inputWrapper,
   .input,
   .button,

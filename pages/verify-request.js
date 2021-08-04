@@ -8,6 +8,7 @@ import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
 
 import styles from '../styles/Index.module.css'
+import formStyles from '../styles/Form.module.css'
 
 export default function LogIn() {
   const [session, loading] = useSession()
@@ -30,10 +31,10 @@ export default function LogIn() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className={styles.container}>
-          <div className={styles.wrapper}>
+        
+      <div className={formStyles.wrapper}>
             <div className={styles.title}>Check Your Email Address</div>
-            <div className={styles.body}>Didn't receive an email? Try signing in again and double checking your email input.</div>
+            <div className={styles.body}>Didn't receive an email? Try signing in again and double checking when you type your email.</div>
             
             <Link passHref href='/'>
               <motion.div
@@ -45,7 +46,6 @@ export default function LogIn() {
               </motion.div>
             </Link>
           </div>
-        </div>
       </Layout>
     </>
   )

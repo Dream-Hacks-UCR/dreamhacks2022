@@ -54,6 +54,10 @@
   min-height: 100vh;
 }
 
+.emailWrapper {
+  font-size: 1.1rem;
+}
+
 /* SECTION STYLES */
 .landingContainer {
   height: 100vh;
@@ -100,7 +104,7 @@
   background: var(--accent);
   font-weight: 600;
   font-family: 'Vollkorn', sans-serif;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .secondarybutton {
@@ -127,7 +131,7 @@
 .applyWrapper {
   display: flex;
   margin-top: 2rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .applyWrapper > div {

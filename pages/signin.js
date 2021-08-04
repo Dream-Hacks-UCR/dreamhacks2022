@@ -9,7 +9,7 @@ import { toast } from 'react-hot-toast'
 
 import styles from '../styles/Form.module.css'
 
-export default function LogIn({ csrfToken }) {
+export default function SignIn({ csrfToken }) {
   const [session, loading] = useSession()
   const router = useRouter()
 
@@ -50,6 +50,12 @@ export default function LogIn({ csrfToken }) {
       </Head>
       <Layout>
         <div className={styles.wrapper}>
+          <div className={styles.title}>
+            Sign In
+          </div>
+          <div className={styles.body}>
+            Sign in to Dream Hacks to access more. Requires no password.
+          </div>
           <form 
             method='post' 
             action='/api/auth/signin/email' 
@@ -79,8 +85,6 @@ export default function LogIn({ csrfToken }) {
               Sign In
             </motion.button>
           </form>
-          
-          
           <Link passHref href='/'>
             <motion.div
               whileHover={{ scale: 1.03 }}

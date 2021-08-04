@@ -7,7 +7,6 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import { signIn, signOut, useSession } from 'next-auth/client'
 
 import { HiMenuAlt4, HiOutlineX } from 'react-icons/hi'
-import { GoChevronRight } from 'react-icons/go'
 
 import styles from '../styles/Nav.module.css'
 
@@ -138,14 +137,25 @@ export default function Nav() {
           {
             session 
             ?
-              <motion.div 
-                whileHover={{ scale: 1.05}} 
-                whileTap={{ scale: 0.997 }}
-                className={styles.button}
-                onClick={signOut}
-              >
-                Sign Out <GoChevronRight />
-              </motion.div>
+              <>
+                <Link passHref href='/checkin'>
+                  <motion.div 
+                    whileHover={{ scale: 1.05}} 
+                    whileTap={{ scale: 0.997 }}
+                    className={styles.secondarybutton}
+                  >
+                    Check In
+                  </motion.div>
+                </Link>
+                <motion.div 
+                  whileHover={{ scale: 1.05}} 
+                  whileTap={{ scale: 0.997 }}
+                  className={styles.button}
+                  onClick={signOut}
+                >
+                  Sign Out
+                </motion.div>
+              </>
             :
               <motion.div 
                 whileHover={{ scale: 1.05}} 
@@ -153,7 +163,7 @@ export default function Nav() {
                 className={styles.button}
                 onClick={signIn}
               >
-                Sign In <GoChevronRight />
+                Sign In
               </motion.div>
           }
           
