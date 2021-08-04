@@ -29,7 +29,7 @@
 }
 
 .socials > div:hover {
-  color: red;
+  color: var(--accent);
   cursor: pointer;
 }
 

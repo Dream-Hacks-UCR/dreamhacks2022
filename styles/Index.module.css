@@ -35,15 +35,26 @@
   margin-bottom: 2rem;
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
+  color: var(--font-grey);
 }
 
 .link {
   color: var(--accent);
+  cursor: default;
+}
+
+.link:hover {
+  color: var(--accent-dark);
   cursor: pointer;
 }
 
-/* SECTION STYLES */
+.flexBody {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
 
+/* SECTION STYLES */
 .landingContainer {
   height: 100vh;
 }
@@ -76,19 +87,25 @@
 }
 
 /* BUTTON STYLES */
-
-.button {
+.button,
+.secondarybutton {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24rem;
   margin-bottom: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   font-weight: 600;
+  font-family: 'Vollkorn', sans-serif;
   font-size: 1.7rem;
   border: none;
   border-radius: 0.3rem;
   background: var(--accent);
+}
+
+.secondarybutton {
+  color: var(--accent);
+  background: var(--bg-darker);
 }
 
 .button:hover {
@@ -96,8 +113,17 @@
   cursor: pointer;
 }
 
-/* INPUT STYLES */
+.secondarybutton:hover {
+  background: var(--bg-darkest);
+  cursor: pointer;
+}
 
+.button,
+.applyWrapper > div {
+  color: var(--font-dark);
+}
+
+/* INPUT STYLES */
 .applyWrapper {
   display: flex;
   margin-top: 2rem;
@@ -123,19 +149,26 @@
 
 .input {
   width: 30rem;
-  padding: 0.7rem;
+  padding: 0.7rem 1rem;
   font-size: 1.2rem;
   font-family: 'Inter', sans-serif;
   border: 2px solid var(--accent);
   border-radius: 0.3rem 0 0 0.3rem;
-  background: var(--bg-light);
-  color: var(--font-color);
+  background: var(--bg-dark);
+  color: var(--font);
 }
 
 .input:focus {
   outline: none;
   border: 2px solid var(--accent-dark);
   border-radius: 0.3rem 0 0 0.3rem;
+}
+
+/* TEAM STYLES */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* RESPONSIVE STYLES */
@@ -165,6 +198,7 @@
 
 @media (max-width: 540px) {
   .button,
+  .secondarybutton,
   .input {
     width: 100%;
   }
@@ -181,6 +215,7 @@
 
 @media (max-width: 720px) {
   .button,
+  .secondarybutton,
   .applyWrapper > div {
     font-size: 1.3rem;
   }
@@ -193,7 +228,8 @@
   .landing {
     align-items: center;
   }
-  .button {
+  .button,
+  .secondarybutton {
     align-self: center;
   }
   .applyWrapper {
@@ -212,6 +248,12 @@
 @media (max-width: 1280px) {
   .wrapper {
     width: 100%;
+  }
+  .landing {
+    display: flex;
+    flex-direction: column;
+    width: 76rem;
+    min-height: inherit;
   }
   .carouselWrapper {
     display: none; 

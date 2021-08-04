@@ -4,6 +4,7 @@ import { Link as NavLink } from 'react-scroll'
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
+import { signIn, signOut, useSession } from 'next-auth/client'
 
 import { HiMenuAlt4, HiOutlineX } from 'react-icons/hi'
 import { GoChevronRight } from 'react-icons/go'
@@ -11,6 +12,7 @@ import { GoChevronRight } from 'react-icons/go'
 import styles from '../styles/Nav.module.css'
 
 export default function Nav() {
+  const [session] = useSession()
   const router = useRouter()
 
   const [open, setOpen] = useState(false)
@@ -55,11 +57,12 @@ export default function Nav() {
                 offset={-90}
                 duration={500}
                 className={styles.link}
+                onClick={() => setOpen(false)}
               >
                 DH
               </NavLink>
-            : <Link passHref href='/' className={styles.link}>
-                <div>DH</div>
+            : <Link passHref href='/'>
+                <span className={styles.link}>DH</span>
               </Link>
           }
           <HiMenuAlt4 className={styles.closeMenu} onClick={() => toggleOpen()} />
@@ -77,6 +80,7 @@ export default function Nav() {
                   offset={-90}
                   duration={500}
                   className={styles.link}
+                  onClick={() => setOpen(false)}
                 >
                   About
                 </NavLink>
@@ -88,6 +92,7 @@ export default function Nav() {
                   offset={-90}
                   duration={500}
                   className={styles.link}
+                  onClick={() => setOpen(false)}
                 >
                   Hardware
                 </NavLink>
@@ -99,6 +104,7 @@ export default function Nav() {
                   offset={-90}
                   duration={500}
                   className={styles.link}
+                  onClick={() => setOpen(false)}
                 >
                   FAQ 
                 </NavLink>
@@ -110,6 +116,7 @@ export default function Nav() {
                   offset={-90}
                   duration={500}
                   className={styles.link}
+                  onClick={() => setOpen(false)}
                 >
                   Sponsors
                 </NavLink>
@@ -121,19 +128,35 @@ export default function Nav() {
                   offset={-90}
                   duration={500}
                   className={styles.link}
+                  onClick={() => setOpen(false)}
                 >
                   Team
                 </NavLink>  
               </>
             : null
           }
-          <motion.div 
-            whileHover={{ scale: 1.05}} 
-            whileTap={{ scale: 0.995 }}
-            className={styles.button}
-          >
-            Apply <GoChevronRight />
-          </motion.div>
+          {
+            session 
+            ?
+              <motion.div 
+                whileHover={{ scale: 1.05}} 
+                whileTap={{ scale: 0.997 }}
+                className={styles.button}
+                onClick={signOut}
+              >
+                Sign Out <GoChevronRight />
+              </motion.div>
+            :
+              <motion.div 
+                whileHover={{ scale: 1.05}} 
+                whileTap={{ scale: 0.997 }}
+                className={styles.button}
+                onClick={signIn}
+              >
+                Sign In <GoChevronRight />
+              </motion.div>
+          }
+          
         </div>
       </div>
     </div>

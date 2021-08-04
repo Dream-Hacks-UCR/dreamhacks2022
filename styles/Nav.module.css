@@ -41,6 +41,8 @@
   border: none;
   border-radius: 0.3rem;
   background: var(--accent);
+  font-weight: 700;
+  color: var(--font-dark);
 }
 
 .button:hover {
@@ -48,8 +50,12 @@
   cursor: pointer;
 }
 
+.link {
+  cursor: default;
+}
+
 .link:hover {
-  color: var(--accent-dark);
+  color: var(--accent);
   cursor: pointer;
 }
 

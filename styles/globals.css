@@ -1,11 +1,21 @@
 :root {
-  --bg: #111222;
-  --bg-light: #19162e;
-  --nav-bg: #111222b6;
-  --accent: #292754;
-  --accent-dark: #494683;
+  --bg: #1a1b33;
+  --bg-dark: #15162a;
+  --bg-darker: #0c0d1c;
+  --bg-darkest: #050410;
+  --nav-bg: #1a1b33b6;
 
-  --font-color: #d7daed;
+  --accent: #f64966;
+  --accent-dark: #dc314d;
+
+  --main: #183df4;
+  --main-alt: #f64966;
+
+  --font: #d7daed;
+  --font-light-grey: #bec8e8;
+  --font-grey: #95a6da;
+  --font-dark: #1a1b33;
+  --font-dark-grey: #722431;
 }
 
 html,
@@ -15,7 +25,7 @@ body {
   font-family: 'Vollkorn', sans-serif;
   overflow: inherit;
   background: var(--bg);
-  color: var(--font-color);
+  color: var(--font);
 }
 
 * {
@@ -27,10 +37,6 @@ body {
   color: var(--accent);
 }
 
-svg {
-  display: block;
-}
-
 .active {
-  color: var(--accent-dark);
+  color: var(--accent);
 }
