@@ -3,17 +3,17 @@
   --bg-dark: #15162a;
   --nav-bg: #1a1b33b6;
 
-  --accent: #4169e1;
-  --accent-dark: #1f51ff;
+  --accent: #f64966;
+  --accent-dark: #dc314d;
 
   --main: #183df4;
   --main-alt: #f64966;
 
   --font: #d7daed;
-  --font-light-grey: #bfccf3;
-  --font-grey: #9ab2fa;
+  --font-light-grey: #bec8e8;
+  --font-grey: #95a6da;
   --font-dark: #1a1b33;
-  --font-dark-grey: #1e3274;
+  --font-dark-grey: #722431;
 }
 
 html,
