@@ -7,8 +7,7 @@ import { getCsrfToken, useSession } from 'next-auth/client'
 import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
 
-import styles from '../styles/Index.module.css'
-import loginStyles from '../styles/Login.module.css'
+import styles from '../styles/Form.module.css'
 
 export default function LogIn({ csrfToken }) {
   const [session, loading] = useSession()
@@ -50,45 +49,47 @@ export default function LogIn({ csrfToken }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className={styles.container}>
-          <div className={styles.wrapper}>
-            <form method='post' action='/api/auth/signin/email'>
-              <input name='csrfToken' type='hidden' defaultValue={csrfToken}/>
-              <div className={loginStyles.inputWrapper}>
-                <div className={loginStyles.label}>
-                  Email Address
-                </div>
-                <input 
-                  type='email' 
-                  id='email' 
-                  name='email'
-                  value={email}
-                  onChange={handleChangeEmail}
-                  className={loginStyles.input}
-                />
+        <div className={styles.wrapper}>
+          <form 
+            method='post' 
+            action='/api/auth/signin/email' 
+            className={styles.form}
+          >
+            <input name='csrfToken' type='hidden' defaultValue={csrfToken}/>
+            <div className={styles.inputWrapper}>
+              <div className={styles.label}>
+                Email Address
               </div>
-              <motion.button
-                type='submit'
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.995 }} 
-                className={styles.button}
-                onClick={() => verifyEmail()}
-              >
-                Sign In
-              </motion.button>
-            </form>
-            
-            
-            <Link passHref href='/'>
-              <motion.div
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.995 }}
-                className={styles.secondarybutton}
-              >
-                Go Back to Homepage
-              </motion.div>
-            </Link>
-          </div>
+              <input 
+                type='email' 
+                id='email' 
+                name='email'
+                value={email}
+                onChange={handleChangeEmail}
+                className={styles.input}
+              />
+            </div>
+            <motion.button
+              type='submit'
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.995 }} 
+              className={styles.button}
+              onClick={() => verifyEmail()}
+            >
+              Sign In
+            </motion.button>
+          </form>
+          
+          
+          <Link passHref href='/'>
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.995 }}
+              className={styles.secondarybutton}
+            >
+              Go Back to Homepage
+            </motion.div>
+          </Link>
         </div>
       </Layout>
     </>
