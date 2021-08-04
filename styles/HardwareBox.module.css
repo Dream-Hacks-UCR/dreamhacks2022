@@ -11,7 +11,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
-  border-bottom: 2px solid var(--accent);
+  /* border-bottom: 2px solid var(--accent); */
   font-weight: 600;
   font-size: 1.7rem;
 }
@@ -19,16 +19,23 @@
 .title:hover {
   border-radius: 0.3rem;
   background: var(--accent);
+  color: var(--font-dark);
   cursor: pointer;  
 }
 
 .open .title {
-  border-radius: 0.3rem 0.3rem 0 0;
+  border-radius: 0.3rem;
   background: var(--accent);
+  color: var(--font-dark);
 }
 
 .subtitle {
-  color:  var(--accent-dark);
+  color:  var(--font-grey);
+}
+
+.title:hover .subtitle,
+.open .subtitle {
+  color:  var(--font-dark-grey);
 }
 
 .content {
@@ -36,12 +43,13 @@
   padding: 1rem 1.5rem;
   padding-bottom: 0;
   opacity: 0;
-  border-left: 3px solid var(--accent);
+  /* border-left: 3px solid var(--accent);
   border-bottom: 3px solid var(--accent);
   border-right: 3px solid  var(--accent);
-  border-radius: 0 0 0.3rem 0.3rem;
+  border-radius: 0 0 0.3rem 0.3rem; */
   font-family: 'Inter', sans-serif;
   font-size: 1.2rem;
+  color: var(--font-light-grey);
   overflow-y: hidden;
   transition: max-height 200ms ease-out, opacity 150ms ease-out;
 }
@@ -55,12 +63,12 @@
 
 .arrow {
   margin-left: 1rem;
-  transition: 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 
 .open .arrow {
   transform: rotate(90deg);
-  transition: 200ms ease-in-out;
+  transition: transform 200ms ease-in-out;
 }
 
 /* RESPONSIVE STYLES */

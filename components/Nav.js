@@ -129,7 +129,7 @@ export default function Nav() {
           }
           <motion.div 
             whileHover={{ scale: 1.05}} 
-            whileTap={{ scale: 0.995 }}
+            whileTap={{ scale: 0.997 }}
             className={styles.button}
           >
             Apply <GoChevronRight />

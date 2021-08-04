@@ -8,6 +8,7 @@
   margin-bottom: 0.5rem;
   font-weight: 700;
   font-size: 2rem;
+  color: var(--font-grey);
 }
 
 .countdown {
@@ -33,6 +34,7 @@
   border: none;
   border-radius: 0.3rem;
   background: var(--accent);
+  color: var(--font-dark);
 }
 
 .num:hover {
@@ -45,6 +47,7 @@
   font-family: 'Vollkorn', sans-serif;
   font-weight: 600;
   font-size: 1.1rem;
+  color: var(--font-grey);
 }
 
 /* RESPONSIVE STYLES */

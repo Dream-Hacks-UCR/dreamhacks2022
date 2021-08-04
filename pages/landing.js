@@ -18,7 +18,7 @@ export default function Landing() {
             </div>
             <Link passHref href='/'>
               <motion.div
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.995 }}
                 className={styles.button}
               >
@@ -27,7 +27,7 @@ export default function Landing() {
             </Link>
             <Link passHref href='/'>
               <motion.div
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.995 }}
                 className={styles.button}
               >
@@ -38,7 +38,7 @@ export default function Landing() {
               <input placeholder='Enter your email...' className={styles.input}/>
               <motion.div
                 whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.995 }}
+                whileTap={{ scale: 1.03 }}
               >
                 Apply <GoChevronRight />
               </motion.div>

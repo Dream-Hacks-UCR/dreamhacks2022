@@ -35,10 +35,15 @@
   margin-bottom: 2rem;
   font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
+  color: var(--font-grey);
 }
 
 .link {
   color: var(--accent);
+}
+
+.link:hover {
+  color: var(--accent-dark);
   cursor: pointer;
 }
 
@@ -96,6 +101,11 @@
   cursor: pointer;
 }
 
+.button,
+.applyWrapper > div {
+  color: var(--font-dark);
+}
+
 /* INPUT STYLES */
 
 .applyWrapper {
@@ -128,8 +138,8 @@
   font-family: 'Inter', sans-serif;
   border: 2px solid var(--accent);
   border-radius: 0.3rem 0 0 0.3rem;
-  background: var(--bg-light);
-  color: var(--font-color);
+  background: var(--bg-dark);
+  color: var(--font);
 }
 
 .input:focus {
