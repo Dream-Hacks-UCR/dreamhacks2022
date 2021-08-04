@@ -251,6 +251,12 @@
   .wrapper {
     width: 100%;
   }
+  .landing {
+    display: flex;
+    flex-direction: column;
+    width: 76rem;
+    min-height: inherit;
+  }
   .carouselWrapper {
     display: none; 
   }
