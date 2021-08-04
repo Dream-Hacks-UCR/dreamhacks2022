@@ -148,6 +148,13 @@
   border-radius: 0.3rem 0 0 0.3rem;
 }
 
+/* TEAM STYLES */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* RESPONSIVE STYLES */
 @media (max-width: 325px) {
   .body {
