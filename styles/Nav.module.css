@@ -50,6 +50,10 @@
   cursor: pointer;
 }
 
+.link {
+  cursor: default;
+}
+
 .link:hover {
   color: var(--accent);
   cursor: pointer;

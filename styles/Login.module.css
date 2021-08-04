@@ -1,0 +1,40 @@
+.inputWrapper {
+  margin-bottom: 0.7rem;
+}
+
+.label {
+  margin-left: 0.1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+  color: var(--font-grey);
+}
+
+.input {
+  width: 24rem;
+  padding: 0.7rem 1rem;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+  border: 2px solid var(--bg-darkest);
+  border-radius: 0.3rem;
+  background: var(--bg-dark);
+  color: var(--font);
+}
+
+.input:focus {
+  outline: none;
+  border: 2px solid var(--accent-dark);
+  border-radius: 0.3rem;
+}
+
+@media (max-width: 540px) {
+  .input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .input {
+    font-size: 1.1rem;
+  }
+}

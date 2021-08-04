@@ -40,11 +40,18 @@
 
 .link {
   color: var(--accent);
+  cursor: default;
 }
 
 .link:hover {
   color: var(--accent-dark);
   cursor: pointer;
+}
+
+.flexBody {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* SECTION STYLES */
@@ -82,13 +89,14 @@
 
 /* BUTTON STYLES */
 
-.button {
+.button,
+.secondarybutton {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 24rem;
   margin-bottom: 0.5rem;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   font-weight: 600;
   font-size: 1.7rem;
   border: none;
@@ -96,8 +104,18 @@
   background: var(--accent);
 }
 
+.secondarybutton {
+  color: var(--accent);
+  background: var(--bg-darker);
+}
+
 .button:hover {
   background: var(--accent-dark);
+  cursor: pointer;
+}
+
+.secondarybutton:hover {
+  background: var(--bg-darkest);
   cursor: pointer;
 }
 
@@ -182,6 +200,7 @@
 
 @media (max-width: 540px) {
   .button,
+  .secondarybutton,
   .input {
     width: 100%;
   }
@@ -198,6 +217,7 @@
 
 @media (max-width: 720px) {
   .button,
+  .secondarybutton,
   .applyWrapper > div {
     font-size: 1.3rem;
   }
@@ -210,7 +230,8 @@
   .landing {
     align-items: center;
   }
-  .button {
+  .button,
+  .secondarybutton {
     align-self: center;
   }
   .applyWrapper {

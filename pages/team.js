@@ -31,15 +31,7 @@ export default function Team() {
             position='Sponsorship Lead'
           />
           <Card 
-            name='Alexander Zamora'
-            position='Sponsorship Lead'
-          />
-          <Card 
             name='Rachel Pham'
-            position='Marketing Lead'
-          />
-          <Card 
-            name='Daniel Kang'
             position='Marketing Lead'
           />
           <Card 

@@ -1,6 +1,8 @@
 :root {
   --bg: #1a1b33;
   --bg-dark: #15162a;
+  --bg-darker: #0c0d1c;
+  --bg-darkest: #050410;
   --nav-bg: #1a1b33b6;
 
   --accent: #f64966;

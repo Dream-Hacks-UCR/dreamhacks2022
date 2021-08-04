@@ -59,8 +59,8 @@ export default function Nav() {
               >
                 DH
               </NavLink>
-            : <Link passHref href='/' className={styles.link}>
-                <div>DH</div>
+            : <Link passHref href='/'>
+                <span className={styles.link}>DH</span>
               </Link>
           }
           <HiMenuAlt4 className={styles.closeMenu} onClick={() => toggleOpen()} />
@@ -133,13 +133,15 @@ export default function Nav() {
               </>
             : null
           }
-          <motion.div 
-            whileHover={{ scale: 1.05}} 
-            whileTap={{ scale: 0.997 }}
-            className={styles.button}
-          >
-            Apply <GoChevronRight />
-          </motion.div>
+          <Link passHref href='/login'>
+            <motion.div 
+              whileHover={{ scale: 1.05}} 
+              whileTap={{ scale: 0.997 }}
+              className={styles.button}
+            >
+              Apply <GoChevronRight />
+            </motion.div>
+          </Link>
         </div>
       </div>
     </div>
