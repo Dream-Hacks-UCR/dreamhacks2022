@@ -26,6 +26,8 @@ body {
   font-family: 'Vollkorn', sans-serif;
   overflow: inherit;
   background: var(--bg);
+  background: -moz-linear-gradient(180deg, var(--bg) 0%, var(--main) 100%);
+  background: -webkit-linear-gradient(180deg, var(--bg) 0%, var(--main) 100%);
   background: linear-gradient(180deg, var(--bg) 0%, var(--main) 250%);
   color: var(--font);
 }
