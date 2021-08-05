@@ -5,7 +5,9 @@ import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import { signIn, signOut, useSession } from 'next-auth/client'
+import Image from 'next/image'
 
+import Logo from '../public/assets/logo.png'
 import { HiMenuAlt4, HiOutlineX } from 'react-icons/hi'
 
 import styles from '../styles/Nav.module.css'
@@ -58,10 +60,22 @@ export default function Nav() {
                 className={styles.link}
                 onClick={() => setOpen(false)}
               >
-                DH
+                <Image
+                  src={Logo}
+                  width={35}
+                  height={30}
+                  objectFit='contain'
+                />
               </NavLink>
             : <Link passHref href='/'>
-                <span className={styles.link}>DH</span>
+                <span className={styles.link}>
+                  <Image
+                    src={Logo}
+                    width={35}
+                    height={30}
+                    objectFit='contain'
+                  />
+                </span>
               </Link>
           }
           <HiMenuAlt4 className={styles.closeMenu} onClick={() => toggleOpen()} />

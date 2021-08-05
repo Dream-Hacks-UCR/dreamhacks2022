@@ -18,7 +18,6 @@ export default function Home() {
       <Head>
         <title>Dream Hacks</title>
         <meta name="description" content="Dream Hacks, a hardware hackathon hosted at University of California, Riverside." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Layout>

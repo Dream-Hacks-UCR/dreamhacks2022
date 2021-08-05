@@ -6,6 +6,7 @@
   border-radius: 0.3rem;
   background: transparent;
   perspective: 1500px; /* Remove this if you don't want the 3D effect */
+  cursor: pointer;
 }
 
 /* This container is needed to position the front and back side */
@@ -37,14 +38,12 @@
 /* Style the front side (fallback if image is missing) */
 .flipcardFront {
   background: var(--font-grey);
-  color: black;
 }
 
 /* Style the back side */
 .flipcardBack {
   padding: 0.5rem;
   background: var(--font-grey);
-  color: white;
   transform: rotateY(-180deg);
 }
 
