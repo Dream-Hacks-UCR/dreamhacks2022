@@ -87,7 +87,13 @@
 
 .organizers {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.organizers > div:hover {
+  cursor: pointer;
 }
 
 /* BUTTON STYLES */

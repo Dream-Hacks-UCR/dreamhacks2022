@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Layout from '../components/Layout'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useSession } from 'next-auth/client'
 import { useRouter } from 'next/router'
@@ -16,7 +15,34 @@ export default function CheckIn() {
   const [session, loading] = useSession()
   const router = useRouter()
 
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
+  const [school, setSchool] = useState('')
+  const [major, setMajor] = useState('')
+  const [grade, setGrade] = useState('')
   const [firstTime, setFirstTime] = useState('')
+
+  const [submitPressed, setSubmitPressed] = useState(false)
+
+  const handleChangeFirstName = (e) => {
+    setFirstName(e.target.value)
+  }
+  const handleChangeLastName = (e) => {
+    setLastName(e.target.value)
+  }
+  const handleChangeSchool = (e) => {
+    setSchool(e.target.value)
+  }
+  const handleChangeMajor = (e) => {
+    setMajor(e.target.value)
+  }
+  const handleChangeGrade = (e) => {
+    setGrade(e.target.value)
+  }
+
+  const checkSubmission = () => {
+    setSubmitPressed(true)
+  }
 
   useEffect(() => {
     if (!loading && !session) {
@@ -61,7 +87,9 @@ export default function CheckIn() {
                 First Name
               </div>
               <input
-                className={styles.input}
+                value={firstName}
+                onChange={handleChangeFirstName}
+                className={`${styles.input}`}
               />
             </div>
             <div className={styles.inputWrapper}>
@@ -69,7 +97,9 @@ export default function CheckIn() {
                 Last Name
               </div>
               <input
-                className={styles.input}
+                value={lastName}
+                onChange={handleChangeLastName}
+                className={`${styles.input}`}
               />
             </div>
           </div>
@@ -98,7 +128,9 @@ export default function CheckIn() {
                 School
               </div>
               <input
-                className={styles.input}
+                value={school}
+                onChange={handleChangeSchool}
+                className={`${styles.input}`}
               />
             </div>
             <div className={styles.inputWrapper}>
@@ -106,7 +138,9 @@ export default function CheckIn() {
                 Major
               </div>
               <input
-                className={styles.input}
+                value={major}
+                onChange={handleChangeMajor}
+                className={`${styles.input}`}
               />
             </div>
             <div className={styles.inputWrapper}>
@@ -114,7 +148,9 @@ export default function CheckIn() {
                 Grade
               </div>
               <input
-                className={styles.input}
+                value={grade}
+                onChange={handleChangeGrade}
+                className={`${styles.input}`}
               />
             </div>
             <div className={styles.inputWrapper}>
@@ -145,6 +181,7 @@ export default function CheckIn() {
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.995 }}
             className={styles.button}
+            onClick={() => checkSubmission()}
           >
             Submit
           </motion.div>
