@@ -6,6 +6,7 @@ import { motion } from 'framer-motion'
 import { getCsrfToken, useSession } from 'next-auth/client'
 import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
+import { FadeLoader } from 'react-spinners'
 
 import styles from '../styles/Form.module.css'
 
