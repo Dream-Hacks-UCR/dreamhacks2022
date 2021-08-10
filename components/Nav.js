@@ -97,7 +97,7 @@ export default function Nav() {
                 >
                   About
                 </NavLink>
-                {/* <NavLink
+                <NavLink
                   activeClass="active"
                   to="Hardware"
                   spy={true}
@@ -144,11 +144,11 @@ export default function Nav() {
                   onClick={() => setOpen(false)}
                 >
                   Team
-                </NavLink>   */}
+                </NavLink>  
               </>
             : null
           }
-          {/* {
+          {
             session 
             ?
               <>
@@ -179,7 +179,7 @@ export default function Nav() {
               >
                 Sign In
               </motion.div>
-          } */}
+          }
         </div>
       </div>
     </div>
