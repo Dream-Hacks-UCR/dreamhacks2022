@@ -43,7 +43,7 @@ export default function Landing() {
                 Logged in as {session.user.email}
               </div>
             }
-            <div className={styles.heading}>Dream Hacks</div>
+            <div className={styles.heading}>Lotus Hacks</div>
             <div className={styles.countdownWrapper}>
               <CountdownOutput />
             </div>
@@ -65,7 +65,7 @@ export default function Landing() {
                 Join Our Team <GoChevronRight />
               </motion.div>
             </Link>
-            { session 
+            {/* { session 
               ?
                 <Link passHref href='/checkin'>
                   <motion.div 
@@ -92,7 +92,7 @@ export default function Landing() {
                     Apply <GoChevronRight />
                   </motion.div>
                 </div>
-            }
+            } */}
           </div>
           <div className={styles.carouselWrapper}>
             {/* Insert image */}
