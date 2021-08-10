@@ -10,30 +10,30 @@ export default function Footer() {
     <div className={styles.container}>
       <div className={styles.wrapper}>
         <div>
-          Built with ❤️ and ✨ by the Dream Hacks Team.
+          Built with ❤️ and ✨ by the Lotus Hacks Team.
         </div>
         <div className={styles.socials}>
-          <Link passHref href='mailto:dreamhacksucr@gmail.com'>
+          <Link passHref href='mailto:lotushacksucr@gmail.com'>
             <motion.div whileHover={{ y:-3 }}>
               <FiMail />
             </motion.div> 
           </Link>
-          <Link passHref href='https://www.linkedin.com/company/dream-hacks'>
+          <Link passHref href='https://www.linkedin.com/company/lotus-hacks'>
             <motion.div whileHover={{ y:-3 }}>
               <FiLinkedin />
             </motion.div>
           </Link>
-          <Link passHref href='https://www.facebook.com/dreamhacksucr'>
+          <Link passHref href='https://www.facebook.com/lotushacksucr'>
             <motion.div whileHover={{ y:-3 }}>
               <FiFacebook />
             </motion.div>
           </Link>
-          <Link passHref href='https://www.instagram.com/dreamhacksucr'>
+          <Link passHref href='https://www.instagram.com/lotushacksucr'>
             <motion.div whileHover={{ y:-3 }}>
               <FiInstagram />
             </motion.div>
           </Link>
-          <Link passHref href='https://twitter.com/dreamhacksucr'>
+          <Link passHref href='https://twitter.com/lotushacksucr'>
             <motion.div whileHover={{ y:-3 }}>
               <FiTwitter />
             </motion.div>
