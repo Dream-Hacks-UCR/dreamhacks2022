@@ -6,11 +6,11 @@ import { motion } from 'framer-motion'
 import { getCsrfToken, useSession } from 'next-auth/client'
 import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
+import { FadeLoader } from 'react-spinners'
 
-import styles from '../styles/Index.module.css'
-import loginStyles from '../styles/Login.module.css'
+import styles from '../styles/Form.module.css'
 
-export default function LogIn({ csrfToken }) {
+export default function SignIn({ csrfToken }) {
   const [session, loading] = useSession()
   const router = useRouter()
 
@@ -42,6 +42,16 @@ export default function LogIn({ csrfToken }) {
     setInit(false)
   }, [email, init, loading, session, router])
   
+  if (loading) {
+    return(
+      <Layout>
+        <div className={styles.wrapper}>
+          <FadeLoader color='#95a6da' width={5} height={12} />
+        </div>
+      </Layout>
+    )
+  }
+
   return (
     <>
       <Head>
@@ -50,45 +60,51 @@ export default function LogIn({ csrfToken }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className={styles.container}>
-          <div className={styles.wrapper}>
-            <form method='post' action='/api/auth/signin/email'>
-              <input name='csrfToken' type='hidden' defaultValue={csrfToken}/>
-              <div className={loginStyles.inputWrapper}>
-                <div className={loginStyles.label}>
-                  Email Address
-                </div>
-                <input 
-                  type='email' 
-                  id='email' 
-                  name='email'
-                  value={email}
-                  onChange={handleChangeEmail}
-                  className={loginStyles.input}
-                />
-              </div>
-              <motion.button
-                type='submit'
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.995 }} 
-                className={styles.button}
-                onClick={() => verifyEmail()}
-              >
-                Sign In
-              </motion.button>
-            </form>
-            
-            
-            <Link passHref href='/'>
-              <motion.div
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.995 }}
-                className={styles.secondarybutton}
-              >
-                Go Back to Homepage
-              </motion.div>
-            </Link>
+        <div className={styles.wrapper}>
+          <div className={styles.title}>
+            Sign In
           </div>
+          <div className={styles.body}>
+            Sign in to Dream Hacks to access more. Requires no password.
+          </div>
+          <form 
+            method='post' 
+            action='/api/auth/signin/email' 
+            className={styles.form}
+          >
+            <input name='csrfToken' type='hidden' defaultValue={csrfToken}/>
+            <div className={styles.inputWrapper}>
+              <div className={styles.label}>
+                Email Address
+              </div>
+              <input 
+                type='email' 
+                id='email' 
+                name='email'
+                value={email}
+                onChange={handleChangeEmail}
+                className={styles.input}
+              />
+            </div>
+            <motion.button
+              type='submit'
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.995 }} 
+              className={styles.button}
+              onClick={() => verifyEmail()}
+            >
+              Sign In
+            </motion.button>
+          </form>
+          <Link passHref href='/'>
+            <motion.div
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.995 }}
+              className={styles.secondarybutton}
+            >
+              Go Back to Homepage
+            </motion.div>
+          </Link>
         </div>
       </Layout>
     </>

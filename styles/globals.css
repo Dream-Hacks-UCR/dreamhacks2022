@@ -14,8 +14,9 @@
   --font: #d7daed;
   --font-light-grey: #bec8e8;
   --font-grey: #95a6da;
+  --font-dark-grey: #5e6ba5;
   --font-dark: #1a1b33;
-  --font-dark-grey: #722431;
+  --font-dark-accent: #722431;
 }
 
 html,
@@ -25,6 +26,9 @@ body {
   font-family: 'Vollkorn', sans-serif;
   overflow: inherit;
   background: var(--bg);
+  background: -moz-linear-gradient(180deg, var(--bg) 0%, var(--main) 100%);
+  background: -webkit-linear-gradient(180deg, var(--bg) 0%, var(--main) 100%);
+  background: linear-gradient(180deg, var(--bg) 0%, var(--main) 250%);
   color: var(--font);
 }
 

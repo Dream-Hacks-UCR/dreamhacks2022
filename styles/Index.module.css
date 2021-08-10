@@ -54,6 +54,10 @@
   min-height: 100vh;
 }
 
+.emailWrapper {
+  font-size: 1.1rem;
+}
+
 /* SECTION STYLES */
 .landingContainer {
   height: 100vh;
@@ -83,7 +87,13 @@
 
 .organizers {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.organizers > div:hover {
+  cursor: pointer;
 }
 
 /* BUTTON STYLES */
@@ -95,12 +105,12 @@
   width: 24rem;
   margin-bottom: 0.5rem;
   padding: 0.5rem 1.5rem;
-  font-weight: 600;
-  font-family: 'Vollkorn', sans-serif;
-  font-size: 1.7rem;
   border: none;
   border-radius: 0.3rem;
   background: var(--accent);
+  font-weight: 600;
+  font-family: 'Vollkorn', sans-serif;
+  font-size: 1.5rem;
 }
 
 .secondarybutton {
@@ -127,7 +137,7 @@
 .applyWrapper {
   display: flex;
   margin-top: 2rem;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .applyWrapper > div {

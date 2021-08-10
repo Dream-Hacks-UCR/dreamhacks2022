@@ -38,6 +38,11 @@ export default function Landing() {
       <div className={`${styles.container} ${styles.landingContainer}`}>
         <div className={styles.landing}>
           <div>
+            {session && session.user && session.user.email &&
+              <div className={styles.emailWrapper}>
+                Logged in as {session.user.email}
+              </div>
+            }
             <div className={styles.heading}>Dream Hacks</div>
             <div className={styles.countdownWrapper}>
               <CountdownOutput />
@@ -60,8 +65,18 @@ export default function Landing() {
                 Join Our Team <GoChevronRight />
               </motion.div>
             </Link>
-            
-            { !session &&
+            { session 
+              ?
+                <Link passHref href='/checkin'>
+                  <motion.div 
+                    whileHover={{ scale: 1.03}} 
+                    whileTap={{ scale: 0.995 }}
+                    className={styles.secondarybutton}
+                  >
+                    Check In <GoChevronRight />
+                  </motion.div>
+                </Link>
+              :
                 <div className={styles.applyWrapper}>
                   <input 
                     placeholder='Enter your email...' 
