@@ -43,7 +43,7 @@ export default function Landing() {
                 Logged in as {session.user.email}
               </div>
             }
-            <div className={styles.heading}>Dream Hacks</div>
+            <div className={styles.heading}>Lotus Hacks</div>
             <div className={styles.countdownWrapper}>
               <CountdownOutput />
             </div>

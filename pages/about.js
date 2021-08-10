@@ -18,7 +18,7 @@ export default function About() {
           <div className={styles.aboutContent}>
             <div className={styles.title}>About</div>
             <div className={styles.body}>
-              Dream Hacks is UC Riverside's first 24-hour hardware hackathon, founded by Theta Tau and Institute of Electrical and Electronics Engineers (IEEE), taking place in Spring 2022.
+            Lotus Hacks is UC Riverside's first 24-hour hardware hackathon, founded by Theta Tau and Institute of Electrical and Electronics Engineers (IEEE), taking place in Spring 2022.
             </div>
             <div className={styles.title}>Organizers</div>
             <div className={styles.organizers}>

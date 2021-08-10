@@ -66,8 +66,8 @@ export default function CheckIn() {
   return (
     <>
       <Head>
-        <title>Dream Hacks | Sign In</title>
-        <meta name="description" content="Dream Hacks, a hardware hackathon hosted at University of California, Riverside." />
+        <title>Lotus Hacks | Check In</title>
+        <meta name="description" content="Lotus Hacks, a hardware hackathon hosted at University of California, Riverside." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>

@@ -16,8 +16,8 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Dream Hacks</title>
-        <meta name="description" content="Dream Hacks, a hardware hackathon hosted at University of California, Riverside." />
+        <title>Lotus Hacks</title>
+        <meta name="description" content="Lotus Hacks, a hardware hackathon hosted at University of California, Riverside." />
       </Head>
 
       <Layout>
