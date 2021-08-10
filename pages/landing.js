@@ -65,7 +65,7 @@ export default function Landing() {
                 Join Our Team <GoChevronRight />
               </motion.div>
             </Link>
-            { session 
+            {/* { session 
               ?
                 <Link passHref href='/checkin'>
                   <motion.div 
@@ -92,7 +92,7 @@ export default function Landing() {
                     Apply <GoChevronRight />
                   </motion.div>
                 </div>
-            }
+            } */}
           </div>
           <div className={styles.carouselWrapper}>
             {/* Insert image */}
