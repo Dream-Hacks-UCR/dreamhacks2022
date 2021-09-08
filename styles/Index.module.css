@@ -22,7 +22,7 @@
 
 .title {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 .headingWrapper {
@@ -49,7 +49,7 @@
 .body {
   text-align: center;
   margin-bottom: 2rem;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color: var(--font-grey);
 }
 
@@ -77,21 +77,38 @@
 .landingContainer {
   position: relative;
   height: 100vh;
-  background: #f2f3f4;
+  padding: 5rem 0;
+  background: var(--landing);
 }
 
 .aboutContainer {
   position: relative;
+  padding: 5rem 0;
+  background: var(--about);
 }
 
 .hardwareContainer {
   position: relative;
-  background: #f2f3f4;
+  padding: 5rem 0;
+  background: var(--hardware);
+}
+
+.faqContainer {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  background: var(--faq);
 }
 
 .sponsorsContainer {
   position: relative;
-  background: #f2f3f4;
+  padding: 5rem 0;
+  background: var(--sponsors);
+}
+
+.teamContainer {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  background: var(--team);
 }
 
 .landing,
@@ -225,7 +242,7 @@
   justify-content: center;
 }
 
-.aboutWave {
+.hardwareWave {
   position: absolute;
   top: -83px;
   left: 0;
@@ -235,7 +252,7 @@
   transform: rotate(180deg);
 }
 
-.aboutWave2 {
+.hardwareWave2 {
   position: absolute;
   bottom: -61px;
   left: 0;
@@ -244,26 +261,27 @@
   line-height: 0;
 }
 
-.aboutWave svg {
+.hardwareWave svg {
   position: relative;
   display: block;
   width: calc(138% + 1.3px);
   height: 83px;
 }
 
-.aboutWave2 svg {
+.hardwareWave2 svg {
   position: relative;
   display: block;
   width: calc(111% + 1.3px);
   height: 61px;
 }
 
-.aboutWave .shapeFill,
-.aboutWave2 .shapeFill {
-  fill: #f2f3f4;
+.hardwareWave .shapeFill,
+.hardwareWave2 .shapeFill {
+  fill: var(--hardware);
 }
 
 .landingWave {
+  z-index: 10;
   position: absolute;
   bottom: -71px;
   left: 0;
@@ -280,7 +298,7 @@
 }
 
 .landingWave .shapeFill {
-  fill: #f2f3f4;
+  fill: var(--landing);
 }
 
 .sponsorsWave {
@@ -318,13 +336,13 @@
 
 .sponsorsWave .shapeFill,
 .sponsorsWave2 .shapeFill {
-  fill: #f2f3f4;
+  fill: var(--sponsors);
 }
 
 /* RESPONSIVE STYLES */
 @media (max-width: 325px) {
   .body {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -342,7 +360,7 @@
     font-size: 3.2rem;
   }
   .title {
-    font-size: 2.5rem;
+    font-size: 2.7rem;
   }
 }
 
@@ -359,7 +377,7 @@
     font-size: 4rem;
   }
   .title {
-    font-size: 2.7rem;
+    font-size: 3rem;
   }
 }
 

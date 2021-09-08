@@ -148,6 +148,8 @@ export default function Nav() {
               </>
             : null
           }
+        </div>
+        <div className={styles.actions}>
           {
             session 
             ?

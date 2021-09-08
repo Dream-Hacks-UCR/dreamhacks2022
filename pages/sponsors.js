@@ -10,7 +10,7 @@ export default function Sponsors() {
           </svg>
         </div>
         <div className={styles.wrapper}>
-          <div className={styles.title}>Sponsors</div>
+          <div className={styles.title}>sponsors</div>
           <div className={styles.body}>
             Thanks to all of our sponsors who made this hackathon possible!
           </div>

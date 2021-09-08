@@ -5,18 +5,26 @@
   --bg-darkest: #050410;
   --nav-bg: #1a1b33b6; */
 
-  --accent: #c5c5c5;
-  --accent-dark: #b5b5b5;
+  --accent: #3e68ef;
+  --accent-dark: #2c56e1;
 
   --main: #183df4;
   --main-alt: #f64966;
 
-  /* --font: #d7daed;
+  --font: #92a8e6;
   --font-light-grey: #bec8e8;
-  --font-grey: #95a6da;
+  --font-grey: #546dcb;
   --font-dark-grey: #5e6ba5;
-  --font-dark: #1a1b33;
-  --font-dark-accent: #722431; */
+  --font-dark: #000e2d;
+  --font-dark-accent: #92a8e6;
+
+  --landing: #000e2d;
+  --about: #061434;
+  --hardware: #0d1a3a;
+  --faq: #14223f;
+  --sponsors: #1a2844;
+  --team: #0d1a3a;
+  --footer: #061434;
 }
 
 html,

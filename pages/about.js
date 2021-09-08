@@ -16,11 +16,11 @@ export default function About() {
           <div className={styles.assetWrapper}>
           </div>
           <div className={styles.aboutContent}>
-            <div className={styles.title}>about</div>
+            <div className={styles.title}>about us</div>
             <div className={styles.body}>
             Lotus Hacks is UC Riverside's first 24-hour hardware hackathon, founded by Theta Tau and Institute of Electrical and Electronics Engineers (IEEE), taking place in Spring 2022.
             </div>
-            <div className={styles.title}>Organizers</div>
+            <div className={styles.title}>organizers</div>
             <div className={styles.organizers}>
               <Link passHref href='https://www.thetatauucr.com/'>
                 <motion.div 

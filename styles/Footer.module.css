@@ -4,7 +4,7 @@
   justify-content: center;
   width: 100%;
   padding: 3rem 0;
-  background: #f2f3f4;
+  background: var(--footer);
 }
 
 .wrapper {
@@ -53,7 +53,7 @@
 }
 
 .wave .shapeFill {
-  fill: #f2f3f4;
+  fill: var(--footer);
 }
 
 /* RESPONSIVE STYLES */
