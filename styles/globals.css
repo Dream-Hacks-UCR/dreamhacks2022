@@ -1,34 +1,30 @@
 :root {
-  --bg: #1a1b33;
+  /* --bg: #1a1b33;
   --bg-dark: #15162a;
   --bg-darker: #0c0d1c;
   --bg-darkest: #050410;
-  --nav-bg: #1a1b33b6;
+  --nav-bg: #1a1b33b6; */
 
-  --accent: #f64966;
-  --accent-dark: #dc314d;
+  --accent: #c5c5c5;
+  --accent-dark: #b5b5b5;
 
   --main: #183df4;
   --main-alt: #f64966;
 
-  --font: #d7daed;
+  /* --font: #d7daed;
   --font-light-grey: #bec8e8;
   --font-grey: #95a6da;
   --font-dark-grey: #5e6ba5;
   --font-dark: #1a1b33;
-  --font-dark-accent: #722431;
+  --font-dark-accent: #722431; */
 }
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Vollkorn', sans-serif;
+  font-family: 'Urbanist', sans-serif;
   overflow: inherit;
-  background: var(--bg);
-  background: -moz-linear-gradient(180deg, var(--bg) 0%, var(--main) 100%);
-  background: -webkit-linear-gradient(180deg, var(--bg) 0%, var(--main) 100%);
-  background: linear-gradient(180deg, var(--bg) 0%, var(--main) 250%);
   color: var(--font);
 }
 

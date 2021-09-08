@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 import styles from '../styles/Countdown.module.css'
 
-export default function CountdownOutput() {
+export default function CountdownOutput( props ) {
   const Completionist = () => (
     <div className={styles.completed}>
       Currently taking place!
@@ -20,7 +20,7 @@ export default function CountdownOutput() {
     else {
       return (
         <div className={styles.countdown}>
-          <div className={styles.heading}>MANIFEST YOUR IDEAS IN...</div>
+          <div className={styles.heading}>{props.heading}</div>
           <div className={styles.wrapper}>
             { 
               days > 0 &&

@@ -27,7 +27,7 @@ export default function Home() {
         <Element name="About" className={styles.element}>
           <About />
         </Element>
-        {/* <Element name="Hardware" className={styles.element}>
+        <Element name="Hardware" className={styles.element}>
           <Hardware />
         </Element>
         <Element name="Faq" className={styles.element}>
@@ -38,7 +38,7 @@ export default function Home() {
         </Element>
         <Element name="Team" className={styles.element}>
           <Team />
-        </Element> */}
+        </Element>
       </Layout>
     </>
   )

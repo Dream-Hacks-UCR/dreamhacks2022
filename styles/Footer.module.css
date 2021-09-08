@@ -1,8 +1,10 @@
 .container {
+  position: relative;
   display: flex;
   justify-content: center;
   width: 100%;
   padding: 3rem 0;
+  background: #f2f3f4;
 }
 
 .wrapper {
@@ -31,6 +33,27 @@
 .socials > div:hover {
   color: var(--accent);
   cursor: pointer;
+}
+
+.wave {
+  position: absolute;
+  top: -93px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.wave svg {
+  position: relative;
+  display: block;
+  width: calc(203% + 1.3px);
+  height: 93px;
+}
+
+.wave .shapeFill {
+  fill: #f2f3f4;
 }
 
 /* RESPONSIVE STYLES */

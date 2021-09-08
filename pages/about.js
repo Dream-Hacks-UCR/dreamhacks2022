@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
+import OrbHolder from '../public/assets/orb_holder.png'
 import ThetaTau from '../public/assets/ThetaTau_logo.png'
 import IEEE from '../public/assets/IEEE_logo.png'
 
@@ -13,10 +14,9 @@ export default function About() {
       <div className={`${styles.container} ${styles.aboutContainer}`}>
         <div className={styles.about}>
           <div className={styles.assetWrapper}>
-            {/* Insert image */}
           </div>
           <div className={styles.aboutContent}>
-            <div className={styles.title}>About</div>
+            <div className={styles.title}>about</div>
             <div className={styles.body}>
             Lotus Hacks is UC Riverside's first 24-hour hardware hackathon, founded by Theta Tau and Institute of Electrical and Electronics Engineers (IEEE), taking place in Spring 2022.
             </div>

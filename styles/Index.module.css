@@ -25,15 +25,30 @@
   font-size: 3rem;
 }
 
+.headingWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .heading {
   font-weight: 700;
-  font-size: 5rem;
+  font-size: 6rem;
+}
+
+.subtitle {
+  font-size: 2rem;
+}
+
+.subheading {
+  padding: 0.5rem 0;
+  font-weight: 700;
+  font-size: 3rem;
 }
 
 .body {
   text-align: center;
   margin-bottom: 2rem;
-  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   color: var(--font-grey);
 }
@@ -60,13 +75,30 @@
 
 /* SECTION STYLES */
 .landingContainer {
+  position: relative;
   height: 100vh;
+  background: #f2f3f4;
+}
+
+.aboutContainer {
+  position: relative;
+}
+
+.hardwareContainer {
+  position: relative;
+  background: #f2f3f4;
+}
+
+.sponsorsContainer {
+  position: relative;
+  background: #f2f3f4;
 }
 
 .landing,
 .about {
-  display: table;
-  table-layout: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 76rem;
   min-height: inherit;
 }
@@ -97,20 +129,25 @@
 }
 
 /* BUTTON STYLES */
+.buttonWrapper {
+  display: flex;
+  gap: 7.5px;
+}
+
 .button,
 .secondarybutton {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24rem;
+  width: 16rem;
   margin-bottom: 0.5rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.7rem 1.5rem;
   border: none;
-  border-radius: 0.3rem;
+  border-radius: 1.5rem 0.3rem 1.5rem 0.3rem;
   background: var(--accent);
   font-weight: 600;
-  font-family: 'Vollkorn', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-transform: lowercase;
 }
 
 .secondarybutton {
@@ -136,8 +173,14 @@
 /* INPUT STYLES */
 .applyWrapper {
   display: flex;
-  margin-top: 2rem;
-  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  text-transform: lowercase;
+}
+
+.applyWrapper input,
+.applyWrapper input:focus {
+  border-top-left-radius: 1.5rem;
 }
 
 .applyWrapper > div {
@@ -146,13 +189,14 @@
   align-items: center;
   width: 10rem;
   padding: 0.7rem 1.2rem;
-  border-radius: 0 0.3rem 0.3rem 0;
+  border-radius: 0 0.3rem 1.5rem 0;
   background: var(--accent);
   font-weight: 600;
 }
 
 .applyWrapper > div:hover {
   border-radius: 0.3rem;
+  border-bottom-right-radius: 1.5rem;
   background: var(--accent-dark);
   cursor: pointer;
 }
@@ -161,10 +205,10 @@
   width: 30rem;
   padding: 0.7rem 1rem;
   font-size: 1.2rem;
-  font-family: 'Inter', sans-serif;
   border: 2px solid var(--accent);
   border-radius: 0.3rem 0 0 0.3rem;
   background: var(--bg-dark);
+  font-family: 'Urbanist', sans-serif;
   color: var(--font);
 }
 
@@ -179,6 +223,102 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+
+.aboutWave {
+  position: absolute;
+  top: -83px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.aboutWave2 {
+  position: absolute;
+  bottom: -61px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.aboutWave svg {
+  position: relative;
+  display: block;
+  width: calc(138% + 1.3px);
+  height: 83px;
+}
+
+.aboutWave2 svg {
+  position: relative;
+  display: block;
+  width: calc(111% + 1.3px);
+  height: 61px;
+}
+
+.aboutWave .shapeFill,
+.aboutWave2 .shapeFill {
+  fill: #f2f3f4;
+}
+
+.landingWave {
+  position: absolute;
+  bottom: -71px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.landingWave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 71px;
+}
+
+.landingWave .shapeFill {
+  fill: #f2f3f4;
+}
+
+.sponsorsWave {
+  position: absolute;
+  top: -86px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.sponsorsWave2 {
+  position: absolute;
+  bottom: -93px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.sponsorsWave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 86px;
+}
+
+.sponsorsWave2 svg {
+  position: relative;
+  display: block;
+  width: calc(181% + 1.3px);
+  height: 93px;
+}
+
+.sponsorsWave .shapeFill,
+.sponsorsWave2 .shapeFill {
+  fill: #f2f3f4;
 }
 
 /* RESPONSIVE STYLES */
