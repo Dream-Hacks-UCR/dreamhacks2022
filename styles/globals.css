@@ -33,6 +33,7 @@ body {
   margin: 0;
   font-family: 'Urbanist', sans-serif;
   overflow: inherit;
+  background-color: var(--landing);
   color: var(--font);
 }
 
