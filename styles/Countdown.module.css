@@ -33,7 +33,7 @@
   min-width: 4rem;
   padding: 1rem 0;
   border: none;
-  border-radius: 1.5rem 0.3rem 1.5rem 0.3rem;
+  border-radius: 1rem 0.3rem 1rem 0.3rem;
   background: var(--accent);
   color: var(--font-dark);
 }

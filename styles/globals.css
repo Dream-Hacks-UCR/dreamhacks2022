@@ -41,6 +41,40 @@ body {
   box-sizing: border-box;
 }
 
+h1 {
+  margin: 0;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--font);
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--font);
+}
+
+p {
+  text-align: center;
+  font-size: 1.3rem;
+  color: var(--font-grey);
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: var(--accent);
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  text-transform: lowercase;
+}
+
 ::placeholder {
   font-weight: 600;
   color: var(--accent);

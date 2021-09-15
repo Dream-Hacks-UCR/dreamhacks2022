@@ -16,13 +16,14 @@
 
 .open.container {
   max-height: 100vh;
+  background: var(--landing);
 }
 
 .wrapper {
   display: flex;
   /* justify-content: space-between; */
   align-items: center;
-  width: 76rem;
+  width: 68rem;
   font-weight: 700;
   font-size: 1.1rem;
   text-transform: lowercase;
@@ -81,6 +82,10 @@
   display: none;
   font-size: 1.7rem;
   cursor: pointer;
+}
+
+.hidden {
+  visibility: hidden;
 }
 
 /* RESPONSIVE STYLES */

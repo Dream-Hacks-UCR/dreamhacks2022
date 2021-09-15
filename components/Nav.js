@@ -48,6 +48,8 @@ export default function Nav() {
     >
       <div className={styles.wrapper}>
         <div className={styles.navHeader}>
+          <HiMenuAlt4 className={styles.closeMenu} onClick={() => toggleOpen()} />
+          <HiOutlineX className={styles.openMenu} onClick={() => toggleOpen()} />
           {
             router.pathname === '/'
             ? <NavLink
@@ -78,8 +80,8 @@ export default function Nav() {
                 </span>
               </Link>
           }
-          <HiMenuAlt4 className={styles.closeMenu} onClick={() => toggleOpen()} />
-          <HiOutlineX className={styles.openMenu} onClick={() => toggleOpen()} />
+          <HiMenuAlt4 className={`${styles.closeMenu} ${styles.hidden}`} />
+          <HiOutlineX className={`${styles.openMenu} ${styles.hidden}`} />
         </div>
         <div id='nav' className={styles.tabs}>
           {
@@ -149,7 +151,7 @@ export default function Nav() {
             : null
           }
         </div>
-        <div className={styles.actions}>
+        {/* <div className={styles.actions}>
           {
             session 
             ?
@@ -182,7 +184,7 @@ export default function Nav() {
                 Sign In
               </motion.div>
           }
-        </div>
+        </div> */}
       </div>
     </div>
   )

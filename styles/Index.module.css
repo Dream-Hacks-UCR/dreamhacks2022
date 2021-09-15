@@ -14,8 +14,8 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 76rem;
+  /* align-items: center; */
+  width: 68rem;
   min-height: inherit;
   margin-top: 3rem;
 }
@@ -74,71 +74,64 @@
 }
 
 /* SECTION STYLES */
-.landingContainer {
+.landing {
   position: relative;
   height: 100vh;
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background: var(--landing);
 }
 
-.aboutContainer {
+.about {
   position: relative;
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background: var(--about);
 }
 
-.hardwareContainer {
+.about > .wrapper > p {
+  text-align: left;
+}
+
+.hardware {
   position: relative;
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background: var(--hardware);
 }
 
-.faqContainer {
+.faq {
   padding-top: 5rem;
   padding-bottom: 10rem;
   background: var(--faq);
 }
 
-.sponsorsContainer {
+.sponsors {
   position: relative;
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   background: var(--sponsors);
 }
 
-.teamContainer {
+.team {
   padding-top: 5rem;
   padding-bottom: 10rem;
   background: var(--team);
-}
-
-.landing,
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 76rem;
-  min-height: inherit;
-}
-
-.landing > div,
-.about > div {
-  display: table-cell;
-  vertical-align: middle;
 }
 
 .countdownWrapper {
   margin-bottom: 2rem;
 }
 
-.aboutContent {
-  text-align: center;
+.buttonRow {
+  display: flex;
+  gap: 10px;
 }
 
 .organizers {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 50px;
+  margin-top: 2rem;
 }
 
 .organizers > div:hover {
@@ -183,7 +176,7 @@
 }
 
 .button,
-.applyWrapper > div {
+.applyWrapper > button {
   color: var(--font-dark);
 }
 
@@ -200,7 +193,7 @@
   border-top-left-radius: 1.5rem;
 }
 
-.applyWrapper > div {
+.applyWrapper > button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,7 +204,7 @@
   font-weight: 600;
 }
 
-.applyWrapper > div:hover {
+.applyWrapper > button:hover {
   border-radius: 0.3rem;
   border-bottom-right-radius: 1.5rem;
   background: var(--accent-dark);
@@ -384,7 +377,7 @@
 @media (max-width: 720px) {
   .button,
   .secondarybutton,
-  .applyWrapper > div {
+  .applyWrapper > button {
     font-size: 1.3rem;
   }
   .input {
@@ -404,11 +397,11 @@
     flex-direction: column;
     align-items: center;
   }
-  .applyWrapper > div,
+  .applyWrapper > button,
   .input {
     border-radius: 0.3rem;
   }
-  .applyWrapper > div {
+  .applyWrapper > button {
     margin-top: 0.5rem;
   }
 }
@@ -427,9 +420,7 @@
     display: none; 
   }
   .landing,
-  .about,
-  .landing > div,
-  .about > div {
+  .about {
     display: flex;
     flex-direction: column;
   }
