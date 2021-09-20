@@ -61,12 +61,12 @@ export default function SignIn({ csrfToken }) {
       </Head>
       <Layout>
         <div className={styles.wrapper}>
-          <div className={styles.title}>
+          <h1 className={styles.title}>
             Sign In
-          </div>
-          <div className={styles.body}>
+          </h1>
+          <p className={styles.body}>
             Sign in to Dream Hacks to access more. Requires no password.
-          </div>
+          </p>
           <form 
             method='post' 
             action='/api/auth/signin/email' 
@@ -90,20 +90,20 @@ export default function SignIn({ csrfToken }) {
               type='submit'
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.995 }} 
-              className={styles.button}
+              className={styles.primarybutton}
               onClick={() => verifyEmail()}
             >
               Sign In
             </motion.button>
           </form>
           <Link passHref href='/'>
-            <motion.div
+            <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.995 }}
               className={styles.secondarybutton}
             >
               Go Back to Homepage
-            </motion.div>
+            </motion.button>
           </Link>
         </div>
       </Layout>

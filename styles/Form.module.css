@@ -14,20 +14,16 @@
   width: 24rem;
   text-align: left;
   font-weight: 700;
-  font-size: 2rem;
 }
 
 .subtitle {
   font-size: 1.5rem;
-  color: var(--font-grey);
+  color: var(--font-secondary);
 }
 
 .body {
   width: 24rem;
   text-align: left;
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
-  color: var(--font-grey);
 }
 
 .section {
@@ -55,17 +51,17 @@
   margin-left: 0.1rem;
   margin-bottom: 0.3rem;
   font-weight: 600;
-  color: var(--font-dark-grey);
+  color: var(--accent);
 }
 
 .input {
   width: 24rem;
   padding: 0.7rem 1rem;
   font-size: 1.2rem;
-  border: 2px solid var(--bg-darkest);
+  border: 2px solid var(--accent);
   border-radius: 0.3rem;
-  background: var(--bg-dark);
-  color: var(--font);
+  background: var(--darkest);
+  color: var(--font-primary);
 }
 
 .input:focus {
@@ -102,44 +98,30 @@
   margin-bottom: 0.5rem;
 }
 
-.button,
+.primarybutton,
 .secondarybutton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 24rem;
   margin-bottom: 0.5rem;
-  padding: 0.5rem 1.5rem;
-  border: none;
-  border-radius: 0.3rem;
   background: var(--accent);
-  font-weight: 600;
-  font-size: 1.5rem;
-  color: var(--font-dark);
+  color: var(--darkest);
 }
 
 .secondarybutton {
   color: var(--accent);
-  background: var(--bg-darker);
+  background: var(--dark);
 }
 
-.button:hover {
+.primarybutton:hover {
   background: var(--accent-dark);
   cursor: pointer;
 }
 
 .secondarybutton:hover {
-  background: var(--bg-darkest);
+  background: var(--dark-light);
   cursor: pointer;
 }
 
 /* RESPONSIVE STYLES */
-@media (max-width: 325px) {
-  .body {
-    font-size: 1rem;
-  }
-}
-
 @media (max-width: 540px) {
   .section,
   .title,
@@ -147,7 +129,7 @@
   .body,
   .inputWrapper,
   .input,
-  .button,
+  .primarybutton,
   .secondarybutton {
     width: 100%;
   }
@@ -155,7 +137,7 @@
 
 @media (max-width: 720px) {
   .input,
-  .button,
+  .primarybutton,
   .secondarybutton {
     font-size: 1.1rem;
   }

@@ -99,7 +99,7 @@ export default function Landing() {
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.995 }}
-            className={styles.primarybutton}
+            className={styles.secondarybutton}
           >
             Join Our Team
           </motion.button>

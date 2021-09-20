@@ -9,6 +9,8 @@
   align-items: center;
   min-height: 50vh;
   padding: 0 1rem;
+  background-image: url(../public/assets/stars-60.png);
+  background-size: contain;
 }
 
 .wrapper {
@@ -72,14 +74,14 @@
   height: 100vh;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: var(--landing);
+  background-color: var(--landing);
 }
 
 .about {
   position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: var(--about);
+  background-color: var(--about);
 }
 
 .about > .wrapper > p {
@@ -90,26 +92,26 @@
   position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: var(--hardware);
+  background-color: var(--hardware);
 }
 
 .faq {
   padding-top: 5rem;
   padding-bottom: 10rem;
-  background: var(--faq);
+  background-color: var(--faq);
 }
 
 .sponsors {
   position: relative;
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background: var(--sponsors);
+  background-color: var(--sponsors);
 }
 
 .team {
   padding-top: 5rem;
   padding-bottom: 10rem;
-  background: var(--team);
+  background-color: var(--team);
 }
 
 .countdownWrapper {
@@ -151,7 +153,7 @@
   background: var(--dark);
 }
 .secondarybutton:hover {
-  background: var(--darkest);
+  background: var(--dark-light);
 }
 
 .applyWrapper > button {
@@ -336,7 +338,7 @@
 }
 
 @media (max-width: 540px) {
-  .button,
+  .primarybutton,
   .secondarybutton,
   .input {
     width: 100%;
@@ -353,7 +355,7 @@
 }
 
 @media (max-width: 720px) {
-  .button,
+  .primarybutton,
   .secondarybutton,
   .applyWrapper > button {
     font-size: 1.3rem;
@@ -367,7 +369,7 @@
   .landing {
     align-items: center;
   }
-  .button,
+  .primarybutton,
   .secondarybutton {
     align-self: center;
   }

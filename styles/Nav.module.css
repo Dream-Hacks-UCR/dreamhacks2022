@@ -51,7 +51,7 @@
   background: var(--dark);
 }
 .secondarybutton:hover {
-  background: var(--darkest);
+  background: var(--dark-light);
 }
 
 .link {

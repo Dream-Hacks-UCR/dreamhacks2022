@@ -2,9 +2,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-import OrbHolder from '../public/assets/orb_holder.png'
-import ThetaTau from '../public/assets/ThetaTau_logo.png'
-import IEEE from '../public/assets/IEEE_logo.png'
+import ThetaTau from '../public/assets/orgs/ThetaTau.png'
+import IEEE from '../public/assets/orgs/IEEE.png'
 
 import styles from '../styles/Index.module.css'
 
@@ -34,7 +33,7 @@ export default function About() {
             <motion.button 
               whileHover={{ scale: 1.03}} 
               whileTap={{ scale: 0.995 }}
-              className={styles.button}
+              className={styles.primarybutton}
             >
               Sponsor Us
             </motion.button>
@@ -43,7 +42,7 @@ export default function About() {
             <motion.button 
               whileHover={{ scale: 1.03}} 
               whileTap={{ scale: 0.995 }}
-              className={styles.button}
+              className={styles.secondarybutton}
             >
               Join Our Team
             </motion.button>
@@ -63,8 +62,8 @@ export default function About() {
             >
               <Image
                 src={ThetaTau}
-                width={150}
-                height={240}
+                width={280}
+                height={220}
                 objectFit='contain'
                 placeholder='blur'
               />

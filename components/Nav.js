@@ -160,7 +160,7 @@ export default function Nav() {
                   <motion.div 
                     whileHover={{ scale: 1.05}} 
                     whileTap={{ scale: 0.997 }}
-                    className={styles.secondarybutton}
+                    className={styles.primarybutton}
                   >
                     Check In
                   </motion.div>
@@ -168,7 +168,7 @@ export default function Nav() {
                 <motion.div 
                   whileHover={{ scale: 1.05}} 
                   whileTap={{ scale: 0.997 }}
-                  className={styles.button}
+                  className={styles.secondarybutton}
                   onClick={signOut}
                 >
                   Sign Out
@@ -178,7 +178,7 @@ export default function Nav() {
               <motion.div 
                 whileHover={{ scale: 1.05}} 
                 whileTap={{ scale: 0.997 }}
-                className={styles.button}
+                className={styles.primarybutton}
                 onClick={signIn}
               >
                 Sign In

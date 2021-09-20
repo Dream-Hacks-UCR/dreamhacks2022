@@ -180,7 +180,7 @@ export default function CheckIn() {
           <motion.div
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.995 }}
-            className={styles.button}
+            className={styles.primarybutton}
             onClick={() => checkSubmission()}
           >
             Submit
