@@ -90,7 +90,7 @@ export default function Landing() {
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.995 }}
-            className={styles.button}
+            className={styles.primarybutton}
           >
             Sponsor Us
           </motion.button>
@@ -99,7 +99,7 @@ export default function Landing() {
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.995 }}
-            className={styles.button}
+            className={styles.primarybutton}
           >
             Join Our Team
           </motion.button>

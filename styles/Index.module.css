@@ -46,13 +46,6 @@
   font-size: 3rem;
 }
 
-.body {
-  text-align: center;
-  margin-bottom: 2rem;
-  font-size: 1.5rem;
-  color: var(--font-grey);
-}
-
 .link {
   color: var(--accent);
   cursor: default;
@@ -144,40 +137,25 @@
   gap: 7.5px;
 }
 
-.button,
-.secondarybutton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 16rem;
-  margin-bottom: 0.5rem;
-  padding: 0.7rem 1.5rem;
-  border: none;
-  border-radius: 1.5rem 0.3rem 1.5rem 0.3rem;
+.primarybutton {
+  width: 12rem;
   background: var(--accent);
-  font-weight: 600;
-  font-size: 1.2rem;
-  text-transform: lowercase;
+}
+.primarybutton:hover {
+  background: var(--accent-dark);
 }
 
 .secondarybutton {
+  width: 12rem;
   color: var(--accent);
-  background: var(--bg-darker);
+  background: var(--dark);
 }
-
-.button:hover {
-  background: var(--accent-dark);
-  cursor: pointer;
-}
-
 .secondarybutton:hover {
-  background: var(--bg-darkest);
-  cursor: pointer;
+  background: var(--darkest);
 }
 
-.button,
 .applyWrapper > button {
-  color: var(--font-dark);
+  color: var(--darkest);
 }
 
 /* INPUT STYLES */
@@ -217,9 +195,9 @@
   font-size: 1.2rem;
   border: 2px solid var(--accent);
   border-radius: 0.3rem 0 0 0.3rem;
-  background: var(--bg-dark);
+  background: var(--darkest);
   font-family: 'Urbanist', sans-serif;
-  color: var(--font);
+  color: var(--font-primary);
 }
 
 .input:focus {

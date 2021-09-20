@@ -7,10 +7,9 @@
   width: 100%;
   max-height: 4.5rem;
   padding: 1.5rem 0;
-  background: var(--nav-bg);
-  -webkit-backdrop-filter: saturate(120%) blur(20px);
-  -moz-backdrop-filter: saturate(120%) blur(20px);
-  backdrop-filter: saturate(120%) blur(20px);
+  -webkit-backdrop-filter: saturate(120%) blur(15px);
+  -moz-backdrop-filter: saturate(120%) blur(15px);
+  backdrop-filter: saturate(120%) blur(15px);
   overflow-y: hidden;
 }
 
@@ -40,32 +39,19 @@
   margin-right: auto;
 }
 
-.button,
-.secondarybutton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 1.3rem 0.3rem 1.3rem 0.3rem;
+.primarybutton {
   background: var(--accent);
-  font-weight: 700;
-  color: var(--font-dark);
+}
+.primarybutton:hover {
+  background: var(--accent-dark);
 }
 
 .secondarybutton {
   color: var(--accent);
-  background: var(--bg-darker);
+  background: var(--dark);
 }
-
-.button:hover {
-  background: var(--accent-dark);
-  cursor: pointer;
-}
-
 .secondarybutton:hover {
-  background: var(--bg-darkest);
-  cursor: pointer;
+  background: var(--darkest);
 }
 
 .link {

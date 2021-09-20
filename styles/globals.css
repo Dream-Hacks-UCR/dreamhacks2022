@@ -1,30 +1,23 @@
 :root {
-  /* --bg: #1a1b33;
-  --bg-dark: #15162a;
-  --bg-darker: #0c0d1c;
-  --bg-darkest: #050410;
-  --nav-bg: #1a1b33b6; */
+  --darkest: #000e2d;
+  --darker: #061434;
+  --dark: #0d1a3a;
+  --dark-mid: #14223f;
+  --dark-light: #1a2844;
+
+  --font-primary: #92a8e6;
+  --font-secondary: #546dcb;
 
   --accent: #3e68ef;
   --accent-dark: #2c56e1;
 
-  --main: #183df4;
-  --main-alt: #f64966;
-
-  --font: #92a8e6;
-  --font-light-grey: #bec8e8;
-  --font-grey: #546dcb;
-  --font-dark-grey: #5e6ba5;
-  --font-dark: #000e2d;
-  --font-dark-accent: #92a8e6;
-
-  --landing: #000e2d;
-  --about: #061434;
-  --hardware: #0d1a3a;
-  --faq: #14223f;
-  --sponsors: #1a2844;
-  --team: #0d1a3a;
-  --footer: #061434;
+  --landing: var(--darkest);
+  --about: var(--darker);
+  --hardware: var(--dark);
+  --faq: var(--dark-mid);
+  --sponsors: var(--dark-light);
+  --team: var(--dark);
+  --footer: var(--darker);
 }
 
 html,
@@ -34,7 +27,7 @@ body {
   font-family: 'Urbanist', sans-serif;
   overflow: inherit;
   background-color: var(--landing);
-  color: var(--font);
+  color: var(--font-primary);
 }
 
 * {
@@ -47,32 +40,38 @@ h1 {
   line-height: 1.2;
   font-size: 3.5rem;
   font-weight: 700;
-  color: var(--font);
+  color: var(--font-primary);
 }
 
 h2 {
   margin-bottom: 0;
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--font);
+  color: var(--font-primary);
 }
 
 p {
   text-align: center;
   font-size: 1.3rem;
-  color: var(--font-grey);
+  color: var(--font-secondary);
 }
 
 button {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 0.7rem 1.5rem;
   border: none;
+  border-radius: 1.3rem 0.3rem 1.3rem 0.3rem;
   background: var(--accent);
   font-family: 'Urbanist', sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
   text-transform: lowercase;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 ::placeholder {

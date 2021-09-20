@@ -9,7 +9,7 @@
   margin-bottom: 0.5rem;
   font-weight: 700;
   font-size: 2rem;
-  color: var(--font-grey);
+  color: var(--font-secondary);
 }
 
 .countdown {
@@ -34,20 +34,20 @@
   padding: 1rem 0;
   border: none;
   border-radius: 1rem 0.3rem 1rem 0.3rem;
-  background: var(--accent);
-  color: var(--font-dark);
+  background: var(--dark);
+  color: var(--font-primary);
 }
 
 .num:hover {
   cursor: default;
-  background: var(--accent-dark);
+  background: var(--dark-light);
 }
 
 .label {
   margin-top: 0.1rem;
   font-weight: 600;
   font-size: 1.1rem;
-  color: var(--font-grey);
+  color: var(--font-secondary);
 }
 
 /* RESPONSIVE STYLES */
