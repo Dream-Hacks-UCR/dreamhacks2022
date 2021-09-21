@@ -45,6 +45,7 @@
   justify-content: flex-end;
   align-items: center;
   padding: 1rem;
+  padding-bottom: 0;
 }
 
 .closeButton {
@@ -54,6 +55,15 @@
 .closeButton:hover {
   color: var(--dark-lightest);
   cursor: pointer;
+}
+
+.imageWrapper {
+  display: flex;
+  align-items: center;
+  min-width: 15rem;
+  width: 15rem;
+  min-height: 15rem;
+  height: 15rem;
 }
 
 .image {
@@ -71,10 +81,10 @@
 
 .body {
   display: flex;
-  gap: 2rem;
+  gap: 1.5rem;
   align-items: center;
-  padding: 2rem;
-  padding-top: 0;
+  padding: 1rem 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .text,
@@ -105,8 +115,13 @@
 }
 
 @media (max-width: 420px) {
-  .caption {
+  .heading {
     font-size: 1.1rem;
+
+  }
+  .caption,
+  .datasheet {
+    font-size: 0.9rem;
   }
 }
 
@@ -116,8 +131,15 @@
   }
   .body {
     flex-direction: column;
+    gap: 1rem;
+    padding-top: 0;
+    padding-bottom: 0.5rem;
   }
   .imageWrapper {
     align-self: center;
+    min-width: 10rem;
+    width: 10rem;
+    min-height: 10rem;
+    height: 10rem;
   }
 }

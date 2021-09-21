@@ -14,13 +14,13 @@ export default function Modal( props ) {
           </div>
           <div className={styles.body}>
             <div className={styles.imageWrapper}>
-              <Image
-                src={props.image}
-                width={250}
-                height={250}
-                layout='fixed'
-                className={styles.image}
-              />
+              <div>
+                <Image
+                  src={props.image}
+                  objectFit='contain'
+                  className={styles.image}
+                />
+              </div>
             </div>
             <div className={styles.text}>
               <h2 className={styles.heading}>{props.name}</h2>
