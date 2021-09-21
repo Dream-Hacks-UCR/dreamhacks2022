@@ -88,7 +88,7 @@ export default function Landing() {
           </div>
       } */}
       <div className={styles.buttonWrapper}>
-        <Link passHref href='/'>
+        <Link passHref href='https://drive.google.com/file/d/1fMfMw9-7t174oKvctrpfl009UVBd9ykW/view?usp=sharing'>
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.995 }}
