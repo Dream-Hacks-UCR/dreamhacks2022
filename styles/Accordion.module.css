@@ -26,6 +26,46 @@
   background: var(--accent);
 }
 
+.hardwareWrapper,
+.hardware {
+  width: 10rem;
+  text-align: center;
+}
+
+.hardware {
+  height: 10rem;
+  margin-bottom: 0.5rem;
+  border-radius: 20rem;
+  transition: box-shadow 120ms ease-in;
+}
+
+.hardware:hover {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: box-shadow 120ms ease-out;
+}
+
+.hardware .image {
+  border-radius: 20rem;
+}
+
+.name {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 415px) {
+  .hardwareWrapper,
+  .hardware {
+    width: 7rem;
+  }
+  .hardware {
+    height: 7rem;
+  }
+  .name {
+    font-size: 0.9rem;
+  }
+}
+
 @media (max-width: 540px) {
   .selectButtons {
     flex-direction: column;

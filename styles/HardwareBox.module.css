@@ -39,6 +39,10 @@
 }
 
 .content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem 1rem;
+  justify-content: center;
   max-height: 0;
   padding: 1rem 1.5rem;
   padding-bottom: 0;
@@ -54,10 +58,14 @@
 }
 
 .open .content {
-  max-height: 10rem;
+  max-height: 50rem;
   padding: 1rem 1.5rem;
   opacity: 100;
   transition: max-height 200ms ease-out, opacity 150ms ease-out;
+}
+
+.open .content.xl {
+  max-height: 180rem;
 }
 
 .arrow {
@@ -68,4 +76,16 @@
 .open .arrow {
   transform: rotate(45deg);
   transition: transform 200ms ease-in-out;
+}
+
+@media (max-width: 415px) {
+  .content {
+    gap: 1.5rem 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .open .content.xl {
+    max-height: 70rem;
+  }
 }

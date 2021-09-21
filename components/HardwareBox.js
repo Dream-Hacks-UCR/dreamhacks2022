@@ -24,7 +24,11 @@ export default function HardwareBox(props) {
           {props.title} <span className={styles.subtitle}>{props.subtitle}</span>
         </span>
       </div>
-      <div className={styles.content}>
+      <div className={
+        props.xl 
+          ? `${styles.content} ${styles.xl}`
+          : `${styles.content}`
+      }>
         {props.children}
       </div>
     </div>
