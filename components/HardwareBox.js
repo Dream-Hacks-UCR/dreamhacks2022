@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { GoChevronRight } from 'react-icons/go'
+import { GoPlus } from 'react-icons/go'
 
 import styles from '../styles/HardwareBox.module.css'
 
@@ -19,10 +19,10 @@ export default function HardwareBox(props) {
       }
     >
       <div className={styles.title} onClick={() => toggleOpen()}>
+        <GoPlus className={styles.arrow}/>
         <span>
           {props.title} <span className={styles.subtitle}>{props.subtitle}</span>
         </span>
-        <GoChevronRight className={styles.arrow}/>
       </div>
       <div className={styles.content}>
         {props.children}

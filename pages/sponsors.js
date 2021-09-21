@@ -1,3 +1,6 @@
+import Link from 'next/link'
+import { motion } from 'framer-motion'
+
 import styles from '../styles/Index.module.css'
 
 export default function Sponsors() {
@@ -13,6 +16,15 @@ export default function Sponsors() {
         <p>
           Thanks to all of our sponsors who made this hackathon possible!
         </p>
+        <Link passHref href='/'>
+          <motion.button 
+            whileHover={{ scale: 1.03}} 
+            whileTap={{ scale: 0.995 }}
+            className={styles.secondarybutton}
+          >
+            Sponsor Us
+          </motion.button>
+        </Link>
       </div>
       <div className={styles.sponsorsWave2}>
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">

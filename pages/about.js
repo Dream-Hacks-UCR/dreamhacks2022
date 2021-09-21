@@ -28,7 +28,7 @@ export default function About() {
         <p>
           Interested in helping us out? <b>Sponsor us or join our committees!</b>
         </p>
-        <div className={styles.buttonRow}>
+        <div className={styles.buttonWrapper}>
           <Link passHref href='/'>
             <motion.button 
               whileHover={{ scale: 1.03}} 

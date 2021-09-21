@@ -123,7 +123,7 @@ export default function Nav() {
                 >
                   FAQ 
                 </NavLink>
-                <NavLink
+                {/* <NavLink
                   activeClass="active"
                   to="Sponsors"
                   spy={true}
@@ -134,7 +134,7 @@ export default function Nav() {
                   onClick={() => setOpen(false)}
                 >
                   Sponsors
-                </NavLink>
+                </NavLink> */}
                 <NavLink
                   activeClass="active"
                   to="Team"

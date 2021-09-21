@@ -10,6 +10,7 @@
 
   --accent: #3e68ef;
   --accent-dark: #2c56e1;
+  --accent-darker: #1f47cc;
 
   --landing: var(--darkest);
   --about: var(--darker);

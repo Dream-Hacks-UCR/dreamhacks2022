@@ -6,7 +6,7 @@ import styles from '../styles/Countdown.module.css'
 export default function CountdownOutput( props ) {
   const Completionist = () => (
     <div className={styles.completed}>
-      Currently taking place!
+      {props.completed}
     </div>
   )
 
@@ -93,5 +93,5 @@ export default function CountdownOutput( props ) {
     }
   }
 
-  return <Countdown date='2022-04-01T00:00:00' renderer={renderer} />
+  return <Countdown date={props.date} renderer={renderer} />
 }

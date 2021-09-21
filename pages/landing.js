@@ -43,19 +43,21 @@ export default function Landing() {
       }
       <div className={styles.headingWrapper}>
         <div className={styles.heading}>LOTUS</div>
-        <div>
+        <div className={styles.lotus}>
           <Image
             src={Logo}
-            width={90}
-            height={75}
             objectFit='contain'
           />
         </div>
         <div className={styles.heading}>HACKS</div>
       </div>
-      <div className={styles.subheading}>UCR'S FIRST HARWARE HACKATHON</div>
+      <div className={styles.subheading}>UCR'S 1<sup>st</sup> HARWARE HACKATHON</div>
       <div className={styles.countdownWrapper}>
-        <CountdownOutput heading='happening april 1-3, 2022' />
+        <CountdownOutput
+          completed='currently taking place!'
+          heading='happening april 1-3, 2022'
+          date='2022-04-01T00:00:00'
+        />
       </div>
       {/* { session 
         ?

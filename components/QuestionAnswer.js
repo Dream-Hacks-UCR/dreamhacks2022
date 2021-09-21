@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { GoChevronRight } from 'react-icons/go'
+import { GoPlus } from 'react-icons/go'
 
 import styles from '../styles/QuestionAnswer.module.css'
 
@@ -19,7 +19,7 @@ export default function QuestionAnswer(props) {
       }
     >
       <div className={styles.question} onClick={() => toggleOpen()}>
-        {props.question} <GoChevronRight className={styles.arrow}/>
+        <GoPlus className={styles.arrow}/> {props.question}
       </div>
       <div className={styles.answer}>
         {props.answer}

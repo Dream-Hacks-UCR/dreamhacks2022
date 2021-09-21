@@ -33,9 +33,9 @@ export default function Home() {
         <Element name="Faq" className={styles.element}>
           <Faq />
         </Element>
-        <Element name="Sponsors" className={styles.element}>
+        {/* <Element name="Sponsors" className={styles.element}>
           <Sponsors />
-        </Element>
+        </Element> */}
         <Element name="Team" className={styles.element}>
           <Team />
         </Element>

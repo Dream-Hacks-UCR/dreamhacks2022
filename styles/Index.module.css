@@ -10,7 +10,7 @@
   min-height: 50vh;
   padding: 0 1rem;
   background-image: url(../public/assets/stars-60.png);
-  background-size: contain;
+  background-size: 1280px 720px;
 }
 
 .wrapper {
@@ -20,11 +20,6 @@
   width: 68rem;
   min-height: inherit;
   margin-top: 3rem;
-}
-
-.title {
-  font-weight: 700;
-  font-size: 4rem;
 }
 
 .headingWrapper {
@@ -38,17 +33,20 @@
   font-size: 6rem;
 }
 
-.subtitle {
-  font-size: 2rem;
+.lotus {
+  width: 90px;
+  height: 75px;
 }
 
 .subheading {
+  text-align: center;
   padding: 0.5rem 0;
   font-weight: 700;
   font-size: 3rem;
 }
 
 .link {
+  font-weight: 600;
   color: var(--accent);
   cursor: default;
 }
@@ -77,6 +75,10 @@
   background-color: var(--landing);
 }
 
+.countdownWrapper {
+  margin-bottom: 2rem;
+}
+
 .about {
   position: relative;
   padding-top: 5rem;
@@ -86,6 +88,16 @@
 
 .about > .wrapper > p {
   text-align: left;
+}
+
+.organizers {
+  display: flex;
+  gap: 50px;
+  margin-top: 2rem;
+}
+
+.organizers > div:hover {
+  cursor: pointer;
 }
 
 .hardware {
@@ -108,39 +120,29 @@
   background-color: var(--sponsors);
 }
 
+.sponsors > .wrapper > .primarybutton,
+.sponsors > .wrapper > .secondarybutton {
+  align-self: center;
+}
+.sponsors > .wrapper > .secondarybutton:hover {
+  background: var(--dark-mid);
+}
+
 .team {
+  position: relative;
   padding-top: 5rem;
   padding-bottom: 10rem;
   background-color: var(--team);
 }
 
-.countdownWrapper {
-  margin-bottom: 2rem;
-}
-
-.buttonRow {
+/* BUTTON STYLES */
+.buttonWrapper {
   display: flex;
   gap: 10px;
 }
 
-.organizers {
-  display: flex;
-  gap: 50px;
-  margin-top: 2rem;
-}
-
-.organizers > div:hover {
-  cursor: pointer;
-}
-
-/* BUTTON STYLES */
-.buttonWrapper {
-  display: flex;
-  gap: 7.5px;
-}
-
 .primarybutton {
-  width: 12rem;
+  width: 15rem;
   background: var(--accent);
 }
 .primarybutton:hover {
@@ -148,7 +150,7 @@
 }
 
 .secondarybutton {
-  width: 12rem;
+  width: 15rem;
   color: var(--accent);
   background: var(--dark);
 }
@@ -215,9 +217,31 @@
   justify-content: center;
 }
 
+/* WAVE STYLES */
+.landingWave {
+  z-index: 10;
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.landingWave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 71px;
+}
+
+.landingWave .shapeFill {
+  fill: var(--landing);
+}
+
 .hardwareWave {
   position: absolute;
-  top: -83px;
+  top: -82px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -227,7 +251,7 @@
 
 .hardwareWave2 {
   position: absolute;
-  bottom: -61px;
+  bottom: -60px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -253,30 +277,9 @@
   fill: var(--hardware);
 }
 
-.landingWave {
-  z-index: 10;
-  position: absolute;
-  bottom: -71px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.landingWave svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 71px;
-}
-
-.landingWave .shapeFill {
-  fill: var(--landing);
-}
-
 .sponsorsWave {
   position: absolute;
-  top: -86px;
+  top: -85px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -284,20 +287,20 @@
   transform: rotate(180deg);
 }
 
-.sponsorsWave2 {
-  position: absolute;
-  bottom: -93px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
 .sponsorsWave svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 86px;
+}
+
+.sponsorsWave2 {
+  position: absolute;
+  bottom: -92px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
 }
 
 .sponsorsWave2 svg {
@@ -312,32 +315,59 @@
   fill: var(--sponsors);
 }
 
-/* RESPONSIVE STYLES */
-@media (max-width: 325px) {
-  .body {
-    font-size: 1.1rem;
-  }
+.teamWave {
+  position: absolute;
+  top: -85px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
 }
 
+.teamWave svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 86px;
+}
+
+.teamWave .shapeFill {
+  fill: var(--team);
+}
+
+/* RESPONSIVE STYLES */
 @media (max-width: 375px) {
   .heading {
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
-  .title {
-    font-size: 2.5rem;
+  .lotus {
+    width: 42px;
+    height: 35px;
+  }
+  .subheading {
+    font-size: 1.1rem;
   }
 }
 
 @media (min-width: 375px) and (max-width: 450px) {
   .heading {
-    font-size: 3.2rem;
-  }
-  .title {
     font-size: 2.7rem;
+  }
+  .lotus {
+    width: 54px;
+    height: 45px;
+  }
+  .subheading {
+    font-size: 1.4rem;
   }
 }
 
 @media (max-width: 540px) {
+  .buttonWrapper {
+    width: 100%;
+    flex-direction: column;
+  }
   .primarybutton,
   .secondarybutton,
   .input {
@@ -347,16 +377,27 @@
 
 @media (min-width: 450px) and (max-width: 640px) {
   .heading {
-    font-size: 4rem;
+    font-size: 3.4rem;
   }
-  .title {
-    font-size: 3rem;
+  .lotus {
+    width: 60px;
+    height: 50px;
+  }
+  .subheading {
+    font-size: 1.7rem;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 768px) {
+  .heading {
+    font-size: 5rem;
+  }
+  .subheading {
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 720px) {
-  .primarybutton,
-  .secondarybutton,
   .applyWrapper > button {
     font-size: 1.3rem;
   }
