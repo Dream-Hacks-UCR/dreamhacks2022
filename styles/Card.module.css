@@ -21,9 +21,9 @@
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flipcard:hover .flipcardInner {
+/* .flipcard:hover .flipcardInner {
   transform: rotateY(-180deg);
-}
+} */
 
 /* Position the front and back side */
 .flipcardFront, .flipcardBack {

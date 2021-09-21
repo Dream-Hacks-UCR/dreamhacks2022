@@ -28,7 +28,7 @@ export default function CountdownOutput( props ) {
                   <div className={styles.numWrapper}>
                     { Array.from(numDays).map(n =>
                       <motion.div 
-                        whileHover={{ y:-3 }}
+                        whileHover={{ y: -3 }}
                         className={styles.num}
                       >
                         {n}
@@ -44,7 +44,7 @@ export default function CountdownOutput( props ) {
                   <div className={styles.numWrapper}>
                     { Array.from(numHours).map(n =>
                       <motion.div 
-                        whileHover={{ y:-3 }}
+                        whileHover={{ y: -3 }}
                         className={styles.num}
                       >
                         {n}
@@ -60,7 +60,7 @@ export default function CountdownOutput( props ) {
                   <div className={styles.numWrapper}>
                     { Array.from(numMins).map(n =>
                       <motion.div 
-                        whileHover={{ y:-3 }}
+                        whileHover={{ y: -3 }}
                         className={styles.num}
                       >
                         {n}
@@ -76,7 +76,7 @@ export default function CountdownOutput( props ) {
                   <div className={styles.numWrapper}>
                     { Array.from(numSecs).map(n =>
                       <motion.div 
-                        whileHover={{ y:-3 }}
+                        whileHover={{ y: -3 }}
                         className={styles.num}
                       >
                         {n}

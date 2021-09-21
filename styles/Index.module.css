@@ -215,6 +215,17 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 1rem 0;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.leadName {
+  font-weight: 700;
 }
 
 /* WAVE STYLES */
@@ -347,6 +358,10 @@
   }
   .subheading {
     font-size: 1.1rem;
+  }
+  .leadName,
+  .leadPosition {
+    font-size: 0.9rem;
   }
 }
 

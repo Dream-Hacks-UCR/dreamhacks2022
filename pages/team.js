@@ -65,15 +65,19 @@ export default function Team() {
       <div className={styles.wrapper}>
         <h1>our team</h1>
         <p>
-          The ones behind organizing this hackathon. Hover over each one to reveal the face behind the card!
+          The ones behind organizing this hackathon!
         </p>
         <div className={styles.grid}>
-          { team.map(({link, name, position}) =>
-            <Card
-              link={link}
-              name={name}
-              position={position}
-            />
+          {team.map(({link, name, position}) =>
+            <div className={styles.cardWrapper}>
+              <Card
+                link={link}
+                name={name}
+                position={position}
+              />
+              <div className={styles.leadName}>{name}</div>
+              <div className={styles.leadPosition}>{position}</div>
+            </div>
           )}
         </div>
       </div>
