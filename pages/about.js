@@ -23,7 +23,7 @@ export default function About() {
       components: 
       <>
         <p>
-          Lotus Hacks aims to provide hands-on opportunities to underrepresented students within our historically low-income area. By introducing a hardware hackathon, students will have access to technology such as 3D printers, soldering irons, and hardware <b>at no cost</b>.
+          Lotus Hacks aims to provide hands-on opportunities for students to apply skills from all facets of engineering to develop a tangible project. Students will have access to technology such as 3D printers, soldering irons, and hardware <b>at no cost</b>.
         </p>
         <p>
           Interested in helping us out? <b>Sponsor us or join our committees!</b>
