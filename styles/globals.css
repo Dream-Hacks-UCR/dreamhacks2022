@@ -19,6 +19,8 @@
   --sponsors: var(--dark-light);
   --team: var(--dark);
   --footer: var(--darker);
+
+  --nav-moz: #000e2dc4;
 }
 
 html,
