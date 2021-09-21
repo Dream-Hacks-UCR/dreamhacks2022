@@ -74,6 +74,10 @@
   visibility: hidden;
 }
 
+.home {
+  display: none;
+}
+
 /* RESPONSIVE STYLES */
 @media (max-width: 768px) {
   .wrapper {
@@ -102,6 +106,9 @@
     padding: 10rem 0;
     justify-content: space-around;
     height: 90vh;
+  }
+  .home {
+    display: block;
   }
 }
 

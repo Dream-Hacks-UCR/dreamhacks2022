@@ -89,6 +89,18 @@ export default function Nav() {
             ? <>
                 <NavLink
                   activeClass="active"
+                  to="Home"
+                  spy={true}
+                  smooth={true}
+                  offset={-90}
+                  duration={500}
+                  className={`${styles.link} ${styles.home}`}
+                  onClick={() => setOpen(false)}
+                >
+                  Home
+                </NavLink>
+                <NavLink
+                  activeClass="active"
                   to="About"
                   spy={true}
                   smooth={true}
@@ -148,7 +160,11 @@ export default function Nav() {
                   Team
                 </NavLink>  
               </>
-            : null
+            : <Link passHref href='/'>
+                <span className={styles.link}>
+                  Home
+                </span>
+              </Link>
           }
         </div>
         {/* <div className={styles.actions}>
