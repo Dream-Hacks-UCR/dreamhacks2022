@@ -375,7 +375,8 @@ export default function HardwareAccordion() {
       >
         {base.map(({ name, quantity, image, category, description, datasheet }, idx) => 
           <div key={idx} className={styles.hardwareWrapper}>
-            <motion.div 
+            <motion.div
+              whileHover={{ y: -8 }}
               className={styles.hardware} 
               onClick={() => toggleModal(name, quantity, image, category, description, datasheet)}
             >
@@ -399,7 +400,8 @@ export default function HardwareAccordion() {
       >
         {motionAddon.map(({ name, quantity, image, category, description, datasheet }, idx) => 
           <div key={idx} className={styles.hardwareWrapper}>
-            <motion.div 
+            <motion.div
+              whileHover={{ y: -8 }}
               className={styles.hardware} 
               onClick={() => toggleModal(name, quantity, image, category, description, datasheet)}
             >
@@ -423,7 +425,8 @@ export default function HardwareAccordion() {
       >
         {audioVisualAddon.map(({ name, quantity, image, category, description, datasheet }, idx) => 
           <div key={idx} className={styles.hardwareWrapper}>
-            <motion.div 
+            <motion.div
+              whileHover={{ y: -8 }}
               className={styles.hardware} 
               onClick={() => toggleModal(name, quantity, image, category, description, datasheet)}
             >
@@ -447,7 +450,8 @@ export default function HardwareAccordion() {
       >
         {tiBox.map(({ name, quantity, image, category, description, datasheet }, idx) => 
           <div key={idx} className={styles.hardwareWrapper}>
-            <motion.div 
+            <motion.div
+              whileHover={{ y: -8 }}
               className={styles.hardware} 
               onClick={() => toggleModal(name, quantity, image, category, description, datasheet)}
             >
