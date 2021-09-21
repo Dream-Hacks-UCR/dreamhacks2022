@@ -13,7 +13,7 @@ export default function Hardware() {
       <div className={styles.wrapper}>
         <h1>hardware</h1>
         <p>
-          These are the kits that will be available to everyone on the day of. <b>Tentative parts lists to be finalized on November 1.</b>
+          These are the kits that will be available to everyone on the day of. <b>To be finalized on November 1.</b>
         </p>
         <HardwareAccordion />
       </div>
