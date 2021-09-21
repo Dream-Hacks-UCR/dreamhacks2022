@@ -41,7 +41,7 @@ export default function FaqAccordion() {
     },
     {
       question: 'What will I need to participate?',
-      answer: 'All you need to do is bring yourself! We\'ll be providing all the resources you need to build your projects. However, we do encourage you to create teams of up to 4 people. If you\'re unable to form a team before the start date, we\'ll help group you up with other hackers.'
+      answer: 'You will need a laptop, stuff you would bring to a sleepover (e.g. pillow, blanket, toothbrush, etc.), and an ID. We also encourage you to create teams of up to 4 people. If you\'re unable to form a team before the start date, we\'ll help group you up with other hackers.'
     },
     {
       question: 'If I\'m residing outside of the U.S., can I still participate?',
