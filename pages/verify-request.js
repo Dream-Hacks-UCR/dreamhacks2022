@@ -38,23 +38,22 @@ export default function LogIn() {
     <>
       <Head>
         <title>Dream Hacks | Verify Sign In Request</title>
-        <meta name="description" content="Dream Hacks, a hardware hackathon hosted at University of California, Riverside." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
         
       <div className={formStyles.wrapper}>
-            <div className={styles.title}>Check Your Email Address</div>
-            <div className={styles.body}>Didn't receive an email? Try signing in again and double checking when you type your email.</div>
-            
+            <h1>Check Your Email Address</h1>
+            <p>
+              Didn't receive an email? Try signing in again and double checking when you type your email.
+            </p>
             <Link passHref href='/'>
-              <motion.div
+              <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.995 }}
                 className={styles.secondarybutton}
               >
                 Go Back to Homepage
-              </motion.div>
+              </motion.button>
             </Link>
           </div>
       </Layout>

@@ -67,8 +67,6 @@ export default function CheckIn() {
     <>
       <Head>
         <title>Lotus Hacks | Check In</title>
-        <meta name="description" content="Lotus Hacks, a hardware hackathon hosted at University of California, Riverside." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
         <div className={styles.wrapper}>
