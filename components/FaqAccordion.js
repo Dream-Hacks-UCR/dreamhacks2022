@@ -10,81 +10,81 @@ export default function FaqAccordion() {
   const general = [
     {
       question: 'What is a hackathon?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'A hackathon is an event where individuals or a group of individuals are challenged to turn their creative ideas into actual working creations in a limited time frame. At the end of the time frame, contestants demo their creations to judges in order to win prizes.'
     },
     {
       question: 'How does a "hardware hackathon" work?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'A "hardware hackathon" works like any other hackathon, except whatever project that will be made and submitted must include a hardware component.'
     },
     {
       question: 'What if I have no experience with hardware?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'That\'s perfectly alright, and you won\'t be alone! During the hackathon, we\'ll provide you with the resources you need to get started. There will also be mentors who will help you along the way.'
     },
     {
-      question: 'How do I register?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      question: 'How do I apply?',
+      answer: 'You can apply right on this website! You will first need to sign in with just your email (no password required). You will then need to fill out a check-in form to apply. Applications are reviewed on a rolling basis, so you will be notified about your application status within 24 hours through this website and via email. Applications will be available starting mid-December, and they will close mid-March.'
     },
     {
       question: 'Does this event cost money?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'This event does not cost any money! However if you will be traveling from out of state, we unfortunately will not be able to reimburse travel costs.'
     },
     {
       question: 'Where do I sleep?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'TBD.'
     },
   ]
 
   const participation = [
     {
       question: 'Who can participate?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'Lotus Hacks is open to university and high school students in the United States.'
     },
     {
       question: 'What will I need to participate?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'All you need to do is bring yourself! We\'ll be providing all the resources you need to build your projects. However, we do encourage you to create teams of up to 4 people. If you\'re unable to form a team before the start date, we\'ll help group you up with other hackers.'
     },
     {
       question: 'If I\'m residing outside of the U.S., can I still participate?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'Unfortunately due to COVID-19 restrictions, we will only be taking applications from those qualified in the United States.'
     },
     {
       question: 'Will I be able to form teams?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'Yes, you will be able to form teams up to 4 people. If you need help forming a team, contact us at lotushacksucr@gmail.com.'
     },
     {
       question: 'What if I don\'t have a team?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'If you\'re unable to form a team, contact us beforehand at lotushacksucr@gmail.com and we will help group you up with other hackers. Otherwise, we\'ll help group you into a team on the day of.'
     },
     {
       question: 'How many people can be in my team?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'You can have a maximum of 4 people on your team, including yourself.'
     },
   ]
 
   const projects = [
     {
       question: 'Can I use a project I\'ve aleady worked on?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'No, you will need to start working on an entirely new project within the given time frame. Projects that have been started before the start time or have been submitted to other hackathons will be disqualified.'
     },
     {
       question: 'What if I don\'t have an idea on what to make?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'That\'s alright! On the day of, we\'ll provide you with resources to get started with and there will be workshops to get inspiration from. You will also be working with a team, so coming up with an idea will be easier.'
     },
     {
       question: 'Do I have to make a project?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'Yes, since due to COVID-19 restrictioons, we will only be accepting applicants who intend to create a project.'
     },
     {
       question: 'What can I build?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'You can build anything you want as long as it\'s a unique creation and includes a hardware component!'
     },
     {
       question: 'What resources are there to help me build a project?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'We will provide the hardware kits listed in the previous section at the venue on the day of. We will also have mentors who can help you get started and workshops where you can get ideas from.'
     },
     {
       question: 'How do I submit?',
-      answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+      answer: 'Since this will be an in-person event, you will have the opportunity to demo your projects to judges. So, you will be able to submit your project by the end of the time frame at the venue.'
     },
   ]
 
