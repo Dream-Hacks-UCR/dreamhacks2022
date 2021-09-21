@@ -38,7 +38,7 @@ export default function About() {
               Sponsor Us
             </motion.button>
           </Link>
-          <Link passHref href='/'>
+          <Link passHref href='https://bit.ly/lotushackscommitteeforms'>
             <motion.button 
               whileHover={{ scale: 1.03}} 
               whileTap={{ scale: 0.995 }}
