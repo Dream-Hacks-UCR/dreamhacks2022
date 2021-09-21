@@ -30,7 +30,7 @@ export default function FaqAccordion() {
     },
     {
       question: 'Where do I sleep?',
-      answer: 'TBD.'
+      answer: 'Wherever you can! We unfortunately will not be providing rooms where you can sleep, so please help yourself in finding a comfortable corner to sleep at.'
     },
   ]
 
