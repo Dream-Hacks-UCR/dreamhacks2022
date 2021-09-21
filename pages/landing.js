@@ -51,7 +51,7 @@ export default function Landing() {
         </div>
         <div className={styles.heading}>HACKS</div>
       </div>
-      <div className={styles.subheading}>UCR'S 1<sup>st</sup> HARWARE HACKATHON</div>
+      <div className={styles.subheading}>UCR'S 1<sup>st</sup> HARDWARE HACKATHON</div>
       <div className={styles.countdownWrapper}>
         <CountdownOutput
           completed='currently taking place!'

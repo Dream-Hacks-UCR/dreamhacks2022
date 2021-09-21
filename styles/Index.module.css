@@ -42,7 +42,7 @@
   text-align: center;
   padding: 0.5rem 0;
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.8rem;
 }
 
 .link {
@@ -359,7 +359,7 @@
     height: 45px;
   }
   .subheading {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -384,7 +384,7 @@
     height: 50px;
   }
   .subheading {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -393,7 +393,7 @@
     font-size: 5rem;
   }
   .subheading {
-    font-size: 2.5rem;
+    font-size: 2.4rem;
   }
 }
 
