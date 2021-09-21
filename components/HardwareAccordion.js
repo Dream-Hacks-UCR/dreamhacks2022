@@ -380,6 +380,7 @@ export default function HardwareAccordion() {
               onClick={() => toggleModal(name, quantity, image, category, description, datasheet)}
             >
               <Image
+                alt={'Image of ' + name}
                 src={image}
                 objectFit='contain'
                 className={styles.image}
@@ -403,6 +404,7 @@ export default function HardwareAccordion() {
               onClick={() => toggleModal(name, quantity, image, category, description, datasheet)}
             >
               <Image
+                alt={'Image of ' + name}
                 src={image}
                 objectFit='contain'
                 className={styles.image}
@@ -426,6 +428,7 @@ export default function HardwareAccordion() {
               onClick={() => toggleModal(name, quantity, image, category, description, datasheet)}
             >
               <Image
+                alt={'Image of ' + name}
                 src={image}
                 objectFit='contain'
                 className={styles.image}
@@ -449,6 +452,7 @@ export default function HardwareAccordion() {
               onClick={() => toggleModal(name, quantity, image, category, description, datasheet)}
             >
               <Image
+                alt={'Image of ' + name}
                 src={image}
                 objectFit='contain'
                 className={styles.image}

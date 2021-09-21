@@ -46,7 +46,10 @@ export default function LogIn() {
             <p>
               Didn't receive an email? Try signing in again and double checking when you type your email.
             </p>
-            <Link passHref href='/'>
+            <Link alt='Homepage'
+              passHref
+              href='/'
+            >
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.995 }}

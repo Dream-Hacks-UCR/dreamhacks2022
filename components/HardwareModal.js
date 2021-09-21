@@ -35,7 +35,11 @@ export default function Modal( props ) {
               </p>
               {props.datasheet &&
                 <p className={styles.datasheet}>
-                  <Link passHref href={props.datasheet}>
+                  <Link 
+                    alt='Link to datasheet'
+                    passHref
+                    href={props.datasheet}
+                  >
                     <span className={styles.link}>
                       <b>Click Here for the Datasheet</b>
                     </span>

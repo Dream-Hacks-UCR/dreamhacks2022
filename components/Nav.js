@@ -156,7 +156,11 @@ export default function Nav() {
             session 
             ?
               <>
-                <Link passHref href='/checkin'>
+                <Link
+                  alt='Check-In Page'
+                  passHref
+                  href='/checkin'
+                >
                   <motion.div 
                     whileHover={{ scale: 1.05}} 
                     whileTap={{ scale: 0.997 }}

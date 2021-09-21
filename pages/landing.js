@@ -61,7 +61,11 @@ export default function Landing() {
       </div>
       {/* { session 
         ?
-          <Link passHref href='/checkin'>
+          <Link
+            alt='Check-In Page'
+            passHref 
+            href='/checkin'
+          >
             <motion.button 
               whileHover={{ scale: 1.03}} 
               whileTap={{ scale: 0.995 }}
@@ -79,6 +83,7 @@ export default function Landing() {
               className={styles.input}
             />
             <motion.button
+              alt='Apply'
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 1.03 }}
               onClick={() => openSignin()}
@@ -88,7 +93,11 @@ export default function Landing() {
           </div>
       } */}
       <div className={styles.buttonWrapper}>
-        <Link passHref href='https://drive.google.com/file/d/1fMfMw9-7t174oKvctrpfl009UVBd9ykW/view?usp=sharing'>
+        <Link
+          alt='Sponsorship packet'
+          passHref
+          href='https://drive.google.com/file/d/1fMfMw9-7t174oKvctrpfl009UVBd9ykW/view?usp=sharing'
+        >
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.995 }}
@@ -97,7 +106,11 @@ export default function Landing() {
             Sponsor Us
           </motion.button>
         </Link>
-        <Link passHref href='https://bit.ly/lotushackscommitteeforms'>
+        <Link
+          alt='Google form for applying to committees'
+          passHref
+          href='https://bit.ly/lotushackscommitteeforms'
+        >
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.995 }}

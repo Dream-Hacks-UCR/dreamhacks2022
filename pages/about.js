@@ -29,8 +29,12 @@ export default function About() {
           Interested in helping us out? <b>Sponsor us or join our committees!</b>
         </p>
         <div className={styles.buttonWrapper}>
-          <Link passHref href='https://drive.google.com/file/d/1fMfMw9-7t174oKvctrpfl009UVBd9ykW/view?usp=sharing'>
-            <motion.button 
+          <Link 
+            alt='Sponsorship packet'
+            passHref 
+            href='https://drive.google.com/file/d/1fMfMw9-7t174oKvctrpfl009UVBd9ykW/view?usp=sharing'
+          >
+            <motion.button
               whileHover={{ scale: 1.03}} 
               whileTap={{ scale: 0.995 }}
               className={styles.primarybutton}
@@ -38,7 +42,11 @@ export default function About() {
               Sponsor Us
             </motion.button>
           </Link>
-          <Link passHref href='https://bit.ly/lotushackscommitteeforms'>
+          <Link
+            alt='Google form for applying to committees'
+            passHref
+            href='https://bit.ly/lotushackscommitteeforms'
+          >
             <motion.button 
               whileHover={{ scale: 1.03}} 
               whileTap={{ scale: 0.995 }}

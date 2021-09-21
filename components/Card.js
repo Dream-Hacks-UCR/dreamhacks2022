@@ -5,7 +5,11 @@ import styles from '../styles/Card.module.css'
 
 export default function Card(props) {
   return (
-    <Link passHref href={props.link}>
+    <Link
+      alt='Team Lead's LinkedIn
+      passHref
+      href={props.link}
+    >
       <motion.div whileHover={{ y: -10 }} className={styles.flipcard}>
         <div className={styles.flipcardInner}>
           <div className={styles.flipcardFront}></div>

@@ -92,6 +92,7 @@ export default function FaqAccordion() {
     <div className={styles.wrapper}>
       <div className={styles.selectButtons}>
         <motion.button
+          alt='General questions category'
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.995 }}
           className={
@@ -104,6 +105,7 @@ export default function FaqAccordion() {
           General
         </motion.button>
         <motion.button
+          alt='Participation questions category'
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.995 }}
           className={
@@ -116,6 +118,7 @@ export default function FaqAccordion() {
           Participation
         </motion.button>
         <motion.button
+          alt='Projects questions category'
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.995 }}
           className={

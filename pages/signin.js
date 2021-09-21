@@ -87,6 +87,7 @@ export default function SignIn({ csrfToken }) {
               />
             </div>
             <motion.button
+              alt='Sign in'
               type='submit'
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.995 }} 
@@ -96,7 +97,11 @@ export default function SignIn({ csrfToken }) {
               Sign In
             </motion.button>
           </form>
-          <Link passHref href='/'>
+          <Link
+            alt='Homepage'
+            passHref
+            href='/'
+          >
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.995 }}
