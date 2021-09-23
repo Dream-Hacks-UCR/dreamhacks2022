@@ -1,0 +1,67 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 76rem;
+  min-height: inherit;
+  margin-top: 6rem;
+  padding: 0 1rem;
+}
+
+.title {
+  width: 24rem;
+  text-align: left;
+  font-weight: 700;
+}
+
+.body {
+  width: 24rem;
+  text-align: left;
+}
+
+.primarybutton,
+.secondarybutton {
+  width: 24rem;
+  margin-bottom: 0.5rem;
+  background: var(--accent);
+  color: var(--darkest);
+}
+
+.secondarybutton {
+  color: var(--accent);
+  background: var(--dark);
+}
+
+.primarybutton:hover {
+  background: var(--accent-dark);
+  cursor: pointer;
+}
+
+.secondarybutton:hover {
+  background: var(--dark-light);
+  cursor: pointer;
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 540px) {
+  .title,
+  .body,
+  .primarybutton,
+  .secondarybutton {
+    width: 100%;
+  }
+}
+
+@media (max-width: 720px) {
+  .primarybutton,
+  .secondarybutton {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  .wrapper {
+    width: 100%;
+  }
+}

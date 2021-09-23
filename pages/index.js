@@ -17,7 +17,6 @@ export default function Home() {
     <>
       <Head>
         <title>Lotus Hacks</title>
-        <meta name="description" content="Lotus Hacks, a hardware hackathon hosted at University of California, Riverside." />
       </Head>
 
       <Layout>

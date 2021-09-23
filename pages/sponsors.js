@@ -17,9 +17,9 @@ export default function Sponsors() {
           Thanks to all of our sponsors who made this hackathon possible!
         </p>
         <Link
-          alt='Sponsorship packet'
+          alt='Sponsor us page'
           passHref
-          href='https://drive.google.com/file/d/1fMfMw9-7t174oKvctrpfl009UVBd9ykW/view?usp=sharing'
+          href='/sponsor-us'
         >
           <motion.button 
             whileHover={{ scale: 1.03}} 
