@@ -32,58 +32,59 @@ export default function SponsorUs() {
             Sponsor Us
           </h1>
           <p className={styles.body}>
-            Help us make this hackathon possible!
+            <b>Help us make this hackathon possible!</b> Triple your contribution by participating in the BCOE match challenge!
           </p>
-          <Link 
-            alt='Sponsorship packet'
-            passHref 
-            href='https://drive.google.com/file/d/1fMfMw9-7t174oKvctrpfl009UVBd9ykW/view?usp=sharing'
-          >
-            <motion.button
-              whileHover={{ scale: 1.03}} 
-              whileTap={{ scale: 0.995 }}
-              className={styles.primarybutton}
+          <div className={styles.buttonWrapper}>
+            <Link 
+              alt='Sponsorship packet'
+              passHref 
+              href='https://drive.google.com/file/d/1fMfMw9-7t174oKvctrpfl009UVBd9ykW/view?usp=sharing'
             >
-              Sponsorship Packet
-            </motion.button>
-          </Link>
-          <Link 
-            alt='Our paypal'
-            passHref 
-            href='https://paypal.me/ieeeucr?locale.x=en_US'
-          >
-            <motion.button
-              whileHover={{ scale: 1.03}} 
-              whileTap={{ scale: 0.995 }}
-              className={styles.primarybutton}
+              <motion.button
+                whileHover={{ scale: 1.03}} 
+                whileTap={{ scale: 0.995 }}
+                className={styles.primarybutton}
+              >
+                sponsorship packet
+              </motion.button>
+            </Link>
+            <Link 
+              alt='Our paypal'
+              passHref 
+              href='https://paypal.me/ieeeucr?locale.x=en_US'
             >
-              Our Payal
-            </motion.button>
-          </Link>
+              <motion.button
+                whileHover={{ scale: 1.03}} 
+                whileTap={{ scale: 0.995 }}
+                className={styles.primarybutton}
+              >
+                our payal
+              </motion.button>
+            </Link>
+          </div>
+          <h2 className={styles.title}>
+            what is the BCOE match challenge?
+          </h2>
+          <p className={styles.body}>
+            The BCOE match challenge <b>takes place October 4 through October 31</b> and <b>provides direct and immediate support</b> for 19 engineering professional student organizations.
+          </p>
+          <p className={styles.body}>
+            Not only will student organizations earn <b>triple-matched gifts</b>, the student organization with the most supporters will earn <b>a weekly prize</b>. Matches are made <b>up to $1,000</b> per donor per organization from BCOE, and up to $500,000 per donors from UCR.
+          </p>
+          <p className={styles.body}>
+            <b>To give to a student professional organization in the BCOE Match Challenge, click the button below!</b>
+          </p>
           <Link 
             alt='Match challenge'
             passHref 
-            href='/sponsor-us'
+            href='http://www.engr.ucr.edu/match'
           >
             <motion.button
               whileHover={{ scale: 1.03}} 
               whileTap={{ scale: 0.995 }}
               className={styles.primarybutton}
             >
-              Dean&#39;s Match Challenge
-            </motion.button>
-          </Link>
-          <Link
-            alt='Homepage'
-            passHref
-            href='/'
-          >
-            <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.995 }}
-              className={styles.secondarybutton}
-            >
-              Go Back to Homepage
+              BCOE match challenge
             </motion.button>
           </Link>
         </div>

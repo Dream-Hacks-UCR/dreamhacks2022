@@ -3,29 +3,39 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 76rem;
+  width: 68rem;
   min-height: inherit;
   margin-top: 6rem;
+  margin-bottom: 6rem;
   padding: 0 1rem;
 }
 
 .title {
-  width: 24rem;
-  text-align: left;
+  width: 68rem;
+  /* text-align: left; */
   font-weight: 700;
 }
 
 .body {
-  width: 24rem;
-  text-align: left;
+  width: 68rem;
+  margin-bottom: 0;
+  /* text-align: left; */
+}
+
+.buttonWrapper {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 2rem;
 }
 
 .primarybutton,
 .secondarybutton {
-  width: 24rem;
+  width: 18rem;
+  margin-top: 1.5rem;
   margin-bottom: 0.5rem;
   background: var(--accent);
   color: var(--darkest);
+  text-transform: none;
 }
 
 .secondarybutton {
@@ -58,10 +68,21 @@
   .secondarybutton {
     font-size: 1.1rem;
   }
+  .buttonWrapper {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 0;
+  }
+  .buttonWrapper > .primarybutton:nth-of-type(2) {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 1280px) {
-  .wrapper {
+  .wrapper,
+  .title,
+  .body {
     width: 100%;
   }
 }
