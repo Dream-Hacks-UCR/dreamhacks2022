@@ -29,7 +29,7 @@ This is the codebase for Dream Hacks 2022. Below is a guide for setting up a loc
 Run the following commands in a terminal.
 ### Clone the Project
 - `git clone https://github.com/Lotus-Hacks-UCR/lotushacks2022.git`
-- `cd dreamhacks2022`
+- `cd lotushacks2022`
   - This is to navigate into the directory generated for the cloned repo.
 - If you are using VScode, run `code .` to open the current directory in VScode (this is mainly for easier navigation)
   - You may need to install **code** so run `sudo apt install code`
