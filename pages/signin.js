@@ -65,7 +65,7 @@ export default function SignIn({ csrfToken }) {
             Sign In
           </h1>
           <p className={styles.body}>
-            Sign in to Dream Hacks to access more. Requires no password.
+            Sign in to Lotus Hacks to access more. Requires no password.
           </p>
           <form 
             method='post' 

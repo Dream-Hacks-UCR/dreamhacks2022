@@ -77,7 +77,7 @@ export default function SponsorUs() {
           <Link 
             alt='Match challenge'
             passHref 
-            href='http://www.engr.ucr.edu/match'
+            href='https://myadv.ucr.edu/bcoeieee/200830'
           >
             <motion.button
               whileHover={{ scale: 1.03}} 

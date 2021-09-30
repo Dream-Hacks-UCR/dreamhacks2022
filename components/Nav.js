@@ -70,7 +70,7 @@ export default function Nav() {
                 />
               </NavLink>
             : <Link passHref href='/'>
-                <span className={styles.link}>
+                <span className={styles.link} onClick={() => setOpen(false)}>
                   <Image
                     src={Logo}
                     width={35}
@@ -161,7 +161,7 @@ export default function Nav() {
                 </NavLink>  
               </>
             : <Link passHref href='/'>
-                <span className={styles.link}>
+                <span className={styles.link} onClick={() => setOpen(false)}>
                   Home
                 </span>
               </Link>

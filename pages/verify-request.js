@@ -11,7 +11,7 @@ import { FadeLoader } from 'react-spinners'
 import styles from '../styles/Index.module.css'
 import formStyles from '../styles/Form.module.css'
 
-export default function LogIn() {
+export default function VerifyRequest() {
   const [session, loading] = useSession()
   const router = useRouter()
 
@@ -37,28 +37,27 @@ export default function LogIn() {
   return (
     <>
       <Head>
-        <title>Dream Hacks | Verify Sign In Request</title>
+        <title>Lotus Hacks | Verify Sign In Request</title>
       </Head>
       <Layout>
-        
-      <div className={formStyles.wrapper}>
-            <h1>Check Your Email Address</h1>
-            <p>
-              Didn't receive an email? Try signing in again and double checking when you type your email.
-            </p>
-            <Link alt='Homepage'
-              passHref
-              href='/'
+        <div className={formStyles.wrapper}>
+          <h1>Check Your Email Address</h1>
+          <p>
+            Didn't receive an email? Try signing in again and double checking when you type your email.
+          </p>
+          <Link alt='Homepage'
+            passHref
+            href='/'
+          >
+            <motion.button
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.995 }}
+              className={styles.secondarybutton}
             >
-              <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.995 }}
-                className={styles.secondarybutton}
-              >
-                Go Back to Homepage
-              </motion.button>
-            </Link>
-          </div>
+              Go Back to Homepage
+            </motion.button>
+          </Link>
+        </div>
       </Layout>
     </>
   )
