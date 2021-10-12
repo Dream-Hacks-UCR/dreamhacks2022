@@ -18,7 +18,7 @@ export default function Footer() {
         waveClass={styles.footerWave}
         fill={styles.shapeFill}
       />
-      <div className='flex flex-col-reverse sm:flex-row gap-3 sm:gap-0 justify-between items-center w-full max-w-272 mx-4 font-semibold text-lg'>
+      <div className='flex flex-col-reverse sm:flex-row gap-3 sm:gap-0 justify-between items-center text-center w-full max-w-272 mx-4 font-semibold text-lg'>
         <div>
           Built with 💙 by the Lotus Hacks Team.
         </div>
