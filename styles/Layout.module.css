@@ -1,9 +1,0 @@
-.layout {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  /* min-height: 100vh; */
-  flex-grow: 1;
-  /* background-image: url(../public/assets/stars-60.png); */
-}

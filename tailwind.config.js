@@ -25,12 +25,18 @@ module.exports = {
       },
       maxHeight:  {
         '60': '15rem',
+        '200': '50rem',
+        '280': '70rem',
+        '760': '180rem',
       },
       borderWidth: {
         '3': '3px',
       },
       backgroundImage: {
         'stars': 'url(\'/assets/stars-60.png\')',
+      },
+      boxShadow: {
+        'glow': '0 0 10px 0 rgba(255, 255, 255, 0.7)',
       },
       colors: {
         main: {

@@ -44,8 +44,6 @@ import breadboardBooster from '../public/assets/parts/breadboard-booster.png'
 
 import filler from '../public/assets/filler.png'
 
-import styles from '../styles/Accordion.module.css'
-
 export default function HardwareAccordion() {
   const [modalOpen, setModalOpen] = useState(false)
   const [selectedName, setSelectedName] = useState(null);
@@ -368,26 +366,26 @@ export default function HardwareAccordion() {
   ]
 
   return (
-    <div className={styles.wrapper}>
+    <div className='w-full'>
       <HardwareBox 
         title='Base Parts'
         xl={true}
       >
         {base.map(({ name, quantity, image, category, description, datasheet }, idx) => 
-          <div key={idx} className={styles.hardwareWrapper}>
+          <div key={idx} className='w-28 sm:w-40 text-center'>
             <motion.div
               whileHover={{ y: -8 }}
-              className={styles.hardware} 
+              className='w-28 sm:w-40 h-28 sm:h-40 text-center rounded-full hover:shadow-glow transition-shadow duration-150 ease-in-out cursor-pointer'
               onClick={() => toggleModal(name, quantity, image, category, description, datasheet)}
             >
               <Image
                 alt={'Image of ' + name}
                 src={image}
                 objectFit='contain'
-                className={styles.image}
+                className='rounded-full'
               />
             </motion.div>
-            <div className={styles.name}>
+            <div className='mt-3 text-lg'>
               <b>{name}</b> {quantity > 1 && ('(x' + quantity + ')')}
             </div>
           </div>
@@ -399,20 +397,20 @@ export default function HardwareAccordion() {
         xl={false}
       >
         {motionAddon.map(({ name, quantity, image, category, description, datasheet }, idx) => 
-          <div key={idx} className={styles.hardwareWrapper}>
+          <div key={idx} className='w-28 sm:w-40 text-center'>
             <motion.div
               whileHover={{ y: -8 }}
-              className={styles.hardware} 
+              className='w-28 sm:w-40 h-28 sm:h-40 text-center rounded-full hover:shadow-glow transition-shadow duration-150 ease-in-out cursor-pointer'
               onClick={() => toggleModal(name, quantity, image, category, description, datasheet)}
             >
               <Image
                 alt={'Image of ' + name}
                 src={image}
                 objectFit='contain'
-                className={styles.image}
+                className='rounded-full'
               />
             </motion.div>
-            <div className={styles.name}>
+            <div className='mt-3 text-lg'>
               <b>{name}</b> {quantity > 1 && ('(x' + quantity + ')')}
             </div>
           </div>
@@ -424,20 +422,20 @@ export default function HardwareAccordion() {
         xl={false}
       >
         {audioVisualAddon.map(({ name, quantity, image, category, description, datasheet }, idx) => 
-          <div key={idx} className={styles.hardwareWrapper}>
+          <div key={idx} className='w-28 sm:w-40 text-center'>
             <motion.div
               whileHover={{ y: -8 }}
-              className={styles.hardware} 
+              className='w-28 sm:w-40 h-28 sm:h-40 text-center rounded-full hover:shadow-glow transition-shadow duration-150 ease-in-out cursor-pointer'
               onClick={() => toggleModal(name, quantity, image, category, description, datasheet)}
             >
               <Image
                 alt={'Image of ' + name}
                 src={image}
                 objectFit='contain'
-                className={styles.image}
+                className='rounded-full'
               />
             </motion.div>
-            <div className={styles.name}>
+            <div className='mt-3 text-lg'>
               <b>{name}</b> {quantity > 1 && ('(x' + quantity + ')')}
             </div>
           </div>
@@ -449,20 +447,20 @@ export default function HardwareAccordion() {
         xl={false}
       >
         {tiBox.map(({ name, quantity, image, category, description, datasheet }, idx) => 
-          <div key={idx} className={styles.hardwareWrapper}>
+          <div key={idx} className='w-28 sm:w-40 text-center'>
             <motion.div
               whileHover={{ y: -8 }}
-              className={styles.hardware} 
+              className='w-28 sm:w-40 h-28 sm:h-40 text-center rounded-full hover:shadow-glow transition-shadow duration-150 ease-in-out cursor-pointer'
               onClick={() => toggleModal(name, quantity, image, category, description, datasheet)}
             >
               <Image
                 alt={'Image of ' + name}
                 src={image}
                 objectFit='contain'
-                className={styles.image}
+                className='rounded-full'
               />
             </motion.div>
-            <div className={styles.name}>
+            <div className='mt-3 text-lg'>
               <b>{name}</b> {quantity > 1 && ('(x' + quantity + ')')}
             </div>
           </div>
