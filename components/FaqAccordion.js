@@ -94,7 +94,7 @@ export default function FaqAccordion() {
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.995 }}
           className={
-            'flex justify-center items-center w-full sm:w-96 px-6 py-2.5 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md hover:bg-accent font-bold text-xl hover:text-main-500 uppercase '
+            'flex justify-center items-center w-full sm:w-96 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md hover:bg-accent font-bold text-xl hover:text-main-500 uppercase '
             + (selected === 'General' ? 'bg-accent text-main-500' : 'bg-main-500 text-accent')
           }
           onClick={() => setSelected('General')}
@@ -106,7 +106,7 @@ export default function FaqAccordion() {
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.995 }}
           className={
-            'flex justify-center items-center w-full sm:w-96 px-6 py-2.5 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md hover:bg-accent font-bold text-xl hover:text-main-500 uppercase '
+            'flex justify-center items-center w-full sm:w-96 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md hover:bg-accent font-bold text-xl hover:text-main-500 uppercase '
             + (selected === 'Participation' ? 'bg-accent text-main-500' : 'bg-main-500 text-accent')
           }
           onClick={() => setSelected('Participation')}
@@ -118,7 +118,7 @@ export default function FaqAccordion() {
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.995 }}
           className={
-            'flex justify-center items-center w-full sm:w-96 px-6 py-2.5 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md hover:bg-accent font-bold text-xl hover:text-main-500 uppercase '
+            'flex justify-center items-center w-full sm:w-96 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md hover:bg-accent font-bold text-xl hover:text-main-500 uppercase '
             + (selected === 'Projects' ? 'bg-accent text-main-500' : 'bg-main-500 text-accent')
           }
           onClick={() => setSelected('Projects')}
