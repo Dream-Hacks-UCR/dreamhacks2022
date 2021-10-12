@@ -7,8 +7,6 @@ import { motion } from 'framer-motion'
 import ThetaTau from '../public/assets/orgs/ThetaTau.png'
 import IEEE from '../public/assets/orgs/IEEE.png'
 
-import styles from '../styles/Index.module.css'
-
 export default function About() {
   const sections = [
     {
