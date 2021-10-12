@@ -3,7 +3,6 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import { Toaster } from 'react-hot-toast'
 
-import styles from '../styles/Index.module.css'
 import '../styles/globals.css'
 import 'tailwindcss/tailwind.css'
 
@@ -12,7 +11,7 @@ export default function MyApp({ Component, pageProps }) {
     <Provider session={pageProps.session}>
       <Toaster />
       <Nav />
-      <div className={styles.flexBody}>
+      <div className='flex flex-col min-h-screen'>
         <Component {...pageProps} />
         <Footer />
       </div>

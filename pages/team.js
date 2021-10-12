@@ -1,3 +1,6 @@
+import Container from '../components/Container'
+import Wrapper from '../components/Wrapper'
+import Wave from '../components/Wave'
 import Card from '../components/Card'
 import styles from '../styles/Index.module.css'
 
@@ -56,22 +59,21 @@ export default function Team() {
   ]
   
   return (
-    <section className={`${styles.container} ${styles.team}`}>
-      <div className={styles.teamWave}>
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className={styles.shapeFill} />
-        </svg>
-      </div>
-      <div className={styles.wrapper}>
-        <h1>
+    <Container color='bg-main-500'>
+      <Wave
+        waveClass={styles.teamWave}
+        fill={styles.shapeFill}
+      />
+      <Wrapper>
+        <h1 className='text-center font-bold text-6xl text-primary'>
           our team
         </h1>
-        <p>
+        <p className='my-4 text-center text-xl text-secondary'>
           The ones behind organizing this hackathon!
         </p>
         <div className='flex flex-wrap justify-center gap-y-4'>
           {team.map(({link, name, position}) =>
-            <div className='flex flex-col items-center'>
+            <div className='flex flex-col items-center text-sm md:text-base'>
               <Card
                 link={link}
                 name={name}
@@ -82,7 +84,7 @@ export default function Team() {
             </div>
           )}
         </div>
-      </div>
-    </section>
+      </Wrapper>
+    </Container>
   )
 }
