@@ -1,20 +1,21 @@
+import Container from '../components/Container'
+import Wrapper from '../components/Wrapper'
 import Link from 'next/link'
-
 import FaqAccordion from '../components/FaqAccordion'
-
-import styles from '../styles/Index.module.css'
 
 export default function Faq() {
   return (
-    <section className={`${styles.container} ${styles.faq}`}>
-      <div className={styles.wrapper}>
-        <h1>any questions?</h1>
-        <p>
+    <Container color='bg-main-400'>
+      <Wrapper>
+        <h1 className='text-center font-bold text-6xl text-primary'>
+          any questions?
+        </h1>
+        <p className='my-4 text-center text-xl text-secondary'>
           Still can&apos;t find an answer to your question? 
-          Feel free to ask at <Link passHref href='mailto:lotushacksucr@gmail.com'><span className={styles.link}>lotushacksucr@gmail.com</span></Link>.
+          Feel free to ask at <Link passHref href='mailto:lotushacksucr@gmail.com'><span className='font-semibold text-accent hover:text-accent-dark cursor-pointer'>lotushacksucr@gmail.com</span></Link>.
         </p>
         <FaqAccordion />
-      </div>
-    </section>
+      </Wrapper>
+    </Container>
   )
 }

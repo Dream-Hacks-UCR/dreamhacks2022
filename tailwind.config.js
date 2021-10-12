@@ -23,6 +23,9 @@ module.exports = {
         'screen-50': '50vh',
         'inherit': 'inherit',
       },
+      maxHeight:  {
+        '60': '15rem',
+      },
       borderWidth: {
         '3': '3px',
       },
