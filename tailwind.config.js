@@ -13,6 +13,17 @@ module.exports = {
     fontFamily: {
       sans: ['Urbanist', 'sans-serif'],
     },
+    fill: {
+      main: {
+        '100': '#324a7b',
+        '200': '#1c2e52',
+        '300': '#1a2844',
+        '400': '#14223f',
+        '500': '#0d1a3a',
+        '600': '#061434',
+        '700': '#000e2d',
+      },
+    },
     extend: {
       zIndex: {
         60: 60,

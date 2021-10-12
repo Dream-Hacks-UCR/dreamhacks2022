@@ -63,7 +63,7 @@ export default function Team() {
     <Container color='bg-main-500'>
       <Wave
         waveClass={styles.teamWave}
-        fill={styles.shapeFill}
+        fill='fill-main-500'
       />
       <Wrapper>
         <h1 className='text-center font-bold text-6xl text-primary'>

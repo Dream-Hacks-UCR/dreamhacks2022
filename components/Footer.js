@@ -16,7 +16,7 @@ export default function Footer() {
     <div className='relative flex justify-center w-full py-12 bg-main-600'>
       <Wave
         waveClass={styles.footerWave}
-        fill={styles.shapeFill}
+        fill='fill-main-600'
       />
       <div className='flex flex-col-reverse sm:flex-row gap-3 sm:gap-0 justify-between items-center text-center w-full max-w-272 mx-4 font-semibold text-lg'>
         <div>

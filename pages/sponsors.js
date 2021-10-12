@@ -1,3 +1,6 @@
+import Container from '../components/Container'
+import Wrapper from '../components/Wrapper'
+import Wave from '../components/Wave'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
@@ -5,15 +8,16 @@ import styles from '../styles/Wave.module.css'
 
 export default function Sponsors() {
   return (
-    <section className={`${styles.container} ${styles.sponsors}`}>
-      <div className={styles.sponsorsWave}>
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className={styles.shapeFill} />
-        </svg>
-      </div>
-      <div className={styles.wrapper}>
-        <h1>sponsors</h1>
-        <p>
+    <Container color='bg-main-400'>
+      <Wave
+        waveClass={styles.sponsorsWave}
+        fill='fill-main-400'
+      />
+      <Wrapper>
+        <h1 className='text-center font-bold text-6xl text-primary'>
+          sponsors
+        </h1>
+        <p className='my-4 text-xl text-secondary'>
           Thanks to all of our sponsors who made this hackathon possible!
         </p>
         <Link
@@ -24,17 +28,16 @@ export default function Sponsors() {
           <motion.button 
             whileHover={{ scale: 1.03}} 
             whileTap={{ scale: 0.995 }}
-            className={styles.secondarybutton}
+            className='flex justify-center items-center w-full sm:w-60 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-accent hover:bg-accent-dark font-bold text-xl text-main-500 lowercase'
           >
             Sponsor Us
           </motion.button>
         </Link>
-      </div>
-      <div className={styles.sponsorsWave2}>
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-          <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" className={styles.shapeFill} />
-        </svg>
-      </div>
-    </section>
+      </Wrapper>
+      <Wave
+        waveClass={styles.sponsorsWave2}
+        fill='fill-main-400'
+      />
+    </Container>
   )
 }

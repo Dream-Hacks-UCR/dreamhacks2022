@@ -105,16 +105,11 @@
   line-height: 0;
   transform: rotate(180deg);
 }
-
 .teamWave svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
   height: 86px;
-}
-
-.teamWave .shapeFill {
-  fill: var(--team);
 }
 
 .footerWave {
@@ -126,14 +121,9 @@
   line-height: 0;
   transform: rotate(180deg);
 }
-
 .footerWave svg {
   position: relative;
   display: block;
   width: calc(203% + 1.3px);
   height: 93px;
-}
-
-.footerWave .shapeFill {
-  fill: var(--footer);
 }

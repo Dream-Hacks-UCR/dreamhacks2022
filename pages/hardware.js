@@ -10,7 +10,7 @@ export default function Hardware() {
     <Container color='bg-main-500'>
       <Wave
         waveClass={styles.hardwareWave}
-        fill={styles.shapeFill}
+        fill='fill-main-500'
       />
       <Wrapper>
         <h1 className='text-center font-bold text-6xl text-primary'>
@@ -23,7 +23,7 @@ export default function Hardware() {
       </Wrapper>
       <Wave
         waveClass={styles.hardwareWave2}
-        fill={styles.shapeFill}
+        fill='fill-main-500'
       />
     </Container>
   )

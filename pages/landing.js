@@ -132,7 +132,7 @@ export default function Landing() {
       </div>
       <Wave
         waveClass={styles.landingWave}
-        fill={styles.shapeFill}
+        fill='fill-main-700'
       />
     </section>
   )
