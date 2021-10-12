@@ -8,8 +8,6 @@ import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
 import { FadeLoader } from 'react-spinners'
 
-import styles from '../styles/Form.module.css'
-
 export default function SignIn({ csrfToken }) {
   const [session, loading] = useSession()
   const router = useRouter()
@@ -45,7 +43,7 @@ export default function SignIn({ csrfToken }) {
   if (loading) {
     return(
       <Layout>
-        <div className={styles.wrapper}>
+        <div className='flex flex-col items-center text-center w-full max-w-272 my-24 px-4'>
           <FadeLoader color='#95a6da' width={5} height={12} />
         </div>
       </Layout>
@@ -56,25 +54,23 @@ export default function SignIn({ csrfToken }) {
     <>
       <Head>
         <title>Lotus Hacks | Sign In</title>
-        <meta name="description" content="Lotus Hacks, a hardware hackathon hosted at University of California, Riverside." />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
-        <div className={styles.wrapper}>
-          <h1 className={styles.title}>
+        <div className='flex flex-col justify-center items-center w-full max-w-272 mt-24 px-4'>
+          <h1 className='text-center font-bold text-6xl text-primary'>
             Sign In
           </h1>
-          <p className={styles.body}>
+          <p className='w-full sm:w-96 my-4 text-xl text-secondary'>
             Sign in to Lotus Hacks to access more. Requires no password.
           </p>
           <form 
             method='post' 
             action='/api/auth/signin/email' 
-            className={styles.form}
+            className='flex flex-col items-center w-full'
           >
             <input name='csrfToken' type='hidden' defaultValue={csrfToken}/>
-            <div className={styles.inputWrapper}>
-              <div className={styles.label}>
+            <div className='w-full sm:w-96 mb-3'>
+              <div className='w-full text-left mb-1.5 font-semibold text-accent'>
                 Email Address
               </div>
               <input 
@@ -83,7 +79,7 @@ export default function SignIn({ csrfToken }) {
                 name='email'
                 value={email}
                 onChange={handleChangeEmail}
-                className={styles.input}
+                className='w-full px-4 py-3 text-xl border-2 border-accent rounded-md bg-main-700 text-primary'
               />
             </div>
             <motion.button
@@ -91,7 +87,7 @@ export default function SignIn({ csrfToken }) {
               type='submit'
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.995 }} 
-              className={styles.primarybutton}
+              className='flex justify-center items-center w-full sm:w-96 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-accent hover:bg-accent-dark font-bold text-xl text-main-500'
               onClick={() => verifyEmail()}
             >
               Sign In
@@ -105,7 +101,7 @@ export default function SignIn({ csrfToken }) {
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.995 }}
-              className={styles.secondarybutton}
+              className='flex justify-center items-center w-full sm:w-96 mt-6 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-main-500 hover:bg-main-400 font-bold text-xl text-accent'
             >
               Go Back to Homepage
             </motion.button>

@@ -8,9 +8,6 @@ import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
 import { FadeLoader } from 'react-spinners'
 
-import styles from '../styles/Index.module.css'
-import formStyles from '../styles/Form.module.css'
-
 export default function VerifyRequest() {
   const [session, loading] = useSession()
   const router = useRouter()
@@ -27,7 +24,7 @@ export default function VerifyRequest() {
   if (loading) {
     return(
       <Layout>
-        <div className={styles.wrapper}>
+        <div className='flex flex-col items-center text-center w-full max-w-272 my-24 px-4'>
           <FadeLoader color='#95a6da' width={5} height={12} />
         </div>
       </Layout>
@@ -40,9 +37,11 @@ export default function VerifyRequest() {
         <title>Lotus Hacks | Verify Sign In Request</title>
       </Head>
       <Layout>
-        <div className={formStyles.wrapper}>
-          <h1>Check Your Email Address</h1>
-          <p>
+        <div className='flex flex-col justify-center items-center w-full max-w-272 mt-24 px-4'>
+          <h1 className='text-center font-bold text-6xl text-primary'>
+            Check Your Email Address
+          </h1>
+          <p className='my-4 text-xl text-secondary'>
             Didn't receive an email? Try signing in again and double checking when you type your email.
           </p>
           <Link alt='Homepage'
@@ -52,7 +51,7 @@ export default function VerifyRequest() {
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.995 }}
-              className={styles.secondarybutton}
+              className='flex justify-center items-center w-full sm:w-96 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-main-500 hover:bg-main-400 font-bold text-xl text-accent'
             >
               Go Back to Homepage
             </motion.button>
