@@ -56,7 +56,7 @@ export default function SignIn({ csrfToken }) {
         <title>Lotus Hacks | Sign In</title>
       </Head>
       <Layout>
-        <div className='flex flex-col justify-center items-center w-full max-w-272 mt-24 px-4'>
+        <div className='flex flex-col justify-center items-center w-full max-w-272 my-24 px-4'>
           <h1 className='text-center font-bold text-6xl text-primary'>
             Sign In
           </h1>
