@@ -8,7 +8,7 @@ import { signIn, useSession } from 'next-auth/client'
 import Image from 'next/image'
 import Logo from '../public/assets/logo.png'
 
-import styles from '../styles/Index.module.css'
+import styles from '../styles/Wave.module.css'
 
 export default function Landing() {
   const [session] = useSession()

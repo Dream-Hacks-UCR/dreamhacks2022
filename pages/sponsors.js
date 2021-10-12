@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
-import styles from '../styles/Index.module.css'
+import styles from '../styles/Wave.module.css'
 
 export default function Sponsors() {
   return (
