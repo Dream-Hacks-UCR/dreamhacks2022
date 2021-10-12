@@ -6,11 +6,8 @@ import { motion } from 'framer-motion'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import { signIn, signOut, useSession } from 'next-auth/client'
 import Image from 'next/image'
-
-import Logo from '../public/assets/logo.png'
 import { HiMenuAlt4, HiOutlineX } from 'react-icons/hi'
-
-import styles from '../styles/Nav.module.css'
+import Logo from '../public/assets/logo.png'
 
 export default function Nav() {
   const [session] = useSession()
@@ -41,25 +38,31 @@ export default function Nav() {
   return (
     <div
       className={
-        open 
-        ? `${styles.container} ${styles.open}`
-        : `${styles.container}`
+        'z-100 fixed top-0 flex justify-center text-center w-full py-6 backdrop-filter backdrop-blur-lg overflow-hidden '
+        + (open ? 'max-h-screen bg-main-700' : 'max-h-18 bg-nav')
       }
     >
-      <div className={styles.wrapper}>
-        <div className={styles.navHeader}>
-          <HiMenuAlt4 className={styles.closeMenu} onClick={() => toggleOpen()} />
-          <HiOutlineX className={styles.openMenu} onClick={() => toggleOpen()} />
+      <div className='flex flex-col md:flex-row items-center w-full md:w-272 mx-4 md:mx-0 font-bold text-lg lowercase'>
+        <div className='flex justify-between w-full md:w-auto'>
+          <div
+            className='flex md:hidden text-3xl cursor-pointer'
+            onClick={() => toggleOpen()}
+          >
+            { open
+              ? <HiOutlineX />
+              : <HiMenuAlt4 />
+            }
+          </div>
           {
             router.pathname === '/'
             ? <NavLink
-                activeClass="active"
+                activeClass=''
                 to="Home"
                 spy={true}
                 smooth={true}
                 offset={-90}
                 duration={500}
-                className={styles.link}
+                className='cursor-pointer'
                 onClick={() => setOpen(false)}
               >
                 <Image
@@ -70,7 +73,10 @@ export default function Nav() {
                 />
               </NavLink>
             : <Link passHref href='/'>
-                <span className={styles.link} onClick={() => setOpen(false)}>
+                <span
+                  className='cursor-pointer'
+                  onClick={() => setOpen(false)}
+                >
                   <Image
                     src={Logo}
                     width={35}
@@ -80,94 +86,105 @@ export default function Nav() {
                 </span>
               </Link>
           }
-          <HiMenuAlt4 className={`${styles.closeMenu} ${styles.hidden}`} />
-          <HiOutlineX className={`${styles.openMenu} ${styles.hidden}`} />
+          {/* filler icons */}
+          <div
+            className='invisible flex md:hidden text-3xl cursor-pointer'
+            onClick={() => toggleOpen()}
+          >
+            { open
+              ? <HiOutlineX />
+              : <HiMenuAlt4 />
+            }
+          </div>
         </div>
-        <div id='nav' className={styles.tabs}>
+        <div id='nav' className='flex flex-col md:flex-row justify-around h-screen md:h-auto md:gap-6 ml-0 md:ml-6 py-40 md:py-0'>
           {
             router.pathname === '/'
             ? <>
                 <NavLink
-                  activeClass="active"
+                  activeClass='text-accent'
                   to="Home"
                   spy={true}
                   smooth={true}
                   offset={-90}
                   duration={500}
-                  className={`${styles.link} ${styles.home}`}
+                  className='block md:hidden hover:text-accent cursor-pointer'
                   onClick={() => setOpen(false)}
                 >
                   Home
                 </NavLink>
                 <NavLink
-                  activeClass="active"
+                  activeClass='text-accent'
                   to="About"
                   spy={true}
                   smooth={true}
                   offset={-90}
                   duration={500}
-                  className={styles.link}
+                  className='hover:text-accent cursor-pointer'
                   onClick={() => setOpen(false)}
                 >
                   About
                 </NavLink>
                 <NavLink
-                  activeClass="active"
+                  activeClass='text-accent'
                   to="Hardware"
                   spy={true}
                   smooth={true}
                   offset={-90}
                   duration={500}
-                  className={styles.link}
+                  className='hover:text-accent cursor-pointer'
                   onClick={() => setOpen(false)}
                 >
                   Hardware
                 </NavLink>
                 <NavLink
-                  activeClass="active"
+                  activeClass='text-accent'
                   to="Faq"
                   spy={true}
                   smooth={true}
                   offset={-90}
                   duration={500}
-                  className={styles.link}
+                  className='hover:text-accent cursor-pointer'
                   onClick={() => setOpen(false)}
                 >
                   FAQ 
                 </NavLink>
                 {/* <NavLink
-                  activeClass="active"
+                  activeClass='text-accent'
                   to="Sponsors"
                   spy={true}
                   smooth={true}
                   offset={-90}
                   duration={500}
-                  className={styles.link}
+                  className='hover:text-accent cursor-pointer'
                   onClick={() => setOpen(false)}
                 >
                   Sponsors
                 </NavLink> */}
                 <NavLink
-                  activeClass="active"
+                  activeClass='text-accent'
                   to="Team"
                   spy={true}
                   smooth={true}
                   offset={-90}
                   duration={500}
-                  className={styles.link}
+                  className='hover:text-accent cursor-pointer'
                   onClick={() => setOpen(false)}
                 >
                   Team
                 </NavLink>  
               </>
             : <Link passHref href='/'>
-                <span className={styles.link} onClick={() => setOpen(false)}>
+                <span
+                  className='hover:text-accent cursor-pointer'
+                  onClick={() => setOpen(false)}
+                >
                   Home
                 </span>
               </Link>
           }
         </div>
-        {/* <div className={styles.actions}>
+        {/* <div>
           {
             session 
             ?
@@ -180,7 +197,7 @@ export default function Nav() {
                   <motion.div 
                     whileHover={{ scale: 1.05}} 
                     whileTap={{ scale: 0.997 }}
-                    className={styles.primarybutton}
+                    className='flex justify-center items-center w-full sm:w-60 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-accent hover:bg-accent-dark font-bold text-xl text-main-500 lowercase'
                   >
                     Check In
                   </motion.div>
@@ -188,7 +205,7 @@ export default function Nav() {
                 <motion.div 
                   whileHover={{ scale: 1.05}} 
                   whileTap={{ scale: 0.997 }}
-                  className={styles.secondarybutton}
+                  className='flex justify-center items-center w-full sm:w-60 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-main-500 hover:bg-main-400 font-bold text-xl text-accent lowercase'
                   onClick={signOut}
                 >
                   Sign Out
@@ -198,7 +215,7 @@ export default function Nav() {
               <motion.div 
                 whileHover={{ scale: 1.05}} 
                 whileTap={{ scale: 0.997 }}
-                className={styles.primarybutton}
+                className='flex justify-center items-center w-full sm:w-60 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-accent hover:bg-accent-dark font-bold text-xl text-main-500 lowercase'
                 onClick={signIn}
               >
                 Sign In

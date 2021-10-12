@@ -45,6 +45,7 @@ module.exports = {
         'inherit': 'inherit',
       },
       maxHeight:  {
+        '18': '4.5rem',
         '60': '15rem',
         '200': '50rem',
         '280': '70rem',
@@ -76,9 +77,7 @@ module.exports = {
           dark: '#2c56e1',
           darker: '#1f47cc',
         },
-        nav: {
-          moz: '#000e2dc4',
-        },
+        nav: '#000e2d46',
         overlay: '#1a2844b3',
       }
     },
