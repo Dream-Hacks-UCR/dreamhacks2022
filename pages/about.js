@@ -65,7 +65,7 @@ export default function About() {
         <div className='flex gap-12 mt-8'>
           <Link passHref href='https://www.thetatauucr.com/'>
             <motion.div 
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.997 }}
               className='cursor-pointer'
             >
@@ -80,7 +80,7 @@ export default function About() {
           </Link>
           <Link passHref href='https://ieee.ee.ucr.edu/'>
             <motion.div 
-              whileHover={{ scale: 1.1 }}
+              whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.997 }}
               className='cursor-pointer'
             >

@@ -52,85 +52,6 @@
   cursor: pointer;
 }
 
-.flexBody {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-.emailWrapper {
-  font-size: 1.1rem;
-}
-
-/* SECTION STYLES */
-.landing {
-  position: relative;
-  height: 100vh;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: var(--landing);
-}
-
-.countdownWrapper {
-  margin-bottom: 2rem;
-}
-
-.about {
-  position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: var(--about);
-}
-
-.about > .wrapper > p {
-  text-align: left;
-}
-
-.organizers {
-  display: flex;
-  gap: 50px;
-  margin-top: 2rem;
-}
-
-.organizers > div:hover {
-  cursor: pointer;
-}
-
-.hardware {
-  position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: var(--hardware);
-}
-
-.faq {
-  padding-top: 5rem;
-  padding-bottom: 10rem;
-  background-color: var(--faq);
-}
-
-.sponsors {
-  position: relative;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  background-color: var(--sponsors);
-}
-
-.sponsors > .wrapper > .primarybutton,
-.sponsors > .wrapper > .secondarybutton {
-  align-self: center;
-}
-.sponsors > .wrapper > .secondarybutton:hover {
-  background: var(--dark-mid);
-}
-
-.team {
-  position: relative;
-  padding-top: 5rem;
-  padding-bottom: 10rem;
-  background-color: var(--team);
-}
-
 /* BUTTON STYLES */
 .buttonWrapper {
   display: flex;
@@ -152,76 +73,6 @@
 }
 .secondarybutton:hover {
   background: var(--dark-light);
-}
-
-.applyWrapper > button {
-  color: var(--darkest);
-}
-
-/* INPUT STYLES */
-.applyWrapper {
-  display: flex;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  text-transform: lowercase;
-}
-
-.applyWrapper input,
-.applyWrapper input:focus {
-  border-top-left-radius: 1.5rem;
-}
-
-.applyWrapper > button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 10rem;
-  padding: 0.7rem 1.2rem;
-  border-radius: 0 0.3rem 1.5rem 0;
-  background: var(--accent);
-  font-weight: 600;
-}
-
-.applyWrapper > button:hover {
-  border-radius: 0.3rem;
-  border-bottom-right-radius: 1.5rem;
-  background: var(--accent-dark);
-  cursor: pointer;
-}
-
-.input {
-  width: 30rem;
-  padding: 0.7rem 1rem;
-  font-size: 1.2rem;
-  border: 2px solid var(--accent);
-  border-radius: 0.3rem 0 0 0.3rem;
-  background: var(--darkest);
-  font-family: 'Urbanist', sans-serif;
-  color: var(--font-primary);
-}
-
-.input:focus {
-  outline: none;
-  border: 2px solid var(--accent-dark);
-  border-radius: 0.3rem 0 0 0.3rem;
-}
-
-/* TEAM STYLES */
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem 0;
-}
-
-.cardWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.leadName {
-  font-weight: 700;
 }
 
 /* WAVE STYLES */
@@ -345,120 +196,20 @@
 }
 
 /* RESPONSIVE STYLES */
-@media (max-width: 375px) {
-  .heading {
-    font-size: 2.2rem;
-  }
-  .lotus {
-    width: 42px;
-    height: 35px;
-  }
-  .subheading {
-    font-size: 1.1rem;
-  }
-  .leadName,
-  .leadPosition {
-    font-size: 0.9rem;
-  }
-}
-
-@media (min-width: 375px) and (max-width: 450px) {
-  .heading {
-    font-size: 2.7rem;
-  }
-  .lotus {
-    width: 54px;
-    height: 45px;
-  }
-  .subheading {
-    font-size: 1.3rem;
-  }
-}
-
 @media (max-width: 540px) {
   .buttonWrapper {
     width: 100%;
     flex-direction: column;
   }
   .primarybutton,
-  .secondarybutton,
-  .input {
+  .secondarybutton{
     width: 100%;
-  }
-}
-
-@media (min-width: 450px) and (max-width: 640px) {
-  .heading {
-    font-size: 3.4rem;
-  }
-  .lotus {
-    width: 60px;
-    height: 50px;
-  }
-  .subheading {
-    font-size: 1.6rem;
-  }
-}
-
-@media (min-width: 640px) and (max-width: 768px) {
-  .heading {
-    font-size: 5rem;
-  }
-  .subheading {
-    font-size: 2.4rem;
-  }
-}
-
-@media (max-width: 720px) {
-  .applyWrapper > button {
-    font-size: 1.3rem;
-  }
-  .input {
-    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 768px) {
-  .landing {
-    align-items: center;
-  }
   .primarybutton,
   .secondarybutton {
     align-self: center;
-  }
-  .applyWrapper {
-    flex-direction: column;
-    align-items: center;
-  }
-  .applyWrapper > button,
-  .input {
-    border-radius: 0.3rem;
-  }
-  .applyWrapper > button {
-    margin-top: 0.5rem;
-  }
-}
-
-@media (max-width: 1280px) {
-  .wrapper {
-    width: 100%;
-  }
-  .landing {
-    display: flex;
-    flex-direction: column;
-    width: 76rem;
-    min-height: inherit;
-  }
-  .carouselWrapper {
-    display: none; 
-  }
-  .landing,
-  .about {
-    display: flex;
-    flex-direction: column;
-  }
-  .landing,
-  .about {
-    width: 100%;
   }
 }

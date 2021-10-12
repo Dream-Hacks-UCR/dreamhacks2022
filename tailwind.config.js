@@ -2,6 +2,14 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    screens: {
+      'xs': '420px',
+      'sm': '640px',
+      'md': '768px',
+      'lg': '1024px',
+      'xl': '1280px',
+      '2xl': '1536px',
+    },
     extend: {
       zIndex: {
         60: 60,
@@ -13,6 +21,7 @@ module.exports = {
         120: 120,
       },
       width: {
+        120: '30rem',
         180: '45rem',
         240: '60rem',
         272: '68rem',
@@ -74,7 +83,11 @@ module.exports = {
       }
     },
   },
-  variants: {},
+  variants: {
+    extend: {
+      borderRadius: ['hover', 'focus'],
+    },
+  },
   plugins: [
     require('@tailwindcss/forms'),
   ],
