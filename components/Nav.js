@@ -42,7 +42,7 @@ export default function Nav() {
         + (open ? 'max-h-screen bg-main-700' : 'max-h-18 bg-nav')
       }
     >
-      <div className='flex flex-col md:flex-row items-center w-full md:w-272 mx-4 md:mx-0 font-bold text-lg lowercase'>
+      <div className='flex flex-col md:flex-row items-center w-full md:w-272 mx-4 font-bold text-lg lowercase'>
         <div className='flex justify-between w-full md:w-auto'>
           <div
             className='flex md:hidden text-3xl cursor-pointer'
