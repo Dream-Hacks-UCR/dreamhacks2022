@@ -63,20 +63,22 @@ export default function Team() {
         </svg>
       </div>
       <div className={styles.wrapper}>
-        <h1>our team</h1>
+        <h1>
+          our team
+        </h1>
         <p>
           The ones behind organizing this hackathon!
         </p>
-        <div className={styles.grid}>
+        <div className='flex flex-wrap justify-center gap-y-4'>
           {team.map(({link, name, position}) =>
-            <div className={styles.cardWrapper}>
+            <div className='flex flex-col items-center'>
               <Card
                 link={link}
                 name={name}
                 position={position}
               />
-              <div className={styles.leadName}>{name}</div>
-              <div className={styles.leadPosition}>{position}</div>
+              <div className='font-bold'>{name}</div>
+              <div>{position}</div>
             </div>
           )}
         </div>

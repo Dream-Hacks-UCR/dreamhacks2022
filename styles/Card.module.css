@@ -20,11 +20,6 @@
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
-/* .flipcard:hover .flipcardInner {
-  transform: rotateY(-180deg);
-} */
-
 /* Position the front and back side */
 .flipcardFront, .flipcardBack {
   position: absolute;
@@ -38,13 +33,6 @@
 /* Style the front side (fallback if image is missing) */
 .flipcardFront {
   background: var(--font-secondary);
-}
-
-/* Style the back side */
-.flipcardBack {
-  padding: 0.5rem;
-  background: var(--font-secondary);
-  transform: rotateY(-180deg);
 }
 
 /* RESPONSIVE STYLES */

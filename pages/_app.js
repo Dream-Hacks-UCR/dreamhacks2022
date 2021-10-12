@@ -5,6 +5,7 @@ import { Toaster } from 'react-hot-toast'
 
 import styles from '../styles/Index.module.css'
 import '../styles/globals.css'
+import 'tailwindcss/tailwind.css'
 
 export default function MyApp({ Component, pageProps }) {
   return (
