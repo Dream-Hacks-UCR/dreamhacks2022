@@ -10,6 +10,9 @@ module.exports = {
       'xl': '1280px',
       '2xl': '1536px',
     },
+    fontFamily: {
+      sans: ['Urbanist', 'sans-serif'],
+    },
     extend: {
       zIndex: {
         60: 60,
@@ -80,7 +83,10 @@ module.exports = {
         },
         nav: '#000e2d46',
         overlay: '#1a2844b3',
-      }
+      },
+      overflow: {
+        'inherit': 'inherit',
+      },
     },
   },
   variants: {

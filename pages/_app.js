@@ -3,7 +3,6 @@ import Nav from '../components/Nav'
 import Footer from '../components/Footer'
 import { Toaster } from 'react-hot-toast'
 
-import '../styles/globals.css'
 import 'tailwindcss/tailwind.css'
 
 export default function MyApp({ Component, pageProps }) {
