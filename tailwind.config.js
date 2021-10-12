@@ -9,17 +9,29 @@ module.exports = {
         80: 80,
         90: 90,
         100: 100,
+        110: 110,
+        120: 120,
       },
       width: {
+        180: '45rem',
+        240: '60rem',
         272: '68rem',
+        '95/100': '95%',
+      },
+      minWidth:  {
+        '40': '10rem',
+        '60': '15rem',
       },
       maxWidth: {
         272: '68rem',
       },
       height: {
         46: '11.5rem',
+        240: '60rem',
       },
       minHeight:  {
+        '40': '10rem',
+        '60': '15rem',
         'screen-50': '50vh',
         'inherit': 'inherit',
       },
@@ -57,7 +69,8 @@ module.exports = {
         },
         nav: {
           moz: '#000e2dc4',
-        }
+        },
+        overlay: '#1a2844b3',
       }
     },
   },

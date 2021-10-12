@@ -2,45 +2,53 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { GoX } from 'react-icons/go'
 
-import styles from '../styles/Modal.module.css'
-
 export default function Modal( props ) {
   return (
     <>
-      <div className={props.show ? `${styles.modal} ${styles.show}` : `${styles.modal}`}>
+      <div
+        className={
+          'z-120 fixed top-1/2 left-1/2 w-95/100 md:w-180 rounded-lg bg-main-700 transform -translate-x-1/2 -translate-y-1/2 transition-opacity duration-100 '
+          + (props.show ? 'opacity-100 visible' : 'opacity-0 invisible')
+        }
+      >
         <div>
-          <div className={styles.header}>
-            <GoX className={styles.closeButton} onClick={props.handler}/>
+          <div className='flex justify-end items-center p-4 pb-0'>
+            <GoX
+              className='text-3xl text-main-200 hover:text-main-100 cursor-pointer'
+              onClick={props.handler}
+            />
           </div>
-          <div className={styles.body}>
-            <div className={styles.imageWrapper}>
+          <div className='flex flex-col md:flex-row gap-4 md:gap-6 items-center px-6 md:pt-4 pb-2 md:pb-6'>
+            <div className='flex items-center self-center md:self-auto w-40 md:w-60 min-w-40 md:min-w-60 min-h-40 md:min-h-60 h-40 md:h-60'>
               <div>
                 <Image
                   src={props.image}
                   objectFit='contain'
-                  className={styles.image}
+                  className='rounded-full'
                 />
               </div>
             </div>
-            <div className={styles.text}>
-              <h2 className={styles.heading}>{props.name}</h2>
-              <p className={styles.caption}>
+            <div className='flex flex-col gap-2.5 md:gap-4 w-full mb-4 text-base md:text-xl'>
+              <h2 className='font-bold text-lg md:text-2xl text-primary'>
+                {props.name}
+              </h2>
+              <p>
                 <b>Quantity:</b> {props.quantity}
               </p>
-              <p className={styles.caption}>
+              <p>
                 <b>Category:</b> {props.category}
               </p>
-              <p className={styles.caption}>
+              <p>
                 {props.description}
               </p>
               {props.datasheet &&
-                <p className={styles.datasheet}>
+                <p>
                   <Link 
                     alt='Link to datasheet'
                     passHref
                     href={props.datasheet}
                   >
-                    <span className={styles.link}>
+                    <span className='text-accent hover:text-accent-dark cursor-pointer'>
                       <b>Click Here for the Datasheet</b>
                     </span>
                   </Link>
@@ -50,7 +58,13 @@ export default function Modal( props ) {
           </div>
         </div>
       </div>
-      <div className={styles.overlay} onClick={props.handler} />
+      <div
+        className={
+          'z-110 fixed top-0 left-0 w-full h-full bg-overlay backdrop-filter backdrop-blur transition-opacity duration-100 '
+          + (props.show ? 'opacity-100 visible' : 'opacity-0 invisible')
+        }
+        onClick={props.handler}
+      />
     </>
   )
 }

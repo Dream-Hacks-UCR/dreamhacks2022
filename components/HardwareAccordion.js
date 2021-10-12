@@ -385,7 +385,7 @@ export default function HardwareAccordion() {
                 className='rounded-full'
               />
             </motion.div>
-            <div className='mt-3 text-lg'>
+            <div className='mt-3 text-base md:text-base md:text-lg'>
               <b>{name}</b> {quantity > 1 && ('(x' + quantity + ')')}
             </div>
           </div>
@@ -410,7 +410,7 @@ export default function HardwareAccordion() {
                 className='rounded-full'
               />
             </motion.div>
-            <div className='mt-3 text-lg'>
+            <div className='mt-3 text-base md:text-lg'>
               <b>{name}</b> {quantity > 1 && ('(x' + quantity + ')')}
             </div>
           </div>
@@ -435,7 +435,7 @@ export default function HardwareAccordion() {
                 className='rounded-full'
               />
             </motion.div>
-            <div className='mt-3 text-lg'>
+            <div className='mt-3 text-base md:text-lg'>
               <b>{name}</b> {quantity > 1 && ('(x' + quantity + ')')}
             </div>
           </div>
@@ -460,7 +460,7 @@ export default function HardwareAccordion() {
                 className='rounded-full'
               />
             </motion.div>
-            <div className='mt-3 text-lg'>
+            <div className='mt-3 text-base md:text-lg'>
               <b>{name}</b> {quantity > 1 && ('(x' + quantity + ')')}
             </div>
           </div>
