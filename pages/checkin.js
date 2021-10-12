@@ -6,10 +6,7 @@ import { useSession } from 'next-auth/client'
 import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
 import { FadeLoader } from 'react-spinners'
-
 import { IoMdRadioButtonOff, IoMdRadioButtonOn } from 'react-icons/io'
-
-import styles from '../styles/Form.module.css'
 
 export default function CheckIn() {
   const [session, loading] = useSession()
@@ -56,7 +53,7 @@ export default function CheckIn() {
   if (loading) {
     return(
       <Layout>
-        <div className={styles.wrapper}>
+        <div className='flex flex-col items-center text-center w-full max-w-272 my-24 px-4'>
           <FadeLoader color='#95a6da' width={5} height={12} />
         </div>
       </Layout>
@@ -69,94 +66,97 @@ export default function CheckIn() {
         <title>Lotus Hacks | Check In</title>
       </Head>
       <Layout>
-        <div className={styles.wrapper}>
-          <div className={styles.title}>
+        <div className='flex flex-col justify-center items-center w-full max-w-272 min-h-screen my-24 px-4'>
+          <h1 className='text-center font-bold text-6xl text-primary'>
             Check In
-          </div>
-          <div className={styles.body}>
+          </h1>
+          <p className='w-full sm:w-96 my-4 text-xl text-secondary'>
             Check in to register yourself to participate in Dream Hacks.
-          </div>
-          <div className={styles.section}>
-            <div className={styles.subtitle}>
+          </p>
+          <div className='w-full sm:w-96 mb-3'>
+            <h3 className='mb-2 font-bold text-2xl text-secondary'>
               Personal Information
-            </div>
-            <div className={styles.inputWrapper}>
-              <div className={styles.label}>
+            </h3>
+            <div className='w-full sm:w-96 mb-3'>
+              <div className='w-full text-left mb-1.5 font-semibold text-accent'>
                 First Name
               </div>
               <input
                 value={firstName}
                 onChange={handleChangeFirstName}
-                className={`${styles.input}`}
+                className='w-full px-4 py-3 text-xl border-2 border-accent rounded-md bg-main-700 text-primary'
               />
             </div>
-            <div className={styles.inputWrapper}>
-              <div className={styles.label}>
+            <div className='w-full sm:w-96 mb-3'>
+              <div className='w-full text-left mb-1.5 font-semibold text-accent'>
                 Last Name
               </div>
               <input
                 value={lastName}
                 onChange={handleChangeLastName}
-                className={`${styles.input}`}
+                className='w-full px-4 py-3 text-xl border-2 border-accent rounded-md bg-main-700 text-primary'
               />
             </div>
           </div>
-          <div className={styles.section}>
-            <div className={styles.subtitle}>
+          <div className='w-full sm:w-96 mb-3'>
+            <h3 className='mb-2 font-bold text-2xl text-secondary'>
               Demographic Information
-            </div>
-            <div className={styles.inputWrapper}>
-              <div className={styles.label}>
+            </h3>
+            <div className='w-full sm:w-96 mb-3'>
+              <div className='w-full text-left mb-1.5 font-semibold text-accent'>
                 Race
               </div>
               <input
-                className={styles.input}
+                className='w-full px-4 py-3 text-xl border-2 border-accent rounded-md bg-main-700 text-primary'
               />
             </div>
-            <div className={styles.inputWrapper}>
-              <div className={styles.label}>
+            <div className='w-full sm:w-96 mb-3'>
+              <div className='w-full text-left mb-1.5 font-semibold text-accent'>
                 Gender
               </div>
               <input
-                className={styles.input}
+                className='w-full px-4 py-3 text-xl border-2 border-accent rounded-md bg-main-700 text-primary'
               />
             </div>
-            <div className={styles.inputWrapper}>
-              <div className={styles.label}>
+            <div className='w-full sm:w-96 mb-3'>
+              <div className='w-full text-left mb-1.5 font-semibold text-accent'>
                 School
               </div>
               <input
                 value={school}
                 onChange={handleChangeSchool}
-                className={`${styles.input}`}
+                className='w-full px-4 py-3 text-xl border-2 border-accent rounded-md bg-main-700 text-primary'
               />
             </div>
-            <div className={styles.inputWrapper}>
-              <div className={styles.label}>
+            <div className='w-full sm:w-96 mb-3'>
+              <div className='w-full text-left mb-1.5 font-semibold text-accent'>
                 Major
               </div>
               <input
                 value={major}
                 onChange={handleChangeMajor}
-                className={`${styles.input}`}
+                className='w-full px-4 py-3 text-xl border-2 border-accent rounded-md bg-main-700 text-primary'
               />
             </div>
-            <div className={styles.inputWrapper}>
-              <div className={styles.label}>
+            <div className='w-full sm:w-96 mb-3'>
+              <div className='w-full text-left mb-1.5 font-semibold text-accent'>
                 Grade
               </div>
               <input
                 value={grade}
                 onChange={handleChangeGrade}
-                className={`${styles.input}`}
+                className='w-full px-4 py-3 text-xl border-2 border-accent rounded-md bg-main-700 text-primary'
               />
             </div>
-            <div className={styles.inputWrapper}>
-              <div className={styles.label}>
+            <div className='w-full sm:w-96 mb-3'>
+              <div className='w-full text-left mb-1.5 font-semibold text-accent'>
                 First Time Hacker?
               </div>
-              <div className={styles.radioWrapper}>
-                <div className={styles.radio} onClick={() => setFirstTime(true)}>
+              <div className='flex flex-col gap-2 justify-center items-start ml-3'>
+                <div
+                  className='flex justify-center items-center gap-2 cursor-pointer'
+                  onClick={() => setFirstTime(true)}
+                >
                   {
                     firstTime === true
                     ? <IoMdRadioButtonOn />
@@ -164,7 +164,10 @@ export default function CheckIn() {
                   }
                   Yes
                 </div>
-                <div className={styles.radio} onClick={() => setFirstTime(false)}>
+                <div
+                  className='flex justify-center items-center gap-2 cursor-pointer'
+                  onClick={() => setFirstTime(false)}
+                >
                   {
                     firstTime !== true
                     ? <IoMdRadioButtonOn />
@@ -178,7 +181,7 @@ export default function CheckIn() {
           <motion.div
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.995 }}
-            className={styles.primarybutton}
+            className='flex justify-center items-center w-full sm:w-96 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-accent hover:bg-accent-dark font-bold text-xl text-main-500'
             onClick={() => checkSubmission()}
           >
             Submit
