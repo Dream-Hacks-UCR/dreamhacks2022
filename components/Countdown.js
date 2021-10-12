@@ -29,7 +29,7 @@ export default function CountdownOutput( props ) {
                     { Array.from(numDays).map(n =>
                       <motion.div 
                         whileHover={{ y: -3 }}
-                        className='text-center w-7 xs:w-10 sm:w-14 md:w-16 py-2.5 xs:py-3 sm:py-4 rounded-lg rounded-tl-2xl rounded-br-2xl bg-main-500 cursor-default'
+                        className='text-center w-7 xs:w-10 sm:w-14 md:w-16 py-2.5 xs:py-3 sm:py-4 md:py-5 rounded-lg rounded-tl-2xl rounded-br-2xl bg-main-500 cursor-default'
                       >
                         {n}
                       </motion.div>
@@ -47,7 +47,7 @@ export default function CountdownOutput( props ) {
                     { Array.from(numHours).map(n =>
                       <motion.div 
                         whileHover={{ y: -3 }}
-                        className='text-center w-7 xs:w-10 sm:w-14 md:w-16 py-2.5 xs:py-3 sm:py-4 rounded-lg rounded-tl-2xl rounded-br-2xl bg-main-500 cursor-default'
+                        className='text-center w-7 xs:w-10 sm:w-14 md:w-16 py-2.5 xs:py-3 sm:py-4 md:py-5 rounded-lg rounded-tl-2xl rounded-br-2xl bg-main-500 cursor-default'
                       >
                         {n}
                       </motion.div>
@@ -65,7 +65,7 @@ export default function CountdownOutput( props ) {
                     { Array.from(numMins).map(n =>
                       <motion.div 
                         whileHover={{ y: -3 }}
-                        className='text-center w-7 xs:w-10 sm:w-14 md:w-16 py-2.5 xs:py-3 sm:py-4 rounded-lg rounded-tl-2xl rounded-br-2xl bg-main-500 cursor-default'
+                        className='text-center w-7 xs:w-10 sm:w-14 md:w-16 py-2.5 xs:py-3 sm:py-4 md:py-5 rounded-lg rounded-tl-2xl rounded-br-2xl bg-main-500 cursor-default'
                       >
                         {n}
                       </motion.div>
@@ -83,7 +83,7 @@ export default function CountdownOutput( props ) {
                     { Array.from(numSecs).map(n =>
                       <motion.div 
                         whileHover={{ y: -3 }}
-                        className='text-center w-7 xs:w-10 sm:w-14 md:w-16 py-2.5 xs:py-3 sm:py-4 rounded-lg rounded-tl-2xl rounded-br-2xl bg-main-500 cursor-default'
+                        className='text-center w-7 xs:w-10 sm:w-14 md:w-16 py-2.5 xs:py-3 sm:py-4 md:py-5 rounded-lg rounded-tl-2xl rounded-br-2xl bg-main-500 cursor-default'
                       >
                         {n}
                       </motion.div>
