@@ -1,7 +1,7 @@
-import Container from '../components/Container'
-import Wrapper from '../components/Wrapper'
+import Container from '@/components/Container'
+import Wrapper from '@/components/Wrapper'
 import Link from 'next/link'
-import FaqAccordion from '../components/FaqAccordion'
+import FaqAccordion from '@/components/FaqAccordion'
 
 export default function Faq() {
   return (

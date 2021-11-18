@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
-import Layout from '../components/Layout'
+import Layout from '@/components/Layout'
 import { motion } from 'framer-motion'
 import { useSession } from 'next-auth/client'
 import { useRouter } from 'next/router'

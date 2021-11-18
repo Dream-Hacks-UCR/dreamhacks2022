@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from 'react'
-import Wave from '../components/Wave'
+import Wave from '@/components/Wave'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import CountdownOutput from '../components/Countdown'
+import CountdownOutput from '@/components/Countdown'
 import { toast } from 'react-hot-toast'
 import { signIn, useSession } from 'next-auth/client'
 import Image from 'next/image'
-import Logo from '../public/assets/logo.png'
+import Logo from '/assets/logo.png'
 
-import styles from '../styles/Wave.module.css'
+import styles from '@/styles/Wave.module.css'
 
 export default function Landing() {
   const [session] = useSession()

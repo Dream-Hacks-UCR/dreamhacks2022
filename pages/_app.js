@@ -1,6 +1,6 @@
 import { Provider } from 'next-auth/client'
-import Nav from '../components/Nav'
-import Footer from '../components/Footer'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 import { Toaster } from 'react-hot-toast'
 
 import 'tailwindcss/tailwind.css'

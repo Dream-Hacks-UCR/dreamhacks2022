@@ -1,9 +1,9 @@
-import Container from '../components/Container'
-import Wrapper from '../components/Wrapper'
-import Wave from '../components/Wave'
-import HardwareAccordion from '../components/HardwareAccordion'
+import Container from '@/components/Container'
+import Wrapper from '@/components/Wrapper'
+import Wave from '@/components/Wave'
+import HardwareAccordion from '@/components/HardwareAccordion'
 
-import styles from '../styles/Wave.module.css'
+import styles from '@/styles/Wave.module.css'
 
 export default function Hardware() {
   return (

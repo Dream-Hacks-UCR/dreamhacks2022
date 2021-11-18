@@ -1,7 +1,7 @@
-import Container from '../components/Container'
-import Wrapper from '../components/Wrapper'
-import Wave from '../components/Wave'
-import Card from '../components/Card'
+import Container from '@/components/Container'
+import Wrapper from '@/components/Wrapper'
+import Wave from '@/components/Wave'
+import Card from '@/components/Card'
 
 import styles from '../styles/Wave.module.css'
 

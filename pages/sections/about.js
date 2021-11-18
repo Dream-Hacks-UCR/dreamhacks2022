@@ -1,11 +1,11 @@
-import Container from '../components/Container'
-import Wrapper from '../components/Wrapper'
+import Container from '@/components/Container'
+import Wrapper from '@/components/Wrapper'
 import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-import ThetaTau from '../public/assets/orgs/ThetaTau.png'
-import IEEE from '../public/assets/orgs/IEEE.png'
+import ThetaTau from '/assets/orgs/ThetaTau.png'
+import IEEE from '/assets/orgs/IEEE.png'
 
 export default function About() {
   const sections = [

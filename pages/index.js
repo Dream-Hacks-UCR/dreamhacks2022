@@ -1,13 +1,13 @@
 import Head from 'next/head'
 import { connectToDatabase } from '../lib/mongodb'
 import { Element } from 'react-scroll'
-import Layout from '../components/Layout'
-import Landing from '../pages/landing'
-import About from '../pages/about'
-import Hardware from '../pages/hardware'
-import Faq from '../pages/faq'
-import Sponsors from '../pages/sponsors'
-import Team from '../pages/team'
+import Layout from '@/components/Layout'
+import Landing from '@/sections/landing'
+import About from '@/sections/about'
+import Hardware from '@/sections/hardware'
+import Faq from '@/sections/faq'
+import Sponsors from '@/sections/sponsors'
+import Team from '@/sections/team'
 
 export default function Home() {
   return (

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import QuestionAnswer from "./QuestionAnswer"
+import QuestionAnswer from "@/components/QuestionAnswer"
 
 export default function FaqAccordion() {
   const [selected, setSelected] = useState('General')

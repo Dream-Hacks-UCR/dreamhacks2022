@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Head from 'next/head'
-import Layout from '../components/Layout'
+import Layout from '@/components/Layout'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useSession } from 'next-auth/client'

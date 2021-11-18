@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import HardwareBox from './HardwareBox'
-import HardwareModal from './HardwareModal'
+import HardwareBox from '@/components/HardwareBox'
+import HardwareModal from '@/components/HardwareModal'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
