@@ -4,14 +4,14 @@ import Link from 'next/link'
 import { motion } from 'framer-motion'
 import CountdownOutput from '@/components/Countdown'
 import { toast } from 'react-hot-toast'
-import { signIn, useSession } from 'next-auth/client'
+import { signIn, useSession } from 'next-auth/react'
 import Image from 'next/image'
 import Logo from '/assets/logo.png'
 
 import styles from '@/styles/Wave.module.css'
 
 export default function Landing() {
-  const [session] = useSession()
+  const { data: session } = useSession()
   const [email, setEmail] = useState('')
 
   const handleChangeEmail = (e) => {
@@ -104,7 +104,6 @@ export default function Landing() {
       } */}
       <div className='flex flex-col sm:flex-row gap-3 w-full sm:w-auto'>
         <Link
-          alt='Sponsor us page'
           passHref
           href='/sponsor-us'
         >
@@ -117,7 +116,6 @@ export default function Landing() {
           </motion.button>
         </Link>
         <Link
-          alt='Google form for applying to committees'
           passHref
           href='https://bit.ly/lotushackscommitteeforms'
         >

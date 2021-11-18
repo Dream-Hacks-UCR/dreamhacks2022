@@ -3,7 +3,7 @@ import Wrapper from '@/components/Wrapper'
 import Wave from '@/components/Wave'
 import Card from '@/components/Card'
 
-import styles from '../styles/Wave.module.css'
+import styles from '@/styles/Wave.module.css'
 
 export default function Team() {
   const team = [
@@ -77,8 +77,6 @@ export default function Team() {
             <div className='flex flex-col items-center text-sm md:text-base'>
               <Card
                 link={link}
-                name={name}
-                position={position}
               />
               <div className='font-bold'>{name}</div>
               <div>{position}</div>

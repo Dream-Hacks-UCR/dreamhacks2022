@@ -3,13 +3,13 @@ import Head from 'next/head'
 import Layout from '../components/Layout'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { getCsrfToken, useSession } from 'next-auth/client'
+import { getCsrfToken, useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
 import { FadeLoader } from 'react-spinners'
 
 export default function SignIn({ csrfToken }) {
-  const [session, loading] = useSession()
+  const { data: session, status } = useSession()
   const router = useRouter()
 
   const [email, setEmail] = useState('')
@@ -28,19 +28,19 @@ export default function SignIn({ csrfToken }) {
   }
 
   useEffect(() => {
-    if (session) {
+    if (status === 'authenticated') {
       router.push('/')
       toast.error('Access denied. Already signed in!', {
         id: 'alreadySignedInError',
       })
     }
     if (init) {
-      setEmail(sessionStorage.getItem('email', email))
+      setEmail(sessionStorage.getItem('email'))
     }
     setInit(false)
-  }, [email, init, loading, session, router])
+  }, [email, init, status, session, router])
   
-  if (loading) {
+  if (status === 'loading') {
     return(
       <Layout>
         <div className='flex flex-col items-center text-center w-full max-w-[68rem] my-24 px-4'>
@@ -83,7 +83,7 @@ export default function SignIn({ csrfToken }) {
               />
             </div>
             <motion.button
-              alt='Sign in'
+              aria-label='Sign in'
               type='submit'
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.995 }} 
@@ -94,7 +94,6 @@ export default function SignIn({ csrfToken }) {
             </motion.button>
           </form>
           <Link
-            alt='Homepage'
             passHref
             href='/'
           >

@@ -21,7 +21,6 @@ export default function Sponsors() {
           Thanks to all of our sponsors who made this hackathon possible!
         </p>
         <Link
-          alt='Sponsor us page'
           passHref
           href='/sponsor-us'
         >

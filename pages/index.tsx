@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { connectToDatabase } from '../lib/mongodb'
 import { Element } from 'react-scroll'
 import Layout from '@/components/Layout'
 import Landing from '@/sections/landing'
@@ -38,12 +37,4 @@ export default function Home() {
       </Layout>
     </>
   )
-}
-
-export async function getServerSideProps(context) {
-  const { client } = await connectToDatabase()
-
-  return {
-    props: {},
-  }
 }

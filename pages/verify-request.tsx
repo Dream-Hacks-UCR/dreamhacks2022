@@ -3,25 +3,25 @@ import Head from 'next/head'
 import Layout from '@/components/Layout'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import { useSession } from 'next-auth/client'
+import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
 import { FadeLoader } from 'react-spinners'
 
 export default function VerifyRequest() {
-  const [session, loading] = useSession()
+  const { data: session, status } = useSession()
   const router = useRouter()
 
   useEffect(() => {
-    if (session) {
+    if (status === 'authenticated') {
       router.push('/')
       toast.error('Access denied. Already signed in!', {
         id: 'alreadySignedInVerifyError',
       })
     }
-  }, [loading, session, router])
+  }, [status, session, router])
 
-  if (loading) {
+  if (status === 'loading') {
     return(
       <Layout>
         <div className='flex flex-col items-center text-center w-full max-w-[68rem] my-24 px-4'>
@@ -44,7 +44,7 @@ export default function VerifyRequest() {
           <p className='my-4 text-xl text-secondary'>
             Didn't receive an email? Try signing in again and double checking when you type your email.
           </p>
-          <Link alt='Homepage'
+          <Link
             passHref
             href='/'
           >

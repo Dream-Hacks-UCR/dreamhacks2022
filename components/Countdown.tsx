@@ -1,10 +1,10 @@
 import Countdown from 'react-countdown'
 import { motion } from 'framer-motion'
 
-export default function CountdownOutput( props ) {
+export default function CountdownOutput({ completed, heading, date }) {
   const Completionist = () => (
     <div className='mb-8 font-semibold text-2xl xs:text-3xl'>
-      {props.completed}
+      {completed}
     </div>
   )
 
@@ -19,7 +19,7 @@ export default function CountdownOutput( props ) {
       return (
         <div className='mt-8 font-medium text-2xl xs:text-4xl sm:text-5xl md:text-6xl'>
           <h2 className='mb-4 text-center font-bold text-xl xs:text-2xl sm:text-3xl text-secondary'>
-            {props.heading}
+            {heading}
           </h2>
           <div className='flex gap-2.5 sm:gap-4'>
             { 
@@ -100,5 +100,5 @@ export default function CountdownOutput( props ) {
     }
   }
 
-  return <Countdown date={props.date} renderer={renderer} />
+  return <Countdown date={date} renderer={renderer} />
 }

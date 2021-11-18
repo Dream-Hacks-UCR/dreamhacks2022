@@ -1,4 +1,4 @@
-import Wave from '../components/Wave'
+import Wave from '@/components/Wave'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import {
@@ -9,7 +9,7 @@ import {
   FiTwitter
 } from 'react-icons/fi'
 
-import styles from '../styles/Wave.module.css'
+import styles from '@/styles/Wave.module.css'
 
 export default function Footer() {
   return (
@@ -24,7 +24,6 @@ export default function Footer() {
         </div>
         <div className='flex gap-4 text-2xl'>
           <Link
-            alt='Lotus Hacks Email'
             passHref
             href='mailto:lotushacksucr@gmail.com'
           >
@@ -32,11 +31,10 @@ export default function Footer() {
               whileHover={{ y:-3 }}
               className='hover:text-accent cursor-pointer'
             >
-              <FiMail />
+              <FiMail title='Email'/>
             </motion.div> 
           </Link>
           <Link
-            alt='Lotus Hacks LinkedIn'
             passHref
             href='https://www.linkedin.com/company/lotus-hacks'
           >
@@ -44,11 +42,10 @@ export default function Footer() {
               whileHover={{ y:-3 }}
               className='hover:text-accent cursor-pointer'
             >
-              <FiLinkedin />
+              <FiLinkedin title='LinkedIn'/>
             </motion.div>
           </Link>
           <Link
-            alt='Lotus Hacks Facebook'
             passHref
             href='https://www.facebook.com/lotushacksucr'
           >
@@ -56,11 +53,10 @@ export default function Footer() {
               whileHover={{ y:-3 }}
               className='hover:text-accent cursor-pointer'
             >
-              <FiFacebook />
+              <FiFacebook title='Facebook'/>
             </motion.div>
           </Link>
           <Link
-            alt='Lotus Hacks Instagram'
             passHref
             href='https://www.instagram.com/lotushacksucr'
           >
@@ -68,11 +64,10 @@ export default function Footer() {
               whileHover={{ y:-3 }}
               className='hover:text-accent cursor-pointer'
             >
-              <FiInstagram />
+              <FiInstagram title='Instagram'/>
             </motion.div>
           </Link>
           <Link
-            alt='Lotus Hacks Twitter'
             passHref
             href='https://twitter.com/lotushacksucr'
           >
@@ -80,7 +75,7 @@ export default function Footer() {
               whileHover={{ y:-3 }}
               className='hover:text-accent cursor-pointer'
             >
-              <FiTwitter />
+              <FiTwitter title='Twitter'/>
             </motion.div>
           </Link>
         </div>

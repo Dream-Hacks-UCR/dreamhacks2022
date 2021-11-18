@@ -4,13 +4,13 @@ import { Link as NavLink } from 'react-scroll'
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
-import { signIn, signOut, useSession } from 'next-auth/client'
+import { signIn, signOut, useSession } from 'next-auth/react'
 import Image from 'next/image'
 import { HiMenuAlt4, HiOutlineX } from 'react-icons/hi'
-import Logo from '../public/assets/logo.png'
+import Logo from '/assets/logo.png'
 
 export default function Nav() {
-  const [session] = useSession()
+  const { data: session } = useSession()
   const router = useRouter()
 
   const [open, setOpen] = useState(false)

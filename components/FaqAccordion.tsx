@@ -90,7 +90,7 @@ export default function FaqAccordion() {
     <div className='w-full'>
       <div className='flex flex-col sm:flex-row justify-center items-center gap-3 mb-8'>
         <motion.button
-          alt='General questions category'
+          aria-label='General questions category'
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.995 }}
           className={
@@ -102,7 +102,7 @@ export default function FaqAccordion() {
           General
         </motion.button>
         <motion.button
-          alt='Participation questions category'
+          aria-label='Participation questions category'
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.995 }}
           className={
@@ -114,7 +114,7 @@ export default function FaqAccordion() {
           Participation
         </motion.button>
         <motion.button
-          alt='Projects questions category'
+          aria-label='Projects questions category'
           whileHover={{ scale: 1.03 }}
           whileTap={{ scale: 0.995 }}
           className={

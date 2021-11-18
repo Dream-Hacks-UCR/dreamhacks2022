@@ -2,14 +2,14 @@ import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Layout from '@/components/Layout'
 import { motion } from 'framer-motion'
-import { useSession } from 'next-auth/client'
+import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
 import { FadeLoader } from 'react-spinners'
 import { IoMdRadioButtonOff, IoMdRadioButtonOn } from 'react-icons/io'
 
-export default function CheckIn() {
-  const [session, loading] = useSession()
+export default function Apply() {
+  const { data: session, status } = useSession()
   const router = useRouter()
 
   const [firstName, setFirstName] = useState('')
@@ -17,7 +17,7 @@ export default function CheckIn() {
   const [school, setSchool] = useState('')
   const [major, setMajor] = useState('')
   const [grade, setGrade] = useState('')
-  const [firstTime, setFirstTime] = useState('')
+  const [firstTime, setFirstTime] = useState(false)
 
   const [submitPressed, setSubmitPressed] = useState(false)
 
@@ -42,15 +42,15 @@ export default function CheckIn() {
   }
 
   useEffect(() => {
-    if (!loading && !session) {
+    if (status === 'unauthenticated') {
       router.push('/')
       toast.error('Access denied. Please sign in!', {
         id: 'notSignedInCheckInError',
       })
     }
-  }, [loading, session, router])
+  }, [status, session, router])
 
-  if (loading) {
+  if (status === 'loading') {
     return(
       <Layout>
         <div className='flex flex-col items-center text-center w-full max-w-[68rem] my-24 px-4'>
@@ -63,7 +63,7 @@ export default function CheckIn() {
   return (
     <>
       <Head>
-        <title>Lotus Hacks | Check In</title>
+        <title>Lotus Hacks | Apply</title>
       </Head>
       <Layout>
         <div className='flex flex-col justify-center items-center w-full max-w-[68rem] min-h-screen my-24 px-4'>
