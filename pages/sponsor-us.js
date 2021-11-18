@@ -12,7 +12,7 @@ export default function SponsorUs() {
   if (loading) {
     return(
       <Layout>
-        <div className='flex flex-col items-center text-center w-full max-w-272 my-24 px-4'>
+        <div className='flex flex-col items-center text-center w-full max-w-[68rem] my-24 px-4'>
           <FadeLoader color='#95a6da' width={5} height={12} />
         </div>
       </Layout>
@@ -25,7 +25,7 @@ export default function SponsorUs() {
         <title>Lotus Hacks | Sponsor Us</title>
       </Head>
       <Layout>
-        <div className='flex flex-col items-center text-center w-full max-w-272 my-24 px-4'>
+        <div className='flex flex-col items-center text-center w-full max-w-[68rem] my-24 px-4'>
           <h1 className='text-center font-bold text-6xl text-primary'>
             Sponsor Us
           </h1>

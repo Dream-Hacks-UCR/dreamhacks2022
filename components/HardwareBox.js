@@ -31,7 +31,7 @@ export default function HardwareBox(props) {
         className={
           'flex flex-wrap gap-x-4 gap-y-6 sm:gap-y-8 justify-center px-6 pt-4 text-lg transition-all duration-200 ease-out overflow-hidden '
           + (open ? 'pb-4 opacity-100 ' : 'max-h-0 opacity-0 ')
-          + (open && (props.xl ?  'max-h-760 xl:max-h-280' : 'max-h-200'))
+          + (open && (props.xl ?  'max-h-[180rem] xl:max-h-[70rem]' : 'max-h-[50rem]'))
         }
       >
         {props.children}

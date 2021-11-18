@@ -1,6 +1,6 @@
 export default function Container({ children }) {
   return (
-    <div className='flex flex-col w-full max-w-272 min-h-inherit mt-12'>
+    <div className='flex flex-col w-full max-w-[68rem] min-h-[inherit] mt-12'>
       {children}
     </div>
   )

@@ -38,11 +38,11 @@ export default function Nav() {
   return (
     <div
       className={
-        'z-100 fixed top-0 flex justify-center text-center w-full py-6 backdrop-filter backdrop-blur-lg overflow-hidden '
-        + (open ? 'max-h-screen bg-main-700' : 'max-h-18 bg-nav')
+        'z-[100] fixed top-0 flex justify-center text-center w-full py-6 backdrop-filter backdrop-blur-lg overflow-hidden '
+        + (open ? 'max-h-screen bg-main-700' : 'max-h-[4.5rem] bg-nav')
       }
     >
-      <div className='flex flex-col md:flex-row items-center w-full md:w-272 mx-4 font-bold text-lg lowercase'>
+      <div className='flex flex-col md:flex-row items-center w-full md:w-[68rem] mx-4 font-bold text-lg lowercase'>
         <div className='flex justify-between w-full md:w-auto'>
           <div
             className='flex md:hidden text-3xl cursor-pointer'

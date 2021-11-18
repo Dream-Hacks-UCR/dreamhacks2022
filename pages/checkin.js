@@ -53,7 +53,7 @@ export default function CheckIn() {
   if (loading) {
     return(
       <Layout>
-        <div className='flex flex-col items-center text-center w-full max-w-272 my-24 px-4'>
+        <div className='flex flex-col items-center text-center w-full max-w-[68rem] my-24 px-4'>
           <FadeLoader color='#95a6da' width={5} height={12} />
         </div>
       </Layout>
@@ -66,7 +66,7 @@ export default function CheckIn() {
         <title>Lotus Hacks | Check In</title>
       </Head>
       <Layout>
-        <div className='flex flex-col justify-center items-center w-full max-w-272 min-h-screen my-24 px-4'>
+        <div className='flex flex-col justify-center items-center w-full max-w-[68rem] min-h-screen my-24 px-4'>
           <h1 className='text-center font-bold text-6xl text-primary'>
             Check In
           </h1>

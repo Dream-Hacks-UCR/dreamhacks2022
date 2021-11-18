@@ -25,7 +25,7 @@ export default function QuestionAnswer(props) {
       <div
         className={
           'px-6 pt-4 text-xl transition-all duration-200 ease-out overflow-hidden '
-          + (open ? 'max-h-60 pb-4 opacity-100' : 'max-h-0 opacity-0')
+          + (open ? 'max-h-[15rem] pb-4 opacity-100' : 'max-h-0 opacity-0')
         }
       >
         {props.answer}

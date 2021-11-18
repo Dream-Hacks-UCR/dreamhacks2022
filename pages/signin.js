@@ -43,7 +43,7 @@ export default function SignIn({ csrfToken }) {
   if (loading) {
     return(
       <Layout>
-        <div className='flex flex-col items-center text-center w-full max-w-272 my-24 px-4'>
+        <div className='flex flex-col items-center text-center w-full max-w-[68rem] my-24 px-4'>
           <FadeLoader color='#95a6da' width={5} height={12} />
         </div>
       </Layout>
@@ -56,7 +56,7 @@ export default function SignIn({ csrfToken }) {
         <title>Lotus Hacks | Sign In</title>
       </Head>
       <Layout>
-        <div className='flex flex-col justify-center items-center w-full max-w-272 my-24 px-4'>
+        <div className='flex flex-col justify-center items-center w-full max-w-[68rem] my-24 px-4'>
           <h1 className='text-center font-bold text-6xl text-primary'>
             Sign In
           </h1>

@@ -26,50 +26,6 @@ module.exports = {
       },
     },
     extend: {
-      zIndex: {
-        60: 60,
-        70: 70,
-        80: 80,
-        90: 90,
-        100: 100,
-        110: 110,
-        120: 120,
-      },
-      width: {
-        120: '30rem',
-        180: '45rem',
-        240: '60rem',
-        272: '68rem',
-        '95/100': '95%',
-      },
-      minWidth:  {
-        '40': '10rem',
-        '60': '15rem',
-      },
-      maxWidth: {
-        96: '24rem',
-        272: '68rem',
-      },
-      height: {
-        46: '11.5rem',
-        240: '60rem',
-      },
-      minHeight:  {
-        '40': '10rem',
-        '60': '15rem',
-        'screen-50': '50vh',
-        'inherit': 'inherit',
-      },
-      maxHeight:  {
-        '18': '4.5rem',
-        '60': '15rem',
-        '200': '50rem',
-        '280': '70rem',
-        '760': '180rem',
-      },
-      borderWidth: {
-        '3': '3px',
-      },
       backgroundImage: {
         'stars': 'url(\'/assets/stars-60.png\')',
       },

@@ -89,7 +89,7 @@ export default function Landing() {
               placeholder='Enter your email...' 
               value={email}
               onChange={handleChangeEmail}
-              className='w-full md:w-120 px-4 py-2 rounded-tl-3xl rounded-bl-lg rounded-tr-lg rounded-br-3xl md:rounded-r-none border-2 border-accent focus:border-accent-dark bg-main-700 text-xl text-primary outline-none'
+              className='w-full md:w-[30rem] px-4 py-2 rounded-tl-3xl rounded-bl-lg rounded-tr-lg rounded-br-3xl md:rounded-r-none border-2 border-accent focus:border-accent-dark bg-main-700 text-xl text-primary outline-none'
             />
             <motion.button
               alt='Apply'
