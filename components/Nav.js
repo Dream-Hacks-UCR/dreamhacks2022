@@ -57,7 +57,7 @@ export default function Nav() {
             router.pathname === '/'
             ? <NavLink
                 activeClass=''
-                to="Home"
+                to='Home'
                 spy={true}
                 smooth={true}
                 offset={-90}
@@ -103,7 +103,7 @@ export default function Nav() {
             ? <>
                 <NavLink
                   activeClass='text-accent'
-                  to="Home"
+                  to='Home'
                   spy={true}
                   smooth={true}
                   offset={-90}
@@ -115,7 +115,7 @@ export default function Nav() {
                 </NavLink>
                 <NavLink
                   activeClass='text-accent'
-                  to="About"
+                  to='About'
                   spy={true}
                   smooth={true}
                   offset={-90}
@@ -127,7 +127,7 @@ export default function Nav() {
                 </NavLink>
                 <NavLink
                   activeClass='text-accent'
-                  to="Hardware"
+                  to='Hardware'
                   spy={true}
                   smooth={true}
                   offset={-90}
@@ -139,7 +139,7 @@ export default function Nav() {
                 </NavLink>
                 <NavLink
                   activeClass='text-accent'
-                  to="Faq"
+                  to='Faq'
                   spy={true}
                   smooth={true}
                   offset={-90}
@@ -151,7 +151,7 @@ export default function Nav() {
                 </NavLink>
                 {/* <NavLink
                   activeClass='text-accent'
-                  to="Sponsors"
+                  to='Sponsors'
                   spy={true}
                   smooth={true}
                   offset={-90}
@@ -163,7 +163,7 @@ export default function Nav() {
                 </NavLink> */}
                 <NavLink
                   activeClass='text-accent'
-                  to="Team"
+                  to='Team'
                   spy={true}
                   smooth={true}
                   offset={-90}

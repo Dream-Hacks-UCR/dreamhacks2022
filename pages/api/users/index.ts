@@ -10,6 +10,6 @@ export default async function FetchGroupMembers(req: NextApiRequest, res: NextAp
   }
   catch {
     res.status(500);
-    res.json({ error: "Unable to fetch groups..."});
+    res.json({ error: 'Unable to fetch groups...'});
   }
 }

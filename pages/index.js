@@ -17,22 +17,22 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <Element name="Home" className='w-full'>
+        <Element name='Home' className='w-full'>
           <Landing />
         </Element>
-        <Element name="About" className='w-full'>
+        <Element name='About' className='w-full'>
           <About />
         </Element>
-        <Element name="Hardware" className='w-full'>
+        <Element name='Hardware' className='w-full'>
           <Hardware />
         </Element>
-        <Element name="Faq" className='w-full'>
+        <Element name='Faq' className='w-full'>
           <Faq />
         </Element>
-        {/* <Element name="Sponsors" className='w-full'>
+        {/* <Element name='Sponsors' className='w-full'>
           <Sponsors />
         </Element> */}
-        <Element name="Team" className='w-full'>
+        <Element name='Team' className='w-full'>
           <Team />
         </Element>
       </Layout>
