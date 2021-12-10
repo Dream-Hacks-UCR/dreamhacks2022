@@ -4,8 +4,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
 
-import ThetaTau from '/assets/orgs/ThetaTau.png'
-import IEEE from '/assets/orgs/IEEE.png'
+import ThetaTau from '/public/assets/orgs/ThetaTau.png'
+import IEEE from '/public/assets/orgs/IEEE.png'
 
 export default function About() {
   const sections = [
@@ -29,8 +29,7 @@ export default function About() {
           Interested in helping us out? <b>Sponsor us or join our committees!</b>
         </p>
         <div className='flex flex-col sm:flex-row gap-3 w-full sm:w-auto mb-4'>
-          <Link 
-            alt='Sponsor us page'
+          <Link
             passHref 
             href='/sponsor-us'
           >
@@ -43,7 +42,6 @@ export default function About() {
             </motion.button>
           </Link>
           <Link
-            alt='Google form for applying to committees'
             passHref
             href='https://bit.ly/lotushackscommitteeforms'
           >

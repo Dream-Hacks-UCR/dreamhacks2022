@@ -7,7 +7,7 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 import { signIn, signOut, useSession } from 'next-auth/react'
 import Image from 'next/image'
 import { HiMenuAlt4, HiOutlineX } from 'react-icons/hi'
-import Logo from '/assets/logo.png'
+import Logo from '/public/assets/logo.png'
 
 export default function Nav() {
   const { data: session } = useSession()

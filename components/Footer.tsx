@@ -23,61 +23,46 @@ export default function Footer() {
           Built with 💙 by the Lotus Hacks Team.
         </div>
         <div className='flex gap-4 text-2xl'>
-          <Link
-            passHref
-            href='mailto:lotushacksucr@gmail.com'
-          >
+          <a target='_blank' rel='noopener noreferrer' href='mailto:lotushacksucr@gmail.com'>
             <motion.div
               whileHover={{ y:-3 }}
               className='hover:text-accent cursor-pointer'
             >
               <FiMail title='Email'/>
             </motion.div> 
-          </Link>
-          <Link
-            passHref
-            href='https://www.linkedin.com/company/lotus-hacks'
-          >
+          </a>
+          <a target='_blank' rel='noopener noreferrer' href='https://www.linkedin.com/company/lotus-hacks'>
             <motion.div
               whileHover={{ y:-3 }}
               className='hover:text-accent cursor-pointer'
             >
               <FiLinkedin title='LinkedIn'/>
             </motion.div>
-          </Link>
-          <Link
-            passHref
-            href='https://www.facebook.com/lotushacksucr'
-          >
+          </a>
+          <a target='_blank' rel='noopener noreferrer' href='https://www.facebook.com/lotushacksucr'>
             <motion.div
               whileHover={{ y:-3 }}
               className='hover:text-accent cursor-pointer'
             >
               <FiFacebook title='Facebook'/>
             </motion.div>
-          </Link>
-          <Link
-            passHref
-            href='https://www.instagram.com/lotushacksucr'
-          >
+          </a>
+          <a target='_blank' rel='noopener noreferrer' href='https://www.instagram.com/lotushacksucr'>
             <motion.div
               whileHover={{ y:-3 }}
               className='hover:text-accent cursor-pointer'
             >
               <FiInstagram title='Instagram'/>
             </motion.div>
-          </Link>
-          <Link
-            passHref
-            href='https://twitter.com/lotushacksucr'
-          >
+          </a>
+          <a target='_blank' rel='noopener noreferrer' href='https://twitter.com/lotushacksucr'>
             <motion.div
               whileHover={{ y:-3 }}
               className='hover:text-accent cursor-pointer'
             >
               <FiTwitter title='Twitter'/>
             </motion.div>
-          </Link>
+          </a>
         </div>
       </div>
     </div>

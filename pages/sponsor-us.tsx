@@ -1,7 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
 import Layout from '../components/Layout'
-import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { useSession } from 'next-auth/react'
 import { FadeLoader } from 'react-spinners'
@@ -30,13 +29,10 @@ export default function SponsorUs() {
             Sponsor Us
           </h1>
           <p className='my-4 mt-8 text-xl text-secondary'>
-            <b>Help us make this hackathon possible!</b> Triple your contribution by participating in the BCOE match challenge!
+            Help us make this hackathon possible!
           </p>
           <div className='flex flex-col sm:flex-row gap-3 w-full sm:w-auto'>
-            <Link 
-              passHref 
-              href='https://drive.google.com/file/d/1fMfMw9-7t174oKvctrpfl009UVBd9ykW/view?usp=sharing'
-            >
+            <a target='_blank' rel='noopener noreferrer' href='/sponsorship-packet.pdf'>
               <motion.button
                 whileHover={{ scale: 1.03}} 
                 whileTap={{ scale: 0.995 }}
@@ -44,11 +40,8 @@ export default function SponsorUs() {
               >
                 sponsorship packet
               </motion.button>
-            </Link>
-            <Link
-              passHref 
-              href='https://paypal.me/ieeeucr?locale.x=en_US'
-            >
+            </a>
+            <a target='_blank' rel='noopener noreferrer' href='https://paypal.me/ieeeucr?locale.x=en_US'>
               <motion.button
                 whileHover={{ scale: 1.03}} 
                 whileTap={{ scale: 0.995 }}
@@ -56,7 +49,7 @@ export default function SponsorUs() {
               >
                 our payal
               </motion.button>
-            </Link>
+            </a>
           </div>
         </div>
       </Layout>
