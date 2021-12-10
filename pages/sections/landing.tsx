@@ -35,7 +35,7 @@ export default function Landing() {
   }, [email])
 
   return (
-    <section className='relative flex flex-col justify-center items-center min-h-screen px-4 pt-20 pb-40 bg-stars bg-main-700'>
+    <section className='relative flex flex-col justify-center items-center min-h-screen px-4 pt-24 pb-40 bg-stars bg-main-700'>
       {/* {session && session.user && session.user.email &&
         <div className='text-lg'>
           Logged in as {session.user.email}

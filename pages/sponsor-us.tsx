@@ -1,6 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
-import Layout from '../components/Layout'
+import Layout from '@/components/Layout'
 import { motion } from 'framer-motion'
 import { useSession } from 'next-auth/react'
 import { FadeLoader } from 'react-spinners'
@@ -24,7 +24,7 @@ export default function SponsorUs() {
         <title>Lotus Hacks | Sponsor Us</title>
       </Head>
       <Layout>
-        <div className='flex flex-col items-center text-center w-full max-w-[68rem] my-24 px-4'>
+        <section className='flex flex-col justify-center items-center text-center w-full min-h-screen py-24 px-4 bg-stars'>
           <h1 className='text-center font-bold text-6xl text-primary'>
             Sponsor Us
           </h1>
@@ -51,7 +51,7 @@ export default function SponsorUs() {
               </motion.button>
             </a>
           </div>
-        </div>
+        </section>
       </Layout>
     </>
   )
