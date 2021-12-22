@@ -1,9 +1,8 @@
-import Container from '@/components/Container'
-import Wrapper from '@/components/Wrapper'
-import Link from 'next/link'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-
+import Container from '@/components/Container'
+import Wrapper from '@/components/Wrapper'
+import { PrimaryButton, SecondaryButton } from '@/components/Button'
 import ThetaTau from '/public/assets/orgs/ThetaTau.png'
 import IEEE from '/public/assets/orgs/IEEE.png'
 
@@ -29,30 +28,14 @@ export default function About() {
           Interested in helping us out? <b>Sponsor us or join our committees!</b>
         </p>
         <div className='flex flex-col sm:flex-row gap-3 w-full sm:w-auto mb-4'>
-          <Link
-            passHref 
-            href='/sponsor-us'
-          >
-            <motion.button
-              whileHover={{ scale: 1.03}} 
-              whileTap={{ scale: 0.995 }}
-              className='flex justify-center items-center w-full sm:w-60 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-accent hover:bg-accent-dark font-bold text-xl text-main-500 lowercase'
-            >
-              Sponsor Us
-            </motion.button>
-          </Link>
-          <Link
-            passHref
-            href='https://bit.ly/lotushackscommitteeforms'
-          >
-            <motion.button 
-              whileHover={{ scale: 1.03}} 
-              whileTap={{ scale: 0.995 }}
-              className='flex justify-center items-center w-full sm:w-60 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-main-500 hover:bg-main-400 font-bold text-xl text-accent lowercase'
-            >
-              Join Our Team
-            </motion.button>
-          </Link>
+          <PrimaryButton
+            label='Sponsor Us'
+            internalLink='/sponsor-us'
+          />
+          <SecondaryButton
+            label='Join Our Team'
+            externalLink='https://bit.ly/lotushackscommitteeforms'
+          />
         </div>
       </>
     },
@@ -61,7 +44,7 @@ export default function About() {
       components:
       <>
         <div className='flex gap-12 mt-8'>
-          <Link passHref href='https://www.thetatauucr.com/'>
+          <a target='_blank' rel='noreferrer noopenner' href='https://www.thetatauucr.com/'>
             <motion.div 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.997 }}
@@ -75,8 +58,8 @@ export default function About() {
                 placeholder='blur'
               />
             </motion.div>
-          </Link>
-          <Link passHref href='https://ieee.ee.ucr.edu/'>
+          </a>
+          <a target='_blank' rel='noreferrer noopenner' href='https://ieee.ee.ucr.edu/'>
             <motion.div 
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.997 }}
@@ -90,7 +73,7 @@ export default function About() {
                 placeholder='blur'
               />
             </motion.div>
-          </Link>
+          </a>
         </div>
       </>
     }

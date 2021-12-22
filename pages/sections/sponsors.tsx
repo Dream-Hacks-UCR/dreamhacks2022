@@ -2,7 +2,7 @@ import Container from '@/components/Container'
 import Wrapper from '@/components/Wrapper'
 import Wave from '@/components/Wave'
 import Link from 'next/link'
-import { motion } from 'framer-motion'
+import { PrimaryButton } from '@/components/Button'
 
 import styles from '@/styles/Wave.module.css'
 
@@ -24,13 +24,10 @@ export default function Sponsors() {
           passHref
           href='/sponsor-us'
         >
-          <motion.button 
-            whileHover={{ scale: 1.03}} 
-            whileTap={{ scale: 0.995 }}
-            className='flex justify-center items-center w-full sm:w-60 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-accent hover:bg-accent-dark font-bold text-xl text-main-500 lowercase'
-          >
-            Sponsor Us
-          </motion.button>
+          <PrimaryButton
+            label='Sponsor Us'
+            action={() => {}}
+          />
         </Link>
       </Wrapper>
       <Wave

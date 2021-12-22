@@ -6,6 +6,7 @@ import CountdownOutput from '@/components/Countdown'
 import { toast } from 'react-hot-toast'
 import { signIn, useSession } from 'next-auth/react'
 import Image from 'next/image'
+import { PrimaryButton, SecondaryButton } from '@/components/Button'
 import Logo from '/public/assets/logo.png'
 
 import styles from '@/styles/Wave.module.css'
@@ -70,19 +71,10 @@ export default function Landing() {
       </div>
       {/* { session 
         ?
-          <Link
-            alt='Check-In Page'
-            passHref 
-            href='/checkin'
-          >
-            <motion.button 
-              whileHover={{ scale: 1.03}} 
-              whileTap={{ scale: 0.995 }}
-              className='flex justify-center items-center w-full sm:w-60 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-main-500 hover:bg-main-400 font-bold text-xl text-accent lowercase'
-            >
-              Check In
-            </motion.button>
-          </Link>
+          <PrimaryButton
+            label='Check In'
+            internalLink='/checkin'
+          />
         :
           <div className='flex flex-col md:flex-row gap-2 md:gap-0 items-center md:items-stretch w-full md:w-auto mb-4 text-xl lowercase'>
             <input 
@@ -103,30 +95,14 @@ export default function Landing() {
           </div>
       } */}
       <div className='flex flex-col sm:flex-row gap-3 w-full sm:w-auto'>
-        <Link
-          passHref
-          href='/sponsor-us'
-        >
-          <motion.button
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.995 }}
-            className='flex justify-center items-center w-full sm:w-60 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-accent hover:bg-accent-dark font-bold text-xl text-main-500 lowercase'
-          >
-            Sponsor Us
-          </motion.button>
-        </Link>
-        <Link
-          passHref
-          href='https://bit.ly/lotushackscommitteeforms'
-        >
-          <motion.button
-            whileHover={{ scale: 1.03 }}
-            whileTap={{ scale: 0.995 }}
-            className='flex justify-center items-center w-full sm:w-60 px-6 py-2 rounded-tl-3xl rounded-br-3xl rounded-tr-md rounded-bl-md bg-main-500 hover:bg-main-400 font-bold text-xl text-accent lowercase'
-          >
-            Join Our Team
-          </motion.button>
-        </Link>
+        <PrimaryButton
+          label='Sponsor Us'
+          internalLink='/sponsor-us'
+        />
+        <SecondaryButton
+          label='Join Our Team'
+          externalLink='https://bit.ly/lotushackscommitteeforms'
+        />
       </div>
       <Wave
         waveClass={styles.landingWave}
