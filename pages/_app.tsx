@@ -4,6 +4,7 @@ import Footer from '@/components/Footer'
 import { Toaster } from 'react-hot-toast'
 
 import 'tailwindcss/tailwind.css'
+import 'tailwind.source.css'
 
 export default function MyApp({ Component, pageProps }) {
   return (
