@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Element } from 'react-scroll'
-import Layout from '@/components/Layout'
+import { Layout } from '@/components/Page'
 import Landing from '@/sections/landing'
 import About from '@/sections/about'
 import Hardware from '@/sections/hardware'

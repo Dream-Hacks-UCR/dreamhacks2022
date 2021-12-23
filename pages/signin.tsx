@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
-import Layout from '../components/Layout'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { getCsrfToken, useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
 import { FadeLoader } from 'react-spinners'
+import { Layout } from '@/components/Page'
 
 export default function SignIn({ csrfToken }) {
   const { data: session, status } = useSession()

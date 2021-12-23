@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import Wave from '@/components/Wave'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
-import CountdownOutput from '@/components/Countdown'
 import { toast } from 'react-hot-toast'
 import { signIn, useSession } from 'next-auth/react'
 import Image from 'next/image'
+import CountdownOutput from '@/components/Countdown'
+import { WaveBorder } from '@/components/Page'
 import { PrimaryButton, SecondaryButton } from '@/components/Button'
 import Logo from '/public/assets/logo.png'
 
@@ -104,7 +104,7 @@ export default function Landing() {
           externalLink='https://bit.ly/lotushackscommitteeforms'
         />
       </div>
-      <Wave
+      <WaveBorder
         waveClass={styles.landingWave}
         fill='fill-main-700'
       />

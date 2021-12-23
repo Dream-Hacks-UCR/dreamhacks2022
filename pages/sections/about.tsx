@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import Container from '@/components/Container'
-import Wrapper from '@/components/Wrapper'
+import { Section, Wrapper } from '@/components/Page'
 import { PrimaryButton, SecondaryButton } from '@/components/Button'
 import ThetaTau from '/public/assets/orgs/ThetaTau.png'
 import IEEE from '/public/assets/orgs/IEEE.png'
@@ -80,7 +79,7 @@ export default function About() {
   ]
 
   return (
-    <Container color='bg-main-600'>
+    <Section color='bg-main-600'>
       <Wrapper>
         <h1 className='text-center font-bold text-6xl text-primary'>
           about us
@@ -94,6 +93,6 @@ export default function About() {
           </>
         )}
       </Wrapper>
-    </Container>
+    </Section>
   )
 }

@@ -1,6 +1,4 @@
-import Container from '@/components/Container'
-import Wrapper from '@/components/Wrapper'
-import Wave from '@/components/Wave'
+import { Section, Wrapper, WaveBorder } from '@/components/Page'
 import Link from 'next/link'
 import { PrimaryButton } from '@/components/Button'
 
@@ -8,8 +6,8 @@ import styles from '@/styles/Wave.module.css'
 
 export default function Sponsors() {
   return (
-    <Container color='bg-main-400'>
-      <Wave
+    <Section color='bg-main-400'>
+      <WaveBorder
         waveClass={styles.sponsorsWave}
         fill='fill-main-400'
       />
@@ -30,10 +28,10 @@ export default function Sponsors() {
           />
         </Link>
       </Wrapper>
-      <Wave
+      <WaveBorder
         waveClass={styles.sponsorsWave2}
         fill='fill-main-400'
       />
-    </Container>
+    </Section>
   )
 }

@@ -1,11 +1,10 @@
-import Container from '@/components/Container'
-import Wrapper from '@/components/Wrapper'
+import { Section, Wrapper } from '@/components/Page'
 import Link from 'next/link'
 import FaqAccordion from '@/components/FaqAccordion'
 
 export default function Faq() {
   return (
-    <Container color='bg-main-400'>
+    <Section color='bg-main-400'>
       <Wrapper>
         <h1 className='text-center font-bold text-6xl text-primary'>
           any questions?
@@ -16,6 +15,6 @@ export default function Faq() {
         </p>
         <FaqAccordion />
       </Wrapper>
-    </Container>
+    </Section>
   )
 }

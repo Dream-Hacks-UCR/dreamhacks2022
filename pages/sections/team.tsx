@@ -1,6 +1,4 @@
-import Container from '@/components/Container'
-import Wrapper from '@/components/Wrapper'
-import Wave from '@/components/Wave'
+import { Section, Wrapper, WaveBorder } from '@/components/Page'
 import Card from '@/components/Card'
 
 import styles from '@/styles/Wave.module.css'
@@ -60,8 +58,8 @@ export default function Team() {
   ]
   
   return (
-    <Container color='bg-main-500'>
-      <Wave
+    <Section color='bg-main-500'>
+      <WaveBorder
         waveClass={styles.teamWave}
         fill='fill-main-500'
       />
@@ -84,6 +82,6 @@ export default function Team() {
           )}
         </div>
       </Wrapper>
-    </Container>
+    </Section>
   )
 }

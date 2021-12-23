@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
-import Layout from '@/components/Layout'
 import { motion } from 'framer-motion'
 import { useSession } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import { toast } from 'react-hot-toast'
 import { FadeLoader } from 'react-spinners'
 import { IoMdRadioButtonOff, IoMdRadioButtonOn } from 'react-icons/io'
+import { Layout } from '@/components/Page'
 
 export default function Apply() {
   const { data: session, status } = useSession()

@@ -1,8 +1,8 @@
 import React from 'react'
 import Head from 'next/head'
-import Layout from '@/components/Layout'
 import { useSession } from 'next-auth/react'
 import { FadeLoader } from 'react-spinners'
+import { Layout } from '@/components/Page'
 import { PrimaryButton } from '@/components/Button'
 
 export default function SponsorUs() {

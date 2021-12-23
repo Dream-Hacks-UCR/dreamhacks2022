@@ -1,14 +1,12 @@
-import Container from '@/components/Container'
-import Wrapper from '@/components/Wrapper'
-import Wave from '@/components/Wave'
+import { Section, Wrapper, WaveBorder } from '@/components/Page'
 import HardwareAccordion from '@/components/HardwareAccordion'
 
 import styles from '@/styles/Wave.module.css'
 
 export default function Hardware() {
   return (
-    <Container color='bg-main-500'>
-      <Wave
+    <Section color='bg-main-500'>
+      <WaveBorder
         waveClass={styles.hardwareWave}
         fill='fill-main-500'
       />
@@ -21,10 +19,10 @@ export default function Hardware() {
         </p>
         <HardwareAccordion />
       </Wrapper>
-      <Wave
+      <WaveBorder
         waveClass={styles.hardwareWave2}
         fill='fill-main-500'
       />
-    </Container>
+    </Section>
   )
 }

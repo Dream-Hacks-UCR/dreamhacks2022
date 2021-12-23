@@ -1,4 +1,4 @@
-import Wave from '@/components/Wave'
+import { WaveBorder } from '@/components/Page'
 import { motion } from 'framer-motion'
 import {
   FiMail,
@@ -13,7 +13,7 @@ import styles from '@/styles/Wave.module.css'
 export default function Footer() {
   return (
     <div className='relative flex justify-center w-full py-12 bg-main-600'>
-      <Wave
+      <WaveBorder
         waveClass={styles.footerWave}
         fill='fill-main-600'
       />
