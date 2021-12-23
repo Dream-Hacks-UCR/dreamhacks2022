@@ -8,7 +8,7 @@ export const Input = ({ type, label, variable, register, required, errors }) => 
       type={type}
       {...register(variable, {required})}
       className={
-        'w-full px-3 py-[0.5rem] text-lg border-2 rounded-md bg-main-400 text-primary focus:border-main-100 focus:outline-none file:mr-3 file:rounded-lg file:border-0 file:font-semibold file:bg-primary hover:file:bg-secondary file:text-main-700 '
+        'w-full px-3 py-[0.5rem] text-lg border-2 rounded-md bg-main-500 text-primary focus:border-main-100 focus:outline-none file:mr-3 file:rounded-lg file:border-0 file:font-semibold file:bg-primary hover:file:bg-secondary file:text-main-700 '
         + (errors[variable] ? 'border-red-500' : 'border-main-100')
       }
     />
@@ -24,7 +24,7 @@ export const TextArea = ({ label, variable, register, required, errors }) => (
     <textarea
       {...register(variable, {required})}
       className={
-        'w-full px-3 py-[0.5rem] text-lg border-2 rounded-md bg-main-400 text-primary focus:border-main-100 focus:outline-none '
+        'w-full px-3 py-[0.5rem] text-lg border-2 rounded-md bg-main-500 text-primary focus:border-main-100 focus:outline-none '
         + (errors[variable] ? 'border-red-500' : 'border-main-100')
       }
     />
@@ -37,7 +37,7 @@ export const Select = ({ label, variable, register, required, options, errors })
     <select
       {...register(variable, {required})}
       className={
-        'w-full px-3 py-[0.5rem] text-lg border-2 rounded-md bg-main-400 text-primary focus:border-main-100 focus:outline-none overflow-ellipsis '
+        'w-full px-3 py-[0.5rem] text-lg border-2 rounded-md bg-main-500 text-primary focus:border-main-100 focus:outline-none overflow-ellipsis '
         + (errors[variable] ? 'border-red-500' : 'border-main-100')
       }
       
