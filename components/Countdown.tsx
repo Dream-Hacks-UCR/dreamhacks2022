@@ -1,7 +1,13 @@
 import Countdown from 'react-countdown'
 import { motion } from 'framer-motion'
 
-export default function CountdownOutput({ completed, heading, date }) {
+interface Props {
+  completed: string
+  heading: string
+  date: string
+}
+
+export default function CountdownOutput({ completed, heading, date }: Props) {
   const Completionist = () => (
     <div className='mb-8 font-semibold text-2xl xs:text-3xl'>
       {completed}

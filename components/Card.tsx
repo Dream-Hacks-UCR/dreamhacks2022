@@ -1,7 +1,11 @@
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 
-export default function Card({ link }) {
+interface Props {
+  link: string
+}
+
+export default function Card({ link }: Props) {
   return (
     <Link passHref href={link}>
       <motion.div

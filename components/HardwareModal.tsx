@@ -2,7 +2,18 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { GoX } from 'react-icons/go'
 
-export default function HardwareModal({ show, handler, image, name, quantity, category, description, datasheet }) {
+interface Props {
+  show: boolean
+  handler: any // quick fix
+  image: StaticImageData
+  name: string
+  quantity: number
+  category: string
+  description: string
+  datasheet: string
+}
+
+export default function HardwareModal({ show, handler, image, name, quantity, category, description, datasheet }: Props) {
   return (
     <>
       <div

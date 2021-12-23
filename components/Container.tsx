@@ -1,4 +1,9 @@
-export default function Container({ color, children }) {
+interface Props {
+  children: React.ReactNode | React.ReactNodeArray
+  color: string
+}
+
+export default function Container({ children, color}: Props) {
   return (
     <section 
       className={

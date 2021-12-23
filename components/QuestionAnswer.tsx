@@ -1,7 +1,12 @@
 import React, { useState } from 'react'
 import { GoPlus } from 'react-icons/go'
 
-export default function QuestionAnswer(props) {
+interface Props {
+  question: string
+  answer: string
+}
+
+export default function QuestionAnswer({ question, answer }: Props) {
   const [open, setOpen] = useState(false)
 
   const toggleOpen = () => {
@@ -20,7 +25,7 @@ export default function QuestionAnswer(props) {
             + (open && 'rotate-45')
           }
         />
-        <span>{props.question}</span>
+        <span>{question}</span>
       </div>
       <div
         className={
@@ -28,7 +33,7 @@ export default function QuestionAnswer(props) {
           + (open ? 'max-h-[15rem] pb-4 opacity-100' : 'max-h-0 opacity-0')
         }
       >
-        {props.answer}
+        {answer}
       </div>
     </div>
   )

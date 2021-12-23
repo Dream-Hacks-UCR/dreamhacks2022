@@ -53,7 +53,14 @@ export default function HardwareAccordion() {
   const [selectedDescription, setSelectedDescription] = useState(null);
   const [selectedDatasheet, setSelectedDatasheet] = useState(null);
 
-  const toggleModal = (name, quantity, image, category, description, datasheet) => {
+  const toggleModal = (
+    name: string,
+    quantity: number,
+    image: StaticImageData,
+    category: string,
+    description: string,
+    datasheet: string
+  ) => {
     if (!modalOpen) {
       setSelectedName(name)
       setSelectedQuantity(quantity)

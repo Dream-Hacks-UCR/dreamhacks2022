@@ -1,4 +1,9 @@
-export default function Wave({ waveClass, fill }) {
+interface Props {
+  waveClass: string
+  fill: string
+}
+
+export default function Wave({ waveClass, fill }: Props) {
   return (
     <div className={waveClass}>
       <svg data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'>
