@@ -28,7 +28,6 @@ export default async function auth(req: NextApiRequest, res: NextApiResponse) {
         session.user.gid = user.gid
         session.user.name = user.name
         session.user.qualified = user.qualified
-        session.user.admin = user.admin
         return session
       },
     },

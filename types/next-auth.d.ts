@@ -11,7 +11,6 @@ declare module 'next-auth' {
         last: string
       }
       qualified: string
-      admin: boolean
     }
   }
   interface User {
@@ -22,6 +21,5 @@ declare module 'next-auth' {
       last: string
     }
     qualified: string
-    admin: boolean
   }
 }
