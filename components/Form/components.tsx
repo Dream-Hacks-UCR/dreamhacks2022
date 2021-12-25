@@ -1,6 +1,6 @@
 export const Input = ({ type, label, variable, register, required, errors }) => (
   <div>
-    <label className='text-lg font-semibold'>
+    <label className='text-base font-semibold'>
       {label}
       {!required && <span className='text-main-100'> (optional)</span>}
     </label>
@@ -8,7 +8,7 @@ export const Input = ({ type, label, variable, register, required, errors }) => 
       type={type}
       {...register(variable, {required})}
       className={
-        'w-full px-3 py-[0.5rem] text-lg border-2 rounded-md bg-main-500 text-primary focus:border-main-100 focus:outline-none file:mr-3 file:rounded-lg file:border-0 file:font-semibold file:bg-primary hover:file:bg-secondary file:text-main-700 '
+        'w-full px-3 py-[0.5rem] text-base border-2 rounded-md bg-main-500 text-primary focus:border-main-100 focus:outline-none file:mr-3 file:rounded-lg file:border-0 file:font-semibold file:bg-primary hover:file:bg-secondary file:text-main-700 '
         + (errors[variable] ? 'border-red-500' : 'border-main-100')
       }
     />
@@ -17,14 +17,14 @@ export const Input = ({ type, label, variable, register, required, errors }) => 
 
 export const TextArea = ({ label, variable, register, required, errors }) => (
   <div>
-    <label className='text-lg font-semibold'>
+    <label className='text-base font-semibold'>
       {label}
       {!required && <span className='text-main-100'> (optional)</span>}
     </label>
     <textarea
       {...register(variable, {required})}
       className={
-        'w-full px-3 py-[0.5rem] text-lg border-2 rounded-md bg-main-500 text-primary focus:border-main-100 focus:outline-none '
+        'w-full px-3 py-[0.5rem] text-base border-2 rounded-md bg-main-500 text-primary focus:border-main-100 focus:outline-none '
         + (errors[variable] ? 'border-red-500' : 'border-main-100')
       }
     />
@@ -33,11 +33,11 @@ export const TextArea = ({ label, variable, register, required, errors }) => (
 
 export const Select = ({ label, variable, register, required, options, errors }) => (
   <div>
-    <label className='text-lg font-semibold'>{label}</label>
+    <label className='text-base font-semibold'>{label}</label>
     <select
       {...register(variable, {required})}
       className={
-        'w-full px-3 py-[0.5rem] text-lg border-2 rounded-md bg-main-500 text-primary focus:border-main-100 focus:outline-none overflow-ellipsis '
+        'w-full px-3 py-[0.5rem] text-base border-2 rounded-md bg-main-500 text-primary focus:border-main-100 focus:outline-none overflow-ellipsis '
         + (errors[variable] ? 'border-red-500' : 'border-main-100')
       }
       
@@ -61,8 +61,8 @@ export const Select = ({ label, variable, register, required, options, errors })
 
 export const Radio = ({ register, label, variable, required, options, errors }) => (
   <div>
-    <legend className='text-lg font-semibold'>{label}</legend>
-    <div className='flex flex-col gap-1 pl-2 text-lg'>
+    <legend className='text-base font-semibold'>{label}</legend>
+    <div className='flex flex-col gap-1 pl-2 text-base'>
       {
         options.map((option) =>
           <div id={label} className='flex items-center gap-2'>
